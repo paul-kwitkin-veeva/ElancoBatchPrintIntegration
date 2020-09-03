@@ -1,0 +1,781 @@
+2020-09-01 19:07:52 DEBUG com.veeva.vps.integration.BatchPrintEngine:11 - Hello World!
+2020-09-01 19:19:50 INFO  com.veeva.vps.integration.BatchPrintEngine:14 - Start com.veeva.vps.integration.BatchPrintEngine
+2020-09-01 19:20:21 INFO  com.veeva.vps.integration.BatchPrintEngine:23 - End com.veeva.vps.integration.BatchPrintEngine
+2020-09-01 19:28:30 INFO  com.veeva.vps.integration.BatchPrintEngine:19 - Start com.veeva.vps.integration.BatchPrintEngine
+2020-09-01 19:29:13 INFO  com.veeva.vps.integration.BatchPrintEngine:19 - Start com.veeva.vps.integration.BatchPrintEngine
+2020-09-01 19:30:09 INFO  com.veeva.vps.integration.BatchPrintEngine:19 - Start com.veeva.vps.integration.BatchPrintEngine
+2020-09-01 19:33:29 INFO  com.veeva.vps.integration.BatchPrintEngine:19 - Start com.veeva.vps.integration.BatchPrintEngine
+2020-09-01 19:39:58 INFO  com.veeva.vps.integration.BatchPrintEngine:20 - Start com.veeva.vps.integration.BatchPrintEngine
+2020-09-01 19:40:53 INFO  com.veeva.vps.integration.BatchPrintEngine:19 - Start com.veeva.vps.integration.BatchPrintEngine
+2020-09-01 19:40:54 INFO  com.veeva.vps.integration.BatchPrintEngine:65 - Job completed
+2020-09-01 19:40:54 INFO  com.veeva.vps.integration.BatchPrintEngine:65 - Job completed
+2020-09-01 19:40:54 INFO  com.veeva.vps.integration.BatchPrintEngine:53 - Exiting app
+2020-09-01 19:40:54 INFO  com.veeva.vps.integration.BatchPrintEngine:59 - End com.veeva.vps.integration.BatchPrintEngine
+2020-09-02 10:33:53 INFO  BatchPrintEngine:22 - Start com.veeva.vps.integration.BatchPrintEngine
+2020-09-02 10:33:54 DEBUG HttpRequestConnector:295 - RequestBody: Form
+2020-09-02 10:33:54 INFO  HttpRequestConnector:134 - Sending POST to https://sbelanco-phase-2-sbx.veevavault.com/api/v20.2/auth
+2020-09-02 10:33:54 DEBUG HttpRequestConnector:145 - HTTP status code = 200
+2020-09-02 10:33:54 DEBUG VaultRequest:97 - HTTP response before deserialization = {"responseStatus":"SUCCESS","sessionId":"657DD56A4BBBCA73B895543BB3ECA343F212C5EFC402FF84CA6A75740C453AC44C1105626B23802F5D87BEF8E2D6521A5C4C4F1C6C09192CBAD18555A4993514","userId":3420495,"vaultIds":[{"id":36945,"name":"Quality Sandbox","url":"https://sb-elanco-quality.veevavault.com/api"},{"id":39587,"name":"Alpha Review sbx","url":"https://sbelanco-alpha-review-sbx.veevavault.com/api"},{"id":46950,"name":"QualitySuite Sandbox","url":"https://sbelanco-qualitysuite-sandbox.veevavault.com/api"},{"id":47567,"name":"Phase 2 SBX","url":"https://sbelanco-phase-2-sbx.veevavault.com/api"},{"id":48610,"name":"Temporary Sandbox","url":"https://sbelanco-temporary-sandbox.veevavault.com/api"},{"id":49248,"name":"Clinical VAL","url":"https://sbelanco-clinical-val.veevavault.com/api"},{"id":50270,"name":"Clinical Sandbox","url":"https://sb-elanco-clinical-sbx.veevavault.com/api"},{"id":51477,"name":"New Complaints VPK SBX","url":"https://sb-elanco-new-complaints-vpk-sbx.veevavault.com/api"},{"id":52099,"name":"Elanco Test","url":"https://sbelanco-elanco-test.veevavault.com/api"},{"id":52804,"name":"RIM Training","url":"https://sb-elanco-rim-training.veevavault.com/api"},{"id":55563,"name":"QMS Dry Run Config Migration SBX 2","url":"https://sb-elanco-qms-dry-run-config-migration-sbx-2.veevavault.com/api"},{"id":55644,"name":"Quality Suite Test","url":"https://sbelanco-qualitysuite-test.veevavault.com/api"},{"id":56114,"name":"Integration-Migration","url":"https://sb-elanco-integration-migration.veevavault.com/api"}],"vaultId":47567}
+2020-09-02 10:33:54 DEBUG VaultRequest:208 - responseOption = STRING
+2020-09-02 10:33:54 INFO  AuthenticationRequest:374 - Authentication succeeded
+2020-09-02 10:34:31 INFO  BatchPrintEngine:22 - Start com.veeva.vps.integration.BatchPrintEngine
+2020-09-02 10:34:31 DEBUG HttpRequestConnector:295 - RequestBody: Form
+2020-09-02 10:34:31 INFO  HttpRequestConnector:134 - Sending POST to https://sbelanco-phase-2-sbx.veevavault.com/api/v20.2/auth
+2020-09-02 10:34:32 DEBUG HttpRequestConnector:145 - HTTP status code = 200
+2020-09-02 10:34:32 DEBUG VaultRequest:97 - HTTP response before deserialization = {"responseStatus":"SUCCESS","sessionId":"438749E1ABFFCD160F9E77E78E31E5C691951B8EEA5463003D47FC6C79FAE7E3D8C25537471C60C899D8A1E7D124928A483C344914F43D4C03EE42F1BED0221B","userId":3420495,"vaultIds":[{"id":36945,"name":"Quality Sandbox","url":"https://sb-elanco-quality.veevavault.com/api"},{"id":39587,"name":"Alpha Review sbx","url":"https://sbelanco-alpha-review-sbx.veevavault.com/api"},{"id":46950,"name":"QualitySuite Sandbox","url":"https://sbelanco-qualitysuite-sandbox.veevavault.com/api"},{"id":47567,"name":"Phase 2 SBX","url":"https://sbelanco-phase-2-sbx.veevavault.com/api"},{"id":48610,"name":"Temporary Sandbox","url":"https://sbelanco-temporary-sandbox.veevavault.com/api"},{"id":49248,"name":"Clinical VAL","url":"https://sbelanco-clinical-val.veevavault.com/api"},{"id":50270,"name":"Clinical Sandbox","url":"https://sb-elanco-clinical-sbx.veevavault.com/api"},{"id":51477,"name":"New Complaints VPK SBX","url":"https://sb-elanco-new-complaints-vpk-sbx.veevavault.com/api"},{"id":52099,"name":"Elanco Test","url":"https://sbelanco-elanco-test.veevavault.com/api"},{"id":52804,"name":"RIM Training","url":"https://sb-elanco-rim-training.veevavault.com/api"},{"id":55563,"name":"QMS Dry Run Config Migration SBX 2","url":"https://sb-elanco-qms-dry-run-config-migration-sbx-2.veevavault.com/api"},{"id":55644,"name":"Quality Suite Test","url":"https://sbelanco-qualitysuite-test.veevavault.com/api"},{"id":56114,"name":"Integration-Migration","url":"https://sb-elanco-integration-migration.veevavault.com/api"}],"vaultId":47567}
+2020-09-02 10:34:32 DEBUG VaultRequest:208 - responseOption = STRING
+2020-09-02 10:34:32 INFO  AuthenticationRequest:374 - Authentication succeeded
+2020-09-02 10:35:35 INFO  BatchPrintEngine:22 - Start com.veeva.vps.integration.BatchPrintEngine
+2020-09-02 10:35:35 DEBUG HttpRequestConnector:295 - RequestBody: Form
+2020-09-02 10:35:35 INFO  HttpRequestConnector:134 - Sending POST to https://sbelanco-phase-2-sbx.veevavault.com/api/v20.2/auth
+2020-09-02 10:35:36 DEBUG HttpRequestConnector:145 - HTTP status code = 200
+2020-09-02 10:35:36 DEBUG VaultRequest:97 - HTTP response before deserialization = {"responseStatus":"SUCCESS","sessionId":"854781417282BB729286B599466BA452F2644A20B18B07122CF37841DDA6A961C07963CE47942073D63AF817E92F6C86477A42047D78C008638BB02576998624","userId":3420495,"vaultIds":[{"id":36945,"name":"Quality Sandbox","url":"https://sb-elanco-quality.veevavault.com/api"},{"id":39587,"name":"Alpha Review sbx","url":"https://sbelanco-alpha-review-sbx.veevavault.com/api"},{"id":46950,"name":"QualitySuite Sandbox","url":"https://sbelanco-qualitysuite-sandbox.veevavault.com/api"},{"id":47567,"name":"Phase 2 SBX","url":"https://sbelanco-phase-2-sbx.veevavault.com/api"},{"id":48610,"name":"Temporary Sandbox","url":"https://sbelanco-temporary-sandbox.veevavault.com/api"},{"id":49248,"name":"Clinical VAL","url":"https://sbelanco-clinical-val.veevavault.com/api"},{"id":50270,"name":"Clinical Sandbox","url":"https://sb-elanco-clinical-sbx.veevavault.com/api"},{"id":51477,"name":"New Complaints VPK SBX","url":"https://sb-elanco-new-complaints-vpk-sbx.veevavault.com/api"},{"id":52099,"name":"Elanco Test","url":"https://sbelanco-elanco-test.veevavault.com/api"},{"id":52804,"name":"RIM Training","url":"https://sb-elanco-rim-training.veevavault.com/api"},{"id":55563,"name":"QMS Dry Run Config Migration SBX 2","url":"https://sb-elanco-qms-dry-run-config-migration-sbx-2.veevavault.com/api"},{"id":55644,"name":"Quality Suite Test","url":"https://sbelanco-qualitysuite-test.veevavault.com/api"},{"id":56114,"name":"Integration-Migration","url":"https://sb-elanco-integration-migration.veevavault.com/api"}],"vaultId":47567}
+2020-09-02 10:35:36 DEBUG VaultRequest:208 - responseOption = STRING
+2020-09-02 10:35:36 INFO  AuthenticationRequest:374 - Authentication succeeded
+2020-09-02 10:35:55 INFO  BatchPrintEngine:22 - Start com.veeva.vps.integration.BatchPrintEngine
+2020-09-02 10:36:14 DEBUG HttpRequestConnector:295 - RequestBody: Form
+2020-09-02 10:36:14 INFO  HttpRequestConnector:134 - Sending POST to https://sbelanco-phase-2-sbx.veevavault.com/api/v20.2/auth
+2020-09-02 10:36:15 DEBUG HttpRequestConnector:145 - HTTP status code = 200
+2020-09-02 10:36:15 DEBUG VaultRequest:97 - HTTP response before deserialization = {"responseStatus":"SUCCESS","sessionId":"EEE9715F23529ED36E9C7422AC45BD4D9EF73611A505F7E3AA3A7E3D5EA9716AEDA34BC4E1E0D14F13EA6A7A9ABACAEFB7487FBC1D29413C9B389CAFAF068029","userId":3420495,"vaultIds":[{"id":36945,"name":"Quality Sandbox","url":"https://sb-elanco-quality.veevavault.com/api"},{"id":39587,"name":"Alpha Review sbx","url":"https://sbelanco-alpha-review-sbx.veevavault.com/api"},{"id":46950,"name":"QualitySuite Sandbox","url":"https://sbelanco-qualitysuite-sandbox.veevavault.com/api"},{"id":47567,"name":"Phase 2 SBX","url":"https://sbelanco-phase-2-sbx.veevavault.com/api"},{"id":48610,"name":"Temporary Sandbox","url":"https://sbelanco-temporary-sandbox.veevavault.com/api"},{"id":49248,"name":"Clinical VAL","url":"https://sbelanco-clinical-val.veevavault.com/api"},{"id":50270,"name":"Clinical Sandbox","url":"https://sb-elanco-clinical-sbx.veevavault.com/api"},{"id":51477,"name":"New Complaints VPK SBX","url":"https://sb-elanco-new-complaints-vpk-sbx.veevavault.com/api"},{"id":52099,"name":"Elanco Test","url":"https://sbelanco-elanco-test.veevavault.com/api"},{"id":52804,"name":"RIM Training","url":"https://sb-elanco-rim-training.veevavault.com/api"},{"id":55563,"name":"QMS Dry Run Config Migration SBX 2","url":"https://sb-elanco-qms-dry-run-config-migration-sbx-2.veevavault.com/api"},{"id":55644,"name":"Quality Suite Test","url":"https://sbelanco-qualitysuite-test.veevavault.com/api"},{"id":56114,"name":"Integration-Migration","url":"https://sb-elanco-integration-migration.veevavault.com/api"}],"vaultId":47567}
+2020-09-02 10:36:15 DEBUG VaultRequest:208 - responseOption = STRING
+2020-09-02 10:36:15 INFO  AuthenticationRequest:374 - Authentication succeeded
+2020-09-02 10:37:10 INFO  BatchPrintEngine:22 - Start com.veeva.vps.integration.BatchPrintEngine
+2020-09-02 10:37:18 DEBUG HttpRequestConnector:295 - RequestBody: Form
+2020-09-02 10:37:18 INFO  HttpRequestConnector:134 - Sending POST to https://sbelanco-phase-2-sbx.veevavault.com/api/v20.2/auth
+2020-09-02 10:37:19 DEBUG HttpRequestConnector:145 - HTTP status code = 200
+2020-09-02 10:37:19 DEBUG VaultRequest:97 - HTTP response before deserialization = {"responseStatus":"SUCCESS","sessionId":"AC4C196F6142F0C01B04675E5249DDAD860BD7B423AC492576441ABB3389F7C5AE24960B2767B8D9F48E751443EC103E7712EA8B18A66213A7E0B5A38E34C700","userId":3420495,"vaultIds":[{"id":36945,"name":"Quality Sandbox","url":"https://sb-elanco-quality.veevavault.com/api"},{"id":39587,"name":"Alpha Review sbx","url":"https://sbelanco-alpha-review-sbx.veevavault.com/api"},{"id":46950,"name":"QualitySuite Sandbox","url":"https://sbelanco-qualitysuite-sandbox.veevavault.com/api"},{"id":47567,"name":"Phase 2 SBX","url":"https://sbelanco-phase-2-sbx.veevavault.com/api"},{"id":48610,"name":"Temporary Sandbox","url":"https://sbelanco-temporary-sandbox.veevavault.com/api"},{"id":49248,"name":"Clinical VAL","url":"https://sbelanco-clinical-val.veevavault.com/api"},{"id":50270,"name":"Clinical Sandbox","url":"https://sb-elanco-clinical-sbx.veevavault.com/api"},{"id":51477,"name":"New Complaints VPK SBX","url":"https://sb-elanco-new-complaints-vpk-sbx.veevavault.com/api"},{"id":52099,"name":"Elanco Test","url":"https://sbelanco-elanco-test.veevavault.com/api"},{"id":52804,"name":"RIM Training","url":"https://sb-elanco-rim-training.veevavault.com/api"},{"id":55563,"name":"QMS Dry Run Config Migration SBX 2","url":"https://sb-elanco-qms-dry-run-config-migration-sbx-2.veevavault.com/api"},{"id":55644,"name":"Quality Suite Test","url":"https://sbelanco-qualitysuite-test.veevavault.com/api"},{"id":56114,"name":"Integration-Migration","url":"https://sb-elanco-integration-migration.veevavault.com/api"}],"vaultId":47567}
+2020-09-02 10:37:19 DEBUG VaultRequest:208 - responseOption = STRING
+2020-09-02 10:37:19 INFO  AuthenticationRequest:374 - Authentication succeeded
+2020-09-02 10:37:35 INFO  BatchPrintEngine:22 - Start com.veeva.vps.integration.BatchPrintEngine
+2020-09-02 10:37:45 INFO  BatchPrintEngine:22 - Start com.veeva.vps.integration.BatchPrintEngine
+2020-09-02 10:37:48 DEBUG HttpRequestConnector:295 - RequestBody: Form
+2020-09-02 10:37:48 INFO  HttpRequestConnector:134 - Sending POST to https://sbelanco-phase-2-sbx.veevavault.com/api/v20.2/auth
+2020-09-02 10:37:49 DEBUG HttpRequestConnector:145 - HTTP status code = 200
+2020-09-02 10:37:49 DEBUG VaultRequest:97 - HTTP response before deserialization = {"responseStatus":"SUCCESS","sessionId":"EBAEF81F5E626B3323AE03A452C878850BDCEE725060A1B4F9854BFB27278249BC03DB034337E2A77407E1AA0E9D4E88140D8F700FAFC43CD60A818F3FC780DC","userId":3420495,"vaultIds":[{"id":36945,"name":"Quality Sandbox","url":"https://sb-elanco-quality.veevavault.com/api"},{"id":39587,"name":"Alpha Review sbx","url":"https://sbelanco-alpha-review-sbx.veevavault.com/api"},{"id":46950,"name":"QualitySuite Sandbox","url":"https://sbelanco-qualitysuite-sandbox.veevavault.com/api"},{"id":47567,"name":"Phase 2 SBX","url":"https://sbelanco-phase-2-sbx.veevavault.com/api"},{"id":48610,"name":"Temporary Sandbox","url":"https://sbelanco-temporary-sandbox.veevavault.com/api"},{"id":49248,"name":"Clinical VAL","url":"https://sbelanco-clinical-val.veevavault.com/api"},{"id":50270,"name":"Clinical Sandbox","url":"https://sb-elanco-clinical-sbx.veevavault.com/api"},{"id":51477,"name":"New Complaints VPK SBX","url":"https://sb-elanco-new-complaints-vpk-sbx.veevavault.com/api"},{"id":52099,"name":"Elanco Test","url":"https://sbelanco-elanco-test.veevavault.com/api"},{"id":52804,"name":"RIM Training","url":"https://sb-elanco-rim-training.veevavault.com/api"},{"id":55563,"name":"QMS Dry Run Config Migration SBX 2","url":"https://sb-elanco-qms-dry-run-config-migration-sbx-2.veevavault.com/api"},{"id":55644,"name":"Quality Suite Test","url":"https://sbelanco-qualitysuite-test.veevavault.com/api"},{"id":56114,"name":"Integration-Migration","url":"https://sb-elanco-integration-migration.veevavault.com/api"}],"vaultId":47567}
+2020-09-02 10:37:49 DEBUG VaultRequest:208 - responseOption = STRING
+2020-09-02 10:37:49 INFO  AuthenticationRequest:374 - Authentication succeeded
+2020-09-02 10:37:51 INFO  QueryRequest:138 - Query = select id from package_class_instance__c where state__v = 'ready_for_printing_state__c'
+2020-09-02 10:37:51 DEBUG HttpRequestConnector:295 - RequestBody: Form
+2020-09-02 10:37:51 INFO  HttpRequestConnector:134 - Sending POST to https://sbelanco-phase-2-sbx.veevavault.com/api/v20.2/query
+2020-09-02 10:37:52 DEBUG HttpRequestConnector:145 - HTTP status code = 200
+2020-09-02 10:37:52 DEBUG VaultRequest:97 - HTTP response before deserialization = {"responseStatus":"SUCCESS","responseDetails":{"limit":1000,"offset":0,"size":3,"total":3},"data":[{"id":"V5S000000000H01"},{"id":"V5S000000000H02"},{"id":"V5S000000000I01"}]}
+2020-09-02 10:37:52 DEBUG VaultRequest:208 - responseOption = STRING
+2020-09-02 10:38:53 INFO  BatchPrintEngine:22 - Start com.veeva.vps.integration.BatchPrintEngine
+2020-09-02 10:38:59 DEBUG HttpRequestConnector:295 - RequestBody: Form
+2020-09-02 10:38:59 INFO  HttpRequestConnector:134 - Sending POST to https://sbelanco-phase-2-sbx.veevavault.com/api/v20.2/auth
+2020-09-02 10:39:00 DEBUG HttpRequestConnector:145 - HTTP status code = 200
+2020-09-02 10:39:00 DEBUG VaultRequest:97 - HTTP response before deserialization = {"responseStatus":"SUCCESS","sessionId":"ECF5EFEEDBBA163AC5120E82A4B8919ED3FCCC60F1A050DF5F1316835DEF96AD169DB2D8198C045CFDAE53F1CFD167BF056602DA101D291092C2CAFA64A6F140","userId":3420495,"vaultIds":[{"id":36945,"name":"Quality Sandbox","url":"https://sb-elanco-quality.veevavault.com/api"},{"id":39587,"name":"Alpha Review sbx","url":"https://sbelanco-alpha-review-sbx.veevavault.com/api"},{"id":46950,"name":"QualitySuite Sandbox","url":"https://sbelanco-qualitysuite-sandbox.veevavault.com/api"},{"id":47567,"name":"Phase 2 SBX","url":"https://sbelanco-phase-2-sbx.veevavault.com/api"},{"id":48610,"name":"Temporary Sandbox","url":"https://sbelanco-temporary-sandbox.veevavault.com/api"},{"id":49248,"name":"Clinical VAL","url":"https://sbelanco-clinical-val.veevavault.com/api"},{"id":50270,"name":"Clinical Sandbox","url":"https://sb-elanco-clinical-sbx.veevavault.com/api"},{"id":51477,"name":"New Complaints VPK SBX","url":"https://sb-elanco-new-complaints-vpk-sbx.veevavault.com/api"},{"id":52099,"name":"Elanco Test","url":"https://sbelanco-elanco-test.veevavault.com/api"},{"id":52804,"name":"RIM Training","url":"https://sb-elanco-rim-training.veevavault.com/api"},{"id":55563,"name":"QMS Dry Run Config Migration SBX 2","url":"https://sb-elanco-qms-dry-run-config-migration-sbx-2.veevavault.com/api"},{"id":55644,"name":"Quality Suite Test","url":"https://sbelanco-qualitysuite-test.veevavault.com/api"},{"id":56114,"name":"Integration-Migration","url":"https://sb-elanco-integration-migration.veevavault.com/api"}],"vaultId":47567}
+2020-09-02 10:39:00 DEBUG VaultRequest:208 - responseOption = STRING
+2020-09-02 10:39:00 INFO  AuthenticationRequest:374 - Authentication succeeded
+2020-09-02 10:39:09 INFO  QueryRequest:138 - Query = select id from package_class_instance__c where state__v = 'ready_for_printing_state__c'
+2020-09-02 10:39:09 DEBUG HttpRequestConnector:295 - RequestBody: Form
+2020-09-02 10:39:09 INFO  HttpRequestConnector:134 - Sending POST to https://sbelanco-phase-2-sbx.veevavault.com/api/v20.2/query
+2020-09-02 10:39:43 INFO  BatchPrintEngine:22 - Start com.veeva.vps.integration.BatchPrintEngine
+2020-09-02 10:39:43 DEBUG HttpRequestConnector:295 - RequestBody: Form
+2020-09-02 10:39:43 INFO  HttpRequestConnector:134 - Sending POST to https://sbelanco-phase-2-sbx.veevavault.com/api/v20.2/auth
+2020-09-02 10:39:45 DEBUG HttpRequestConnector:145 - HTTP status code = 200
+2020-09-02 10:39:45 DEBUG VaultRequest:97 - HTTP response before deserialization = {"responseStatus":"SUCCESS","sessionId":"D9C7BE2F5F89E451660080ACDFD650121C6185C442928BC8088778A5C2CC215436811170AF175661795F7D2388B8E0274C9DD6088BBCC1D3D9C4099356E8DBF2","userId":3420495,"vaultIds":[{"id":36945,"name":"Quality Sandbox","url":"https://sb-elanco-quality.veevavault.com/api"},{"id":39587,"name":"Alpha Review sbx","url":"https://sbelanco-alpha-review-sbx.veevavault.com/api"},{"id":46950,"name":"QualitySuite Sandbox","url":"https://sbelanco-qualitysuite-sandbox.veevavault.com/api"},{"id":47567,"name":"Phase 2 SBX","url":"https://sbelanco-phase-2-sbx.veevavault.com/api"},{"id":48610,"name":"Temporary Sandbox","url":"https://sbelanco-temporary-sandbox.veevavault.com/api"},{"id":49248,"name":"Clinical VAL","url":"https://sbelanco-clinical-val.veevavault.com/api"},{"id":50270,"name":"Clinical Sandbox","url":"https://sb-elanco-clinical-sbx.veevavault.com/api"},{"id":51477,"name":"New Complaints VPK SBX","url":"https://sb-elanco-new-complaints-vpk-sbx.veevavault.com/api"},{"id":52099,"name":"Elanco Test","url":"https://sbelanco-elanco-test.veevavault.com/api"},{"id":52804,"name":"RIM Training","url":"https://sb-elanco-rim-training.veevavault.com/api"},{"id":55563,"name":"QMS Dry Run Config Migration SBX 2","url":"https://sb-elanco-qms-dry-run-config-migration-sbx-2.veevavault.com/api"},{"id":55644,"name":"Quality Suite Test","url":"https://sbelanco-qualitysuite-test.veevavault.com/api"},{"id":56114,"name":"Integration-Migration","url":"https://sb-elanco-integration-migration.veevavault.com/api"}],"vaultId":47567}
+2020-09-02 10:39:45 DEBUG VaultRequest:208 - responseOption = STRING
+2020-09-02 10:39:45 INFO  AuthenticationRequest:374 - Authentication succeeded
+2020-09-02 10:39:49 INFO  QueryRequest:138 - Query = select id from package_class_instance__c where state__v = 'ready_for_printing_state__c'
+2020-09-02 10:39:49 DEBUG HttpRequestConnector:295 - RequestBody: Form
+2020-09-02 10:39:49 INFO  HttpRequestConnector:134 - Sending POST to https://sbelanco-phase-2-sbx.veevavault.com/api/v20.2/query
+2020-09-02 10:39:49 DEBUG HttpRequestConnector:145 - HTTP status code = 200
+2020-09-02 10:39:49 DEBUG VaultRequest:97 - HTTP response before deserialization = {"responseStatus":"SUCCESS","responseDetails":{"limit":1000,"offset":0,"size":3,"total":3},"data":[{"id":"V5S000000000H01"},{"id":"V5S000000000H02"},{"id":"V5S000000000I01"}]}
+2020-09-02 10:39:49 DEBUG VaultRequest:208 - responseOption = STRING
+2020-09-02 10:44:36 INFO  BatchPrintEngine:22 - Start com.veeva.vps.integration.BatchPrintEngine
+2020-09-02 10:44:37 DEBUG HttpRequestConnector:295 - RequestBody: Form
+2020-09-02 10:44:37 INFO  HttpRequestConnector:134 - Sending POST to https://sbelanco-phase-2-sbx.veevavault.com/api/v20.2/auth
+2020-09-02 10:44:37 DEBUG HttpRequestConnector:145 - HTTP status code = 200
+2020-09-02 10:44:37 DEBUG VaultRequest:97 - HTTP response before deserialization = {"responseStatus":"SUCCESS","sessionId":"D212FE27D5966E6D0A4E34F3E73F5E802EBAD392B3CA6037CF93D1A72ED2A9975D38ADA5FCFCC3384D865014B1F699105E0770BC948C38CE8C9D8BE4BED8B049","userId":3420495,"vaultIds":[{"id":36945,"name":"Quality Sandbox","url":"https://sb-elanco-quality.veevavault.com/api"},{"id":39587,"name":"Alpha Review sbx","url":"https://sbelanco-alpha-review-sbx.veevavault.com/api"},{"id":46950,"name":"QualitySuite Sandbox","url":"https://sbelanco-qualitysuite-sandbox.veevavault.com/api"},{"id":47567,"name":"Phase 2 SBX","url":"https://sbelanco-phase-2-sbx.veevavault.com/api"},{"id":48610,"name":"Temporary Sandbox","url":"https://sbelanco-temporary-sandbox.veevavault.com/api"},{"id":49248,"name":"Clinical VAL","url":"https://sbelanco-clinical-val.veevavault.com/api"},{"id":50270,"name":"Clinical Sandbox","url":"https://sb-elanco-clinical-sbx.veevavault.com/api"},{"id":51477,"name":"New Complaints VPK SBX","url":"https://sb-elanco-new-complaints-vpk-sbx.veevavault.com/api"},{"id":52099,"name":"Elanco Test","url":"https://sbelanco-elanco-test.veevavault.com/api"},{"id":52804,"name":"RIM Training","url":"https://sb-elanco-rim-training.veevavault.com/api"},{"id":55563,"name":"QMS Dry Run Config Migration SBX 2","url":"https://sb-elanco-qms-dry-run-config-migration-sbx-2.veevavault.com/api"},{"id":55644,"name":"Quality Suite Test","url":"https://sbelanco-qualitysuite-test.veevavault.com/api"},{"id":56114,"name":"Integration-Migration","url":"https://sb-elanco-integration-migration.veevavault.com/api"}],"vaultId":47567}
+2020-09-02 10:44:37 DEBUG VaultRequest:208 - responseOption = STRING
+2020-09-02 10:44:38 INFO  AuthenticationRequest:374 - Authentication succeeded
+2020-09-02 10:44:44 INFO  QueryRequest:138 - Query = select id, (select id, document__c from package_class_document_instances__cr) from package_class_instance__c where state__v = 'ready_for_printing_state__c'
+2020-09-02 10:44:44 DEBUG HttpRequestConnector:295 - RequestBody: Form
+2020-09-02 10:44:44 INFO  HttpRequestConnector:134 - Sending POST to https://sbelanco-phase-2-sbx.veevavault.com/api/v20.2/query
+2020-09-02 10:44:45 DEBUG HttpRequestConnector:145 - HTTP status code = 200
+2020-09-02 10:44:45 DEBUG VaultRequest:97 - HTTP response before deserialization = {"responseStatus":"SUCCESS","responseDetails":{"limit":1000,"offset":0,"size":3,"total":3},"data":[{"id":"V5S000000000H01","package_class_document_instances__cr":{"responseDetails":{"limit":250,"offset":0,"size":1,"total":1},"data":[{"id":"V5T000000000I01","document__c":"500_0_1"}]}},{"id":"V5S000000000H02","package_class_document_instances__cr":{"responseDetails":{"limit":250,"offset":0,"size":0,"total":0},"data":[]}},{"id":"V5S000000000I01","package_class_document_instances__cr":{"responseDetails":{"limit":250,"offset":0,"size":1,"total":1},"data":[{"id":"V5T000000000I02","document__c":"503_0_1"}]}}]}
+2020-09-02 10:44:45 DEBUG VaultRequest:208 - responseOption = STRING
+2020-09-02 10:47:54 INFO  BatchPrintEngine:22 - Start com.veeva.vps.integration.BatchPrintEngine
+2020-09-02 10:47:55 DEBUG HttpRequestConnector:295 - RequestBody: Form
+2020-09-02 10:47:55 INFO  HttpRequestConnector:134 - Sending POST to https://sbelanco-phase-2-sbx.veevavault.com/api/v20.2/auth
+2020-09-02 10:47:55 DEBUG HttpRequestConnector:145 - HTTP status code = 200
+2020-09-02 10:47:55 DEBUG VaultRequest:97 - HTTP response before deserialization = {"responseStatus":"SUCCESS","sessionId":"3827487C578E5036F151F10A564028B3A0B8FB81F1171A66E6975B78CC15E4B0AE69EF21F709308C091A24DF21E32CFB44D5E4788FB8A57892AB990FCD3F730F","userId":3420495,"vaultIds":[{"id":36945,"name":"Quality Sandbox","url":"https://sb-elanco-quality.veevavault.com/api"},{"id":39587,"name":"Alpha Review sbx","url":"https://sbelanco-alpha-review-sbx.veevavault.com/api"},{"id":46950,"name":"QualitySuite Sandbox","url":"https://sbelanco-qualitysuite-sandbox.veevavault.com/api"},{"id":47567,"name":"Phase 2 SBX","url":"https://sbelanco-phase-2-sbx.veevavault.com/api"},{"id":48610,"name":"Temporary Sandbox","url":"https://sbelanco-temporary-sandbox.veevavault.com/api"},{"id":49248,"name":"Clinical VAL","url":"https://sbelanco-clinical-val.veevavault.com/api"},{"id":50270,"name":"Clinical Sandbox","url":"https://sb-elanco-clinical-sbx.veevavault.com/api"},{"id":51477,"name":"New Complaints VPK SBX","url":"https://sb-elanco-new-complaints-vpk-sbx.veevavault.com/api"},{"id":52099,"name":"Elanco Test","url":"https://sbelanco-elanco-test.veevavault.com/api"},{"id":52804,"name":"RIM Training","url":"https://sb-elanco-rim-training.veevavault.com/api"},{"id":55563,"name":"QMS Dry Run Config Migration SBX 2","url":"https://sb-elanco-qms-dry-run-config-migration-sbx-2.veevavault.com/api"},{"id":55644,"name":"Quality Suite Test","url":"https://sbelanco-qualitysuite-test.veevavault.com/api"},{"id":56114,"name":"Integration-Migration","url":"https://sb-elanco-integration-migration.veevavault.com/api"}],"vaultId":47567}
+2020-09-02 10:47:55 DEBUG VaultRequest:208 - responseOption = STRING
+2020-09-02 10:47:56 INFO  AuthenticationRequest:374 - Authentication succeeded
+2020-09-02 10:47:57 INFO  QueryRequest:138 - Query = select id, (select id, document__c from package_class_document_instances__cr) from package_class_instance__c where state__v = 'ready_for_printing_state__c'
+2020-09-02 10:47:57 DEBUG HttpRequestConnector:295 - RequestBody: Form
+2020-09-02 10:47:57 INFO  HttpRequestConnector:134 - Sending POST to https://sbelanco-phase-2-sbx.veevavault.com/api/v20.2/query
+2020-09-02 10:47:58 DEBUG HttpRequestConnector:145 - HTTP status code = 200
+2020-09-02 10:47:58 DEBUG VaultRequest:97 - HTTP response before deserialization = {"responseStatus":"SUCCESS","responseDetails":{"limit":1000,"offset":0,"size":3,"total":3},"data":[{"id":"V5S000000000H01","package_class_document_instances__cr":{"responseDetails":{"limit":250,"offset":0,"size":1,"total":1},"data":[{"id":"V5T000000000I01","document__c":"500_0_1"}]}},{"id":"V5S000000000H02","package_class_document_instances__cr":{"responseDetails":{"limit":250,"offset":0,"size":0,"total":0},"data":[]}},{"id":"V5S000000000I01","package_class_document_instances__cr":{"responseDetails":{"limit":250,"offset":0,"size":1,"total":1},"data":[{"id":"V5T000000000I02","document__c":"503_0_1"}]}}]}
+2020-09-02 10:47:58 DEBUG VaultRequest:208 - responseOption = STRING
+2020-09-02 10:48:27 INFO  BatchPrintEngine:22 - Start com.veeva.vps.integration.BatchPrintEngine
+2020-09-02 10:48:28 DEBUG HttpRequestConnector:295 - RequestBody: Form
+2020-09-02 10:48:28 INFO  HttpRequestConnector:134 - Sending POST to https://sbelanco-phase-2-sbx.veevavault.com/api/v20.2/auth
+2020-09-02 10:48:28 DEBUG HttpRequestConnector:145 - HTTP status code = 200
+2020-09-02 10:48:28 DEBUG VaultRequest:97 - HTTP response before deserialization = {"responseStatus":"SUCCESS","sessionId":"01FB6DFF49767C8E4FD087F7F5EA667E47EA5761556E3DB107CD2C7574DF87AFBA65D3847B6860DA9FBFEC35F4F2858D4C52CA11FB77D37037DE3CA00437B41A","userId":3420495,"vaultIds":[{"id":36945,"name":"Quality Sandbox","url":"https://sb-elanco-quality.veevavault.com/api"},{"id":39587,"name":"Alpha Review sbx","url":"https://sbelanco-alpha-review-sbx.veevavault.com/api"},{"id":46950,"name":"QualitySuite Sandbox","url":"https://sbelanco-qualitysuite-sandbox.veevavault.com/api"},{"id":47567,"name":"Phase 2 SBX","url":"https://sbelanco-phase-2-sbx.veevavault.com/api"},{"id":48610,"name":"Temporary Sandbox","url":"https://sbelanco-temporary-sandbox.veevavault.com/api"},{"id":49248,"name":"Clinical VAL","url":"https://sbelanco-clinical-val.veevavault.com/api"},{"id":50270,"name":"Clinical Sandbox","url":"https://sb-elanco-clinical-sbx.veevavault.com/api"},{"id":51477,"name":"New Complaints VPK SBX","url":"https://sb-elanco-new-complaints-vpk-sbx.veevavault.com/api"},{"id":52099,"name":"Elanco Test","url":"https://sbelanco-elanco-test.veevavault.com/api"},{"id":52804,"name":"RIM Training","url":"https://sb-elanco-rim-training.veevavault.com/api"},{"id":55563,"name":"QMS Dry Run Config Migration SBX 2","url":"https://sb-elanco-qms-dry-run-config-migration-sbx-2.veevavault.com/api"},{"id":55644,"name":"Quality Suite Test","url":"https://sbelanco-qualitysuite-test.veevavault.com/api"},{"id":56114,"name":"Integration-Migration","url":"https://sb-elanco-integration-migration.veevavault.com/api"}],"vaultId":47567}
+2020-09-02 10:48:28 DEBUG VaultRequest:208 - responseOption = STRING
+2020-09-02 10:48:28 INFO  AuthenticationRequest:374 - Authentication succeeded
+2020-09-02 10:48:30 INFO  QueryRequest:138 - Query = select id, (select id, document__c from package_class_document_instances__cr) from package_class_instance__c where state__v = 'ready_for_printing_state__c'
+2020-09-02 10:48:30 DEBUG HttpRequestConnector:295 - RequestBody: Form
+2020-09-02 10:48:30 INFO  HttpRequestConnector:134 - Sending POST to https://sbelanco-phase-2-sbx.veevavault.com/api/v20.2/query
+2020-09-02 10:48:31 DEBUG HttpRequestConnector:145 - HTTP status code = 200
+2020-09-02 10:48:31 DEBUG VaultRequest:97 - HTTP response before deserialization = {"responseStatus":"SUCCESS","responseDetails":{"limit":1000,"offset":0,"size":3,"total":3},"data":[{"id":"V5S000000000H01","package_class_document_instances__cr":{"responseDetails":{"limit":250,"offset":0,"size":1,"total":1},"data":[{"id":"V5T000000000I01","document__c":"500_0_1"}]}},{"id":"V5S000000000H02","package_class_document_instances__cr":{"responseDetails":{"limit":250,"offset":0,"size":0,"total":0},"data":[]}},{"id":"V5S000000000I01","package_class_document_instances__cr":{"responseDetails":{"limit":250,"offset":0,"size":1,"total":1},"data":[{"id":"V5T000000000I02","document__c":"503_0_1"}]}}]}
+2020-09-02 10:48:31 DEBUG VaultRequest:208 - responseOption = STRING
+2020-09-02 10:50:44 INFO  BatchPrintEngine:22 - Start com.veeva.vps.integration.BatchPrintEngine
+2020-09-02 10:50:44 DEBUG HttpRequestConnector:295 - RequestBody: Form
+2020-09-02 10:50:44 INFO  HttpRequestConnector:134 - Sending POST to https://sbelanco-phase-2-sbx.veevavault.com/api/v20.2/auth
+2020-09-02 10:50:45 DEBUG HttpRequestConnector:145 - HTTP status code = 200
+2020-09-02 10:50:45 DEBUG VaultRequest:97 - HTTP response before deserialization = {"responseStatus":"SUCCESS","sessionId":"12054F9CEF5EA0BA80107237993EA4109F799FE3AB05674F97C4DC8C5776EE3B42B82F0C34D89CB680BAF30B74721A7E023CB249BD1F54405E4CB7C7D4AC287A","userId":3420495,"vaultIds":[{"id":36945,"name":"Quality Sandbox","url":"https://sb-elanco-quality.veevavault.com/api"},{"id":39587,"name":"Alpha Review sbx","url":"https://sbelanco-alpha-review-sbx.veevavault.com/api"},{"id":46950,"name":"QualitySuite Sandbox","url":"https://sbelanco-qualitysuite-sandbox.veevavault.com/api"},{"id":47567,"name":"Phase 2 SBX","url":"https://sbelanco-phase-2-sbx.veevavault.com/api"},{"id":48610,"name":"Temporary Sandbox","url":"https://sbelanco-temporary-sandbox.veevavault.com/api"},{"id":49248,"name":"Clinical VAL","url":"https://sbelanco-clinical-val.veevavault.com/api"},{"id":50270,"name":"Clinical Sandbox","url":"https://sb-elanco-clinical-sbx.veevavault.com/api"},{"id":51477,"name":"New Complaints VPK SBX","url":"https://sb-elanco-new-complaints-vpk-sbx.veevavault.com/api"},{"id":52099,"name":"Elanco Test","url":"https://sbelanco-elanco-test.veevavault.com/api"},{"id":52804,"name":"RIM Training","url":"https://sb-elanco-rim-training.veevavault.com/api"},{"id":55563,"name":"QMS Dry Run Config Migration SBX 2","url":"https://sb-elanco-qms-dry-run-config-migration-sbx-2.veevavault.com/api"},{"id":55644,"name":"Quality Suite Test","url":"https://sbelanco-qualitysuite-test.veevavault.com/api"},{"id":56114,"name":"Integration-Migration","url":"https://sb-elanco-integration-migration.veevavault.com/api"}],"vaultId":47567}
+2020-09-02 10:50:45 DEBUG VaultRequest:208 - responseOption = STRING
+2020-09-02 10:50:45 INFO  AuthenticationRequest:374 - Authentication succeeded
+2020-09-02 10:50:47 INFO  QueryRequest:138 - Query = select id, (select id, document__c from package_class_document_instances__cr) from package_class_instance__c where state__v = 'ready_for_printing_state__c'
+2020-09-02 10:50:47 DEBUG HttpRequestConnector:295 - RequestBody: Form
+2020-09-02 10:50:47 INFO  HttpRequestConnector:134 - Sending POST to https://sbelanco-phase-2-sbx.veevavault.com/api/v20.2/query
+2020-09-02 10:50:48 DEBUG HttpRequestConnector:145 - HTTP status code = 200
+2020-09-02 10:50:48 DEBUG VaultRequest:97 - HTTP response before deserialization = {"responseStatus":"SUCCESS","responseDetails":{"limit":1000,"offset":0,"size":3,"total":3},"data":[{"id":"V5S000000000H01","package_class_document_instances__cr":{"responseDetails":{"limit":250,"offset":0,"size":1,"total":1},"data":[{"id":"V5T000000000I01","document__c":"500_0_1"}]}},{"id":"V5S000000000H02","package_class_document_instances__cr":{"responseDetails":{"limit":250,"offset":0,"size":0,"total":0},"data":[]}},{"id":"V5S000000000I01","package_class_document_instances__cr":{"responseDetails":{"limit":250,"offset":0,"size":1,"total":1},"data":[{"id":"V5T000000000I02","document__c":"503_0_1"}]}}]}
+2020-09-02 10:50:48 DEBUG VaultRequest:208 - responseOption = STRING
+2020-09-03 13:48:50 INFO  BatchPrintEngine:22 - Start com.veeva.vps.integration.BatchPrintEngine
+2020-09-03 13:50:04 INFO  BatchPrintEngine:22 - Start com.veeva.vps.integration.BatchPrintEngine
+2020-09-03 13:50:12 DEBUG HttpRequestConnector:295 - RequestBody: Form
+2020-09-03 13:50:12 INFO  HttpRequestConnector:134 - Sending POST to https://sbelanco-phase-2-sbx.veevavault.com/api/v20.2/auth
+2020-09-03 13:50:13 DEBUG HttpRequestConnector:145 - HTTP status code = 200
+2020-09-03 13:50:13 DEBUG VaultRequest:97 - HTTP response before deserialization = {"responseStatus":"SUCCESS","sessionId":"6DEFC02EE399D5F2845184D9C3A05D826F5E4A8052DF7CB3D3FD90427A7C2A203E34558DF0DCE5EB888207EE627FAD297CD06039BD746D1A003F36BD2CE2ED36","userId":3420495,"vaultIds":[{"id":36945,"name":"Quality Sandbox","url":"https://sb-elanco-quality.veevavault.com/api"},{"id":39587,"name":"Alpha Review sbx","url":"https://sbelanco-alpha-review-sbx.veevavault.com/api"},{"id":46950,"name":"QualitySuite Sandbox","url":"https://sbelanco-qualitysuite-sandbox.veevavault.com/api"},{"id":47567,"name":"Phase 2 SBX","url":"https://sbelanco-phase-2-sbx.veevavault.com/api"},{"id":48610,"name":"Temporary Sandbox","url":"https://sbelanco-temporary-sandbox.veevavault.com/api"},{"id":49248,"name":"Clinical VAL","url":"https://sbelanco-clinical-val.veevavault.com/api"},{"id":50270,"name":"Clinical Sandbox","url":"https://sb-elanco-clinical-sbx.veevavault.com/api"},{"id":51477,"name":"New Complaints VPK SBX","url":"https://sb-elanco-new-complaints-vpk-sbx.veevavault.com/api"},{"id":52099,"name":"Elanco Test","url":"https://sbelanco-elanco-test.veevavault.com/api"},{"id":52804,"name":"RIM Training","url":"https://sb-elanco-rim-training.veevavault.com/api"},{"id":55563,"name":"QMS Dry Run Config Migration SBX 2","url":"https://sb-elanco-qms-dry-run-config-migration-sbx-2.veevavault.com/api"},{"id":55644,"name":"Quality Suite Test","url":"https://sbelanco-qualitysuite-test.veevavault.com/api"},{"id":56114,"name":"Integration-Migration","url":"https://sb-elanco-integration-migration.veevavault.com/api"}],"vaultId":47567}
+2020-09-03 13:50:13 DEBUG VaultRequest:208 - responseOption = STRING
+2020-09-03 13:50:13 INFO  AuthenticationRequest:374 - Authentication succeeded
+2020-09-03 13:50:13 INFO  QueryRequest:138 - Query = select id, (select id, document__c from package_class_document_instances__cr) from package_class_instance__c where state__v = 'ready_for_printing_state__c'
+2020-09-03 13:50:13 DEBUG HttpRequestConnector:295 - RequestBody: Form
+2020-09-03 13:50:13 INFO  HttpRequestConnector:134 - Sending POST to https://sbelanco-phase-2-sbx.veevavault.com/api/v20.2/query
+2020-09-03 13:50:14 DEBUG HttpRequestConnector:145 - HTTP status code = 200
+2020-09-03 13:50:14 DEBUG VaultRequest:97 - HTTP response before deserialization = {"responseStatus":"SUCCESS","responseDetails":{"limit":1000,"offset":0,"size":8,"total":8},"data":[{"id":"V5S000000000H01","package_class_document_instances__cr":{"responseDetails":{"limit":250,"offset":0,"size":1,"total":1},"data":[{"id":"V5T000000000I01","document__c":"500_0_1"}]}},{"id":"V5S000000000H02","package_class_document_instances__cr":{"responseDetails":{"limit":250,"offset":0,"size":0,"total":0},"data":[]}},{"id":"V5S000000000I01","package_class_document_instances__cr":{"responseDetails":{"limit":250,"offset":0,"size":1,"total":1},"data":[{"id":"V5T000000000I02","document__c":"503_0_1"}]}},{"id":"V5S000000000K02","package_class_document_instances__cr":{"responseDetails":{"limit":250,"offset":0,"size":1,"total":1},"data":[{"id":"V5T000000000L02","document__c":"667_0_1"}]}},{"id":"V5S000000000M02","package_class_document_instances__cr":{"responseDetails":{"limit":250,"offset":0,"size":1,"total":1},"data":[{"id":"V5T000000000N01","document__c":"741_0_1"}]}},{"id":"V5S000000000M03","package_class_document_instances__cr":{"responseDetails":{"limit":250,"offset":0,"size":1,"total":1},"data":[{"id":"V5T000000000N02","document__c":"744_0_1"}]}},{"id":"V5S000000000N02","package_class_document_instances__cr":{"responseDetails":{"limit":250,"offset":0,"size":1,"total":1},"data":[{"id":"V5T000000000N04","document__c":"754_0_1"}]}},{"id":"V5S000000000N04","package_class_document_instances__cr":{"responseDetails":{"limit":250,"offset":0,"size":3,"total":3},"data":[{"id":"V5T000000000N05","document__c":"755_0_1"},{"id":"V5T000000000N06","document__c":"756_0_1"},{"id":"V5T000000000N07","document__c":"757_0_1"}]}}]}
+2020-09-03 13:50:14 DEBUG VaultRequest:208 - responseOption = STRING
+2020-09-03 13:50:59 INFO  BatchPrintEngine:22 - Start com.veeva.vps.integration.BatchPrintEngine
+2020-09-03 13:51:00 DEBUG HttpRequestConnector:295 - RequestBody: Form
+2020-09-03 13:51:00 INFO  HttpRequestConnector:134 - Sending POST to https://sbelanco-phase-2-sbx.veevavault.com/api/v20.2/auth
+2020-09-03 13:51:00 DEBUG HttpRequestConnector:145 - HTTP status code = 200
+2020-09-03 13:51:00 DEBUG VaultRequest:97 - HTTP response before deserialization = {"responseStatus":"SUCCESS","sessionId":"996B6587E6768A96465C7E99F4A3101B09985223C16396F51039C35572C1EE2A482D430EDD76BCCD572BA6C703576EE7D1E95B230F835DE3A83CE34C9382DA00","userId":3420495,"vaultIds":[{"id":36945,"name":"Quality Sandbox","url":"https://sb-elanco-quality.veevavault.com/api"},{"id":39587,"name":"Alpha Review sbx","url":"https://sbelanco-alpha-review-sbx.veevavault.com/api"},{"id":46950,"name":"QualitySuite Sandbox","url":"https://sbelanco-qualitysuite-sandbox.veevavault.com/api"},{"id":47567,"name":"Phase 2 SBX","url":"https://sbelanco-phase-2-sbx.veevavault.com/api"},{"id":48610,"name":"Temporary Sandbox","url":"https://sbelanco-temporary-sandbox.veevavault.com/api"},{"id":49248,"name":"Clinical VAL","url":"https://sbelanco-clinical-val.veevavault.com/api"},{"id":50270,"name":"Clinical Sandbox","url":"https://sb-elanco-clinical-sbx.veevavault.com/api"},{"id":51477,"name":"New Complaints VPK SBX","url":"https://sb-elanco-new-complaints-vpk-sbx.veevavault.com/api"},{"id":52099,"name":"Elanco Test","url":"https://sbelanco-elanco-test.veevavault.com/api"},{"id":52804,"name":"RIM Training","url":"https://sb-elanco-rim-training.veevavault.com/api"},{"id":55563,"name":"QMS Dry Run Config Migration SBX 2","url":"https://sb-elanco-qms-dry-run-config-migration-sbx-2.veevavault.com/api"},{"id":55644,"name":"Quality Suite Test","url":"https://sbelanco-qualitysuite-test.veevavault.com/api"},{"id":56114,"name":"Integration-Migration","url":"https://sb-elanco-integration-migration.veevavault.com/api"}],"vaultId":47567}
+2020-09-03 13:51:00 DEBUG VaultRequest:208 - responseOption = STRING
+2020-09-03 13:51:00 INFO  AuthenticationRequest:374 - Authentication succeeded
+2020-09-03 13:51:03 INFO  QueryRequest:138 - Query = select id, (select id, document__c from package_class_document_instances__cr) from package_class_instance__c where state__v = 'ready_for_printing_state__c'
+2020-09-03 13:51:03 DEBUG HttpRequestConnector:295 - RequestBody: Form
+2020-09-03 13:51:03 INFO  HttpRequestConnector:134 - Sending POST to https://sbelanco-phase-2-sbx.veevavault.com/api/v20.2/query
+2020-09-03 13:51:04 DEBUG HttpRequestConnector:145 - HTTP status code = 200
+2020-09-03 13:51:04 DEBUG VaultRequest:97 - HTTP response before deserialization = {"responseStatus":"SUCCESS","responseDetails":{"limit":1000,"offset":0,"size":8,"total":8},"data":[{"id":"V5S000000000H01","package_class_document_instances__cr":{"responseDetails":{"limit":250,"offset":0,"size":1,"total":1},"data":[{"id":"V5T000000000I01","document__c":"500_0_1"}]}},{"id":"V5S000000000H02","package_class_document_instances__cr":{"responseDetails":{"limit":250,"offset":0,"size":0,"total":0},"data":[]}},{"id":"V5S000000000I01","package_class_document_instances__cr":{"responseDetails":{"limit":250,"offset":0,"size":1,"total":1},"data":[{"id":"V5T000000000I02","document__c":"503_0_1"}]}},{"id":"V5S000000000K02","package_class_document_instances__cr":{"responseDetails":{"limit":250,"offset":0,"size":1,"total":1},"data":[{"id":"V5T000000000L02","document__c":"667_0_1"}]}},{"id":"V5S000000000M02","package_class_document_instances__cr":{"responseDetails":{"limit":250,"offset":0,"size":1,"total":1},"data":[{"id":"V5T000000000N01","document__c":"741_0_1"}]}},{"id":"V5S000000000M03","package_class_document_instances__cr":{"responseDetails":{"limit":250,"offset":0,"size":1,"total":1},"data":[{"id":"V5T000000000N02","document__c":"744_0_1"}]}},{"id":"V5S000000000N02","package_class_document_instances__cr":{"responseDetails":{"limit":250,"offset":0,"size":1,"total":1},"data":[{"id":"V5T000000000N04","document__c":"754_0_1"}]}},{"id":"V5S000000000N04","package_class_document_instances__cr":{"responseDetails":{"limit":250,"offset":0,"size":3,"total":3},"data":[{"id":"V5T000000000N05","document__c":"755_0_1"},{"id":"V5T000000000N06","document__c":"756_0_1"},{"id":"V5T000000000N07","document__c":"757_0_1"}]}}]}
+2020-09-03 13:51:04 DEBUG VaultRequest:208 - responseOption = STRING
+2020-09-03 13:53:06 INFO  BatchPrintEngine:22 - Start com.veeva.vps.integration.BatchPrintEngine
+2020-09-03 13:53:06 DEBUG HttpRequestConnector:295 - RequestBody: Form
+2020-09-03 13:53:06 INFO  HttpRequestConnector:134 - Sending POST to https://sbelanco-phase-2-sbx.veevavault.com/api/v20.2/auth
+2020-09-03 13:53:07 DEBUG HttpRequestConnector:145 - HTTP status code = 200
+2020-09-03 13:53:07 DEBUG VaultRequest:97 - HTTP response before deserialization = {"responseStatus":"SUCCESS","sessionId":"9DD13E71C00549EDBD2F55F27CD64B94E1DA8EE0EE8DF7DF85183384FD39EB0381572346AC55D65BAB505400F6F13AB9BC3FC78748946FD613C31B5C7A4B6AE2","userId":3420495,"vaultIds":[{"id":36945,"name":"Quality Sandbox","url":"https://sb-elanco-quality.veevavault.com/api"},{"id":39587,"name":"Alpha Review sbx","url":"https://sbelanco-alpha-review-sbx.veevavault.com/api"},{"id":46950,"name":"QualitySuite Sandbox","url":"https://sbelanco-qualitysuite-sandbox.veevavault.com/api"},{"id":47567,"name":"Phase 2 SBX","url":"https://sbelanco-phase-2-sbx.veevavault.com/api"},{"id":48610,"name":"Temporary Sandbox","url":"https://sbelanco-temporary-sandbox.veevavault.com/api"},{"id":49248,"name":"Clinical VAL","url":"https://sbelanco-clinical-val.veevavault.com/api"},{"id":50270,"name":"Clinical Sandbox","url":"https://sb-elanco-clinical-sbx.veevavault.com/api"},{"id":51477,"name":"New Complaints VPK SBX","url":"https://sb-elanco-new-complaints-vpk-sbx.veevavault.com/api"},{"id":52099,"name":"Elanco Test","url":"https://sbelanco-elanco-test.veevavault.com/api"},{"id":52804,"name":"RIM Training","url":"https://sb-elanco-rim-training.veevavault.com/api"},{"id":55563,"name":"QMS Dry Run Config Migration SBX 2","url":"https://sb-elanco-qms-dry-run-config-migration-sbx-2.veevavault.com/api"},{"id":55644,"name":"Quality Suite Test","url":"https://sbelanco-qualitysuite-test.veevavault.com/api"},{"id":56114,"name":"Integration-Migration","url":"https://sb-elanco-integration-migration.veevavault.com/api"}],"vaultId":47567}
+2020-09-03 13:53:07 DEBUG VaultRequest:208 - responseOption = STRING
+2020-09-03 13:53:07 INFO  AuthenticationRequest:374 - Authentication succeeded
+2020-09-03 13:53:07 INFO  QueryRequest:138 - Query = select id, (select id, document__c from package_class_document_instances__cr) from package_class_instance__c where state__v = 'ready_for_printing_state__c'
+2020-09-03 13:53:07 DEBUG HttpRequestConnector:295 - RequestBody: Form
+2020-09-03 13:53:07 INFO  HttpRequestConnector:134 - Sending POST to https://sbelanco-phase-2-sbx.veevavault.com/api/v20.2/query
+2020-09-03 13:53:10 DEBUG HttpRequestConnector:145 - HTTP status code = 200
+2020-09-03 13:53:10 DEBUG VaultRequest:97 - HTTP response before deserialization = {"responseStatus":"SUCCESS","responseDetails":{"limit":1000,"offset":0,"size":8,"total":8},"data":[{"id":"V5S000000000H01","package_class_document_instances__cr":{"responseDetails":{"limit":250,"offset":0,"size":1,"total":1},"data":[{"id":"V5T000000000I01","document__c":"500_0_1"}]}},{"id":"V5S000000000H02","package_class_document_instances__cr":{"responseDetails":{"limit":250,"offset":0,"size":0,"total":0},"data":[]}},{"id":"V5S000000000I01","package_class_document_instances__cr":{"responseDetails":{"limit":250,"offset":0,"size":1,"total":1},"data":[{"id":"V5T000000000I02","document__c":"503_0_1"}]}},{"id":"V5S000000000K02","package_class_document_instances__cr":{"responseDetails":{"limit":250,"offset":0,"size":1,"total":1},"data":[{"id":"V5T000000000L02","document__c":"667_0_1"}]}},{"id":"V5S000000000M02","package_class_document_instances__cr":{"responseDetails":{"limit":250,"offset":0,"size":1,"total":1},"data":[{"id":"V5T000000000N01","document__c":"741_0_1"}]}},{"id":"V5S000000000M03","package_class_document_instances__cr":{"responseDetails":{"limit":250,"offset":0,"size":1,"total":1},"data":[{"id":"V5T000000000N02","document__c":"744_0_1"}]}},{"id":"V5S000000000N02","package_class_document_instances__cr":{"responseDetails":{"limit":250,"offset":0,"size":1,"total":1},"data":[{"id":"V5T000000000N04","document__c":"754_0_1"}]}},{"id":"V5S000000000N04","package_class_document_instances__cr":{"responseDetails":{"limit":250,"offset":0,"size":3,"total":3},"data":[{"id":"V5T000000000N05","document__c":"755_0_1"},{"id":"V5T000000000N06","document__c":"756_0_1"},{"id":"V5T000000000N07","document__c":"757_0_1"}]}}]}
+2020-09-03 13:53:10 DEBUG VaultRequest:208 - responseOption = STRING
+2020-09-03 13:53:32 INFO  BatchPrintEngine:22 - Start com.veeva.vps.integration.BatchPrintEngine
+2020-09-03 13:53:32 DEBUG HttpRequestConnector:295 - RequestBody: Form
+2020-09-03 13:53:32 INFO  HttpRequestConnector:134 - Sending POST to https://sbelanco-phase-2-sbx.veevavault.com/api/v20.2/auth
+2020-09-03 13:53:33 DEBUG HttpRequestConnector:145 - HTTP status code = 200
+2020-09-03 13:53:33 DEBUG VaultRequest:97 - HTTP response before deserialization = {"responseStatus":"SUCCESS","sessionId":"6FC1D3FF30E0E970FBF8CF9D3025936F8F1B638160B82428C492E0B41E72CB8DA4D787569B8C2B2AC14A88F5E7A7D6E959D705C2C4A07DDCE7A928A43C655E21","userId":3420495,"vaultIds":[{"id":36945,"name":"Quality Sandbox","url":"https://sb-elanco-quality.veevavault.com/api"},{"id":39587,"name":"Alpha Review sbx","url":"https://sbelanco-alpha-review-sbx.veevavault.com/api"},{"id":46950,"name":"QualitySuite Sandbox","url":"https://sbelanco-qualitysuite-sandbox.veevavault.com/api"},{"id":47567,"name":"Phase 2 SBX","url":"https://sbelanco-phase-2-sbx.veevavault.com/api"},{"id":48610,"name":"Temporary Sandbox","url":"https://sbelanco-temporary-sandbox.veevavault.com/api"},{"id":49248,"name":"Clinical VAL","url":"https://sbelanco-clinical-val.veevavault.com/api"},{"id":50270,"name":"Clinical Sandbox","url":"https://sb-elanco-clinical-sbx.veevavault.com/api"},{"id":51477,"name":"New Complaints VPK SBX","url":"https://sb-elanco-new-complaints-vpk-sbx.veevavault.com/api"},{"id":52099,"name":"Elanco Test","url":"https://sbelanco-elanco-test.veevavault.com/api"},{"id":52804,"name":"RIM Training","url":"https://sb-elanco-rim-training.veevavault.com/api"},{"id":55563,"name":"QMS Dry Run Config Migration SBX 2","url":"https://sb-elanco-qms-dry-run-config-migration-sbx-2.veevavault.com/api"},{"id":55644,"name":"Quality Suite Test","url":"https://sbelanco-qualitysuite-test.veevavault.com/api"},{"id":56114,"name":"Integration-Migration","url":"https://sb-elanco-integration-migration.veevavault.com/api"}],"vaultId":47567}
+2020-09-03 13:53:33 DEBUG VaultRequest:208 - responseOption = STRING
+2020-09-03 13:53:33 INFO  AuthenticationRequest:374 - Authentication succeeded
+2020-09-03 13:53:33 INFO  QueryRequest:138 - Query = select id, (select id, document__c from package_class_document_instances__cr) from package_class_instance__c where state__v = 'ready_for_printing_state__c'
+2020-09-03 13:53:33 DEBUG HttpRequestConnector:295 - RequestBody: Form
+2020-09-03 13:53:33 INFO  HttpRequestConnector:134 - Sending POST to https://sbelanco-phase-2-sbx.veevavault.com/api/v20.2/query
+2020-09-03 13:53:34 DEBUG HttpRequestConnector:145 - HTTP status code = 200
+2020-09-03 13:53:34 DEBUG VaultRequest:97 - HTTP response before deserialization = {"responseStatus":"SUCCESS","responseDetails":{"limit":1000,"offset":0,"size":8,"total":8},"data":[{"id":"V5S000000000H01","package_class_document_instances__cr":{"responseDetails":{"limit":250,"offset":0,"size":1,"total":1},"data":[{"id":"V5T000000000I01","document__c":"500_0_1"}]}},{"id":"V5S000000000H02","package_class_document_instances__cr":{"responseDetails":{"limit":250,"offset":0,"size":0,"total":0},"data":[]}},{"id":"V5S000000000I01","package_class_document_instances__cr":{"responseDetails":{"limit":250,"offset":0,"size":1,"total":1},"data":[{"id":"V5T000000000I02","document__c":"503_0_1"}]}},{"id":"V5S000000000K02","package_class_document_instances__cr":{"responseDetails":{"limit":250,"offset":0,"size":1,"total":1},"data":[{"id":"V5T000000000L02","document__c":"667_0_1"}]}},{"id":"V5S000000000M02","package_class_document_instances__cr":{"responseDetails":{"limit":250,"offset":0,"size":1,"total":1},"data":[{"id":"V5T000000000N01","document__c":"741_0_1"}]}},{"id":"V5S000000000M03","package_class_document_instances__cr":{"responseDetails":{"limit":250,"offset":0,"size":1,"total":1},"data":[{"id":"V5T000000000N02","document__c":"744_0_1"}]}},{"id":"V5S000000000N02","package_class_document_instances__cr":{"responseDetails":{"limit":250,"offset":0,"size":1,"total":1},"data":[{"id":"V5T000000000N04","document__c":"754_0_1"}]}},{"id":"V5S000000000N04","package_class_document_instances__cr":{"responseDetails":{"limit":250,"offset":0,"size":3,"total":3},"data":[{"id":"V5T000000000N05","document__c":"755_0_1"},{"id":"V5T000000000N06","document__c":"756_0_1"},{"id":"V5T000000000N07","document__c":"757_0_1"}]}}]}
+2020-09-03 13:53:34 DEBUG VaultRequest:208 - responseOption = STRING
+2020-09-03 13:53:36 INFO  HttpRequestConnector:134 - Sending GET to https://sbelanco-phase-2-sbx.veevavault.com/api/v20.2/objects/documents/500/renditions/viewable_rendition__v
+2020-09-03 13:53:37 DEBUG HttpRequestConnector:145 - HTTP status code = 200
+2020-09-03 13:53:37 DEBUG VaultRequest:208 - responseOption = BYTE_ARRAY
+2020-09-03 13:53:48 INFO  HttpRequestConnector:134 - Sending GET to https://sbelanco-phase-2-sbx.veevavault.com/api/v20.2/objects/documents/503/renditions/viewable_rendition__v
+2020-09-03 13:53:49 DEBUG HttpRequestConnector:145 - HTTP status code = 200
+2020-09-03 13:53:49 DEBUG VaultRequest:208 - responseOption = BYTE_ARRAY
+2020-09-03 13:53:53 INFO  HttpRequestConnector:134 - Sending GET to https://sbelanco-phase-2-sbx.veevavault.com/api/v20.2/objects/documents/744/renditions/viewable_rendition__v
+2020-09-03 13:53:54 DEBUG HttpRequestConnector:145 - HTTP status code = 200
+2020-09-03 13:53:54 DEBUG VaultRequest:208 - responseOption = BYTE_ARRAY
+2020-09-03 13:53:57 INFO  HttpRequestConnector:134 - Sending GET to https://sbelanco-phase-2-sbx.veevavault.com/api/v20.2/objects/documents/754/renditions/viewable_rendition__v
+2020-09-03 13:53:58 DEBUG HttpRequestConnector:145 - HTTP status code = 200
+2020-09-03 13:53:58 DEBUG VaultRequest:208 - responseOption = BYTE_ARRAY
+2020-09-03 13:53:58 INFO  HttpRequestConnector:134 - Sending GET to https://sbelanco-phase-2-sbx.veevavault.com/api/v20.2/objects/documents/755/renditions/viewable_rendition__v
+2020-09-03 13:53:59 DEBUG HttpRequestConnector:145 - HTTP status code = 200
+2020-09-03 13:53:59 DEBUG VaultRequest:208 - responseOption = BYTE_ARRAY
+2020-09-03 13:54:00 INFO  HttpRequestConnector:134 - Sending GET to https://sbelanco-phase-2-sbx.veevavault.com/api/v20.2/objects/documents/756/renditions/viewable_rendition__v
+2020-09-03 13:54:01 DEBUG HttpRequestConnector:145 - HTTP status code = 200
+2020-09-03 13:54:01 DEBUG VaultRequest:208 - responseOption = BYTE_ARRAY
+2020-09-03 13:54:01 INFO  HttpRequestConnector:134 - Sending GET to https://sbelanco-phase-2-sbx.veevavault.com/api/v20.2/objects/documents/757/renditions/viewable_rendition__v
+2020-09-03 13:55:56 INFO  BatchPrintEngine:22 - Start com.veeva.vps.integration.BatchPrintEngine
+2020-09-03 13:55:56 DEBUG HttpRequestConnector:295 - RequestBody: Form
+2020-09-03 13:55:56 INFO  HttpRequestConnector:134 - Sending POST to https://sbelanco-phase-2-sbx.veevavault.com/api/v20.2/auth
+2020-09-03 13:55:57 DEBUG HttpRequestConnector:145 - HTTP status code = 200
+2020-09-03 13:55:57 DEBUG VaultRequest:97 - HTTP response before deserialization = {"responseStatus":"SUCCESS","sessionId":"986876A208C6D59353434F3106C2D11F2FB320437D62B707C30B8361583FEF80CFDF2D0866AC878C5F1C3823B92CEF59FE97C1446A3427078B588A6674003477","userId":3420495,"vaultIds":[{"id":36945,"name":"Quality Sandbox","url":"https://sb-elanco-quality.veevavault.com/api"},{"id":39587,"name":"Alpha Review sbx","url":"https://sbelanco-alpha-review-sbx.veevavault.com/api"},{"id":46950,"name":"QualitySuite Sandbox","url":"https://sbelanco-qualitysuite-sandbox.veevavault.com/api"},{"id":47567,"name":"Phase 2 SBX","url":"https://sbelanco-phase-2-sbx.veevavault.com/api"},{"id":48610,"name":"Temporary Sandbox","url":"https://sbelanco-temporary-sandbox.veevavault.com/api"},{"id":49248,"name":"Clinical VAL","url":"https://sbelanco-clinical-val.veevavault.com/api"},{"id":50270,"name":"Clinical Sandbox","url":"https://sb-elanco-clinical-sbx.veevavault.com/api"},{"id":51477,"name":"New Complaints VPK SBX","url":"https://sb-elanco-new-complaints-vpk-sbx.veevavault.com/api"},{"id":52099,"name":"Elanco Test","url":"https://sbelanco-elanco-test.veevavault.com/api"},{"id":52804,"name":"RIM Training","url":"https://sb-elanco-rim-training.veevavault.com/api"},{"id":55563,"name":"QMS Dry Run Config Migration SBX 2","url":"https://sb-elanco-qms-dry-run-config-migration-sbx-2.veevavault.com/api"},{"id":55644,"name":"Quality Suite Test","url":"https://sbelanco-qualitysuite-test.veevavault.com/api"},{"id":56114,"name":"Integration-Migration","url":"https://sb-elanco-integration-migration.veevavault.com/api"}],"vaultId":47567}
+2020-09-03 13:55:57 DEBUG VaultRequest:208 - responseOption = STRING
+2020-09-03 13:55:57 INFO  AuthenticationRequest:374 - Authentication succeeded
+2020-09-03 13:55:57 INFO  QueryRequest:138 - Query = select id, (select id, document__c from package_class_document_instances__cr) from package_class_instance__c where state__v = 'ready_for_printing_state__c'
+2020-09-03 13:55:57 DEBUG HttpRequestConnector:295 - RequestBody: Form
+2020-09-03 13:55:57 INFO  HttpRequestConnector:134 - Sending POST to https://sbelanco-phase-2-sbx.veevavault.com/api/v20.2/query
+2020-09-03 13:55:58 DEBUG HttpRequestConnector:145 - HTTP status code = 200
+2020-09-03 13:55:58 DEBUG VaultRequest:97 - HTTP response before deserialization = {"responseStatus":"SUCCESS","responseDetails":{"limit":1000,"offset":0,"size":8,"total":8},"data":[{"id":"V5S000000000H01","package_class_document_instances__cr":{"responseDetails":{"limit":250,"offset":0,"size":1,"total":1},"data":[{"id":"V5T000000000I01","document__c":"500_0_1"}]}},{"id":"V5S000000000H02","package_class_document_instances__cr":{"responseDetails":{"limit":250,"offset":0,"size":0,"total":0},"data":[]}},{"id":"V5S000000000I01","package_class_document_instances__cr":{"responseDetails":{"limit":250,"offset":0,"size":1,"total":1},"data":[{"id":"V5T000000000I02","document__c":"503_0_1"}]}},{"id":"V5S000000000K02","package_class_document_instances__cr":{"responseDetails":{"limit":250,"offset":0,"size":1,"total":1},"data":[{"id":"V5T000000000L02","document__c":"667_0_1"}]}},{"id":"V5S000000000M02","package_class_document_instances__cr":{"responseDetails":{"limit":250,"offset":0,"size":1,"total":1},"data":[{"id":"V5T000000000N01","document__c":"741_0_1"}]}},{"id":"V5S000000000M03","package_class_document_instances__cr":{"responseDetails":{"limit":250,"offset":0,"size":1,"total":1},"data":[{"id":"V5T000000000N02","document__c":"744_0_1"}]}},{"id":"V5S000000000N02","package_class_document_instances__cr":{"responseDetails":{"limit":250,"offset":0,"size":1,"total":1},"data":[{"id":"V5T000000000N04","document__c":"754_0_1"}]}},{"id":"V5S000000000N04","package_class_document_instances__cr":{"responseDetails":{"limit":250,"offset":0,"size":3,"total":3},"data":[{"id":"V5T000000000N05","document__c":"755_0_1"},{"id":"V5T000000000N06","document__c":"756_0_1"},{"id":"V5T000000000N07","document__c":"757_0_1"}]}}]}
+2020-09-03 13:55:58 DEBUG VaultRequest:208 - responseOption = STRING
+2020-09-03 13:55:58 INFO  HttpRequestConnector:134 - Sending GET to https://sbelanco-phase-2-sbx.veevavault.com/api/v20.2/objects/documents/500/renditions/viewable_rendition__v
+2020-09-03 13:55:59 DEBUG HttpRequestConnector:145 - HTTP status code = 200
+2020-09-03 13:55:59 DEBUG VaultRequest:208 - responseOption = BYTE_ARRAY
+2020-09-03 13:55:59 INFO  HttpRequestConnector:134 - Sending GET to https://sbelanco-phase-2-sbx.veevavault.com/api/v20.2/objects/documents/503/renditions/viewable_rendition__v
+2020-09-03 13:56:00 DEBUG HttpRequestConnector:145 - HTTP status code = 200
+2020-09-03 13:56:00 DEBUG VaultRequest:208 - responseOption = BYTE_ARRAY
+2020-09-03 13:56:00 INFO  HttpRequestConnector:134 - Sending GET to https://sbelanco-phase-2-sbx.veevavault.com/api/v20.2/objects/documents/744/renditions/viewable_rendition__v
+2020-09-03 13:56:01 DEBUG HttpRequestConnector:145 - HTTP status code = 200
+2020-09-03 13:56:01 DEBUG VaultRequest:208 - responseOption = BYTE_ARRAY
+2020-09-03 13:56:01 INFO  HttpRequestConnector:134 - Sending GET to https://sbelanco-phase-2-sbx.veevavault.com/api/v20.2/objects/documents/754/renditions/viewable_rendition__v
+2020-09-03 13:56:02 DEBUG HttpRequestConnector:145 - HTTP status code = 200
+2020-09-03 13:56:02 DEBUG VaultRequest:208 - responseOption = BYTE_ARRAY
+2020-09-03 13:56:02 INFO  HttpRequestConnector:134 - Sending GET to https://sbelanco-phase-2-sbx.veevavault.com/api/v20.2/objects/documents/755/renditions/viewable_rendition__v
+2020-09-03 13:56:03 DEBUG HttpRequestConnector:145 - HTTP status code = 200
+2020-09-03 13:56:03 DEBUG VaultRequest:208 - responseOption = BYTE_ARRAY
+2020-09-03 13:56:03 INFO  HttpRequestConnector:134 - Sending GET to https://sbelanco-phase-2-sbx.veevavault.com/api/v20.2/objects/documents/756/renditions/viewable_rendition__v
+2020-09-03 13:56:05 DEBUG HttpRequestConnector:145 - HTTP status code = 200
+2020-09-03 13:56:05 DEBUG VaultRequest:208 - responseOption = BYTE_ARRAY
+2020-09-03 13:56:05 INFO  HttpRequestConnector:134 - Sending GET to https://sbelanco-phase-2-sbx.veevavault.com/api/v20.2/objects/documents/757/renditions/viewable_rendition__v
+2020-09-03 13:56:06 DEBUG HttpRequestConnector:145 - HTTP status code = 200
+2020-09-03 13:56:06 DEBUG VaultRequest:208 - responseOption = BYTE_ARRAY
+2020-09-03 13:56:06 INFO  HttpRequestConnector:134 - Sending GET to https://sbelanco-phase-2-sbx.veevavault.com/api/v20.2/objects/documents/667/renditions/viewable_rendition__v
+2020-09-03 13:56:07 DEBUG HttpRequestConnector:145 - HTTP status code = 200
+2020-09-03 13:56:07 DEBUG VaultRequest:208 - responseOption = BYTE_ARRAY
+2020-09-03 13:56:07 INFO  HttpRequestConnector:134 - Sending GET to https://sbelanco-phase-2-sbx.veevavault.com/api/v20.2/objects/documents/741/renditions/viewable_rendition__v
+2020-09-03 13:56:08 DEBUG HttpRequestConnector:145 - HTTP status code = 200
+2020-09-03 13:56:08 DEBUG VaultRequest:208 - responseOption = BYTE_ARRAY
+2020-09-03 13:56:08 INFO  BatchPrintEngine:72 - Job completed
+2020-09-03 13:56:08 INFO  BatchPrintEngine:72 - Job completed
+2020-09-03 13:56:08 INFO  BatchPrintEngine:60 - Exiting app
+2020-09-03 13:56:08 INFO  BatchPrintEngine:66 - End com.veeva.vps.integration.BatchPrintEngine
+2020-09-03 13:56:47 INFO  BatchPrintEngine:22 - Start com.veeva.vps.integration.BatchPrintEngine
+2020-09-03 13:56:47 DEBUG HttpRequestConnector:295 - RequestBody: Form
+2020-09-03 13:56:47 INFO  HttpRequestConnector:134 - Sending POST to https://sbelanco-phase-2-sbx.veevavault.com/api/v20.2/auth
+2020-09-03 13:56:48 DEBUG HttpRequestConnector:145 - HTTP status code = 200
+2020-09-03 13:56:48 DEBUG VaultRequest:97 - HTTP response before deserialization = {"responseStatus":"SUCCESS","sessionId":"872FE47037579822519674BC9B65DE4D04793FFA6BE4E2C1BD6D3BE308CBEBA6155FEE9E7180B5DA22054F14EB013D933D6B81FAC76DF1B97C23FB4B7F83A719","userId":3420495,"vaultIds":[{"id":36945,"name":"Quality Sandbox","url":"https://sb-elanco-quality.veevavault.com/api"},{"id":39587,"name":"Alpha Review sbx","url":"https://sbelanco-alpha-review-sbx.veevavault.com/api"},{"id":46950,"name":"QualitySuite Sandbox","url":"https://sbelanco-qualitysuite-sandbox.veevavault.com/api"},{"id":47567,"name":"Phase 2 SBX","url":"https://sbelanco-phase-2-sbx.veevavault.com/api"},{"id":48610,"name":"Temporary Sandbox","url":"https://sbelanco-temporary-sandbox.veevavault.com/api"},{"id":49248,"name":"Clinical VAL","url":"https://sbelanco-clinical-val.veevavault.com/api"},{"id":50270,"name":"Clinical Sandbox","url":"https://sb-elanco-clinical-sbx.veevavault.com/api"},{"id":51477,"name":"New Complaints VPK SBX","url":"https://sb-elanco-new-complaints-vpk-sbx.veevavault.com/api"},{"id":52099,"name":"Elanco Test","url":"https://sbelanco-elanco-test.veevavault.com/api"},{"id":52804,"name":"RIM Training","url":"https://sb-elanco-rim-training.veevavault.com/api"},{"id":55563,"name":"QMS Dry Run Config Migration SBX 2","url":"https://sb-elanco-qms-dry-run-config-migration-sbx-2.veevavault.com/api"},{"id":55644,"name":"Quality Suite Test","url":"https://sbelanco-qualitysuite-test.veevavault.com/api"},{"id":56114,"name":"Integration-Migration","url":"https://sb-elanco-integration-migration.veevavault.com/api"}],"vaultId":47567}
+2020-09-03 13:56:48 DEBUG VaultRequest:208 - responseOption = STRING
+2020-09-03 13:56:48 INFO  AuthenticationRequest:374 - Authentication succeeded
+2020-09-03 13:56:48 INFO  QueryRequest:138 - Query = select id, (select id, document__c from package_class_document_instances__cr) from package_class_instance__c where state__v = 'ready_for_printing_state__c'
+2020-09-03 13:56:48 DEBUG HttpRequestConnector:295 - RequestBody: Form
+2020-09-03 13:56:48 INFO  HttpRequestConnector:134 - Sending POST to https://sbelanco-phase-2-sbx.veevavault.com/api/v20.2/query
+2020-09-03 13:56:49 DEBUG HttpRequestConnector:145 - HTTP status code = 200
+2020-09-03 13:56:49 DEBUG VaultRequest:97 - HTTP response before deserialization = {"responseStatus":"SUCCESS","responseDetails":{"limit":1000,"offset":0,"size":8,"total":8},"data":[{"id":"V5S000000000H01","package_class_document_instances__cr":{"responseDetails":{"limit":250,"offset":0,"size":1,"total":1},"data":[{"id":"V5T000000000I01","document__c":"500_0_1"}]}},{"id":"V5S000000000H02","package_class_document_instances__cr":{"responseDetails":{"limit":250,"offset":0,"size":0,"total":0},"data":[]}},{"id":"V5S000000000I01","package_class_document_instances__cr":{"responseDetails":{"limit":250,"offset":0,"size":1,"total":1},"data":[{"id":"V5T000000000I02","document__c":"503_0_1"}]}},{"id":"V5S000000000K02","package_class_document_instances__cr":{"responseDetails":{"limit":250,"offset":0,"size":1,"total":1},"data":[{"id":"V5T000000000L02","document__c":"667_0_1"}]}},{"id":"V5S000000000M02","package_class_document_instances__cr":{"responseDetails":{"limit":250,"offset":0,"size":1,"total":1},"data":[{"id":"V5T000000000N01","document__c":"741_0_1"}]}},{"id":"V5S000000000M03","package_class_document_instances__cr":{"responseDetails":{"limit":250,"offset":0,"size":1,"total":1},"data":[{"id":"V5T000000000N02","document__c":"744_0_1"}]}},{"id":"V5S000000000N02","package_class_document_instances__cr":{"responseDetails":{"limit":250,"offset":0,"size":1,"total":1},"data":[{"id":"V5T000000000N04","document__c":"754_0_1"}]}},{"id":"V5S000000000N04","package_class_document_instances__cr":{"responseDetails":{"limit":250,"offset":0,"size":3,"total":3},"data":[{"id":"V5T000000000N05","document__c":"755_0_1"},{"id":"V5T000000000N06","document__c":"756_0_1"},{"id":"V5T000000000N07","document__c":"757_0_1"}]}}]}
+2020-09-03 13:56:49 DEBUG VaultRequest:208 - responseOption = STRING
+2020-09-03 13:56:49 INFO  HttpRequestConnector:134 - Sending GET to https://sbelanco-phase-2-sbx.veevavault.com/api/v20.2/objects/documents/500/renditions/viewable_rendition__v
+2020-09-03 13:56:51 DEBUG HttpRequestConnector:145 - HTTP status code = 200
+2020-09-03 13:56:51 DEBUG VaultRequest:208 - responseOption = BYTE_ARRAY
+2020-09-03 13:56:51 INFO  HttpRequestConnector:134 - Sending GET to https://sbelanco-phase-2-sbx.veevavault.com/api/v20.2/objects/documents/503/renditions/viewable_rendition__v
+2020-09-03 13:56:52 DEBUG HttpRequestConnector:145 - HTTP status code = 200
+2020-09-03 13:56:52 DEBUG VaultRequest:208 - responseOption = BYTE_ARRAY
+2020-09-03 13:56:52 INFO  HttpRequestConnector:134 - Sending GET to https://sbelanco-phase-2-sbx.veevavault.com/api/v20.2/objects/documents/744/renditions/viewable_rendition__v
+2020-09-03 13:56:53 DEBUG HttpRequestConnector:145 - HTTP status code = 200
+2020-09-03 13:56:53 DEBUG VaultRequest:208 - responseOption = BYTE_ARRAY
+2020-09-03 13:56:53 INFO  HttpRequestConnector:134 - Sending GET to https://sbelanco-phase-2-sbx.veevavault.com/api/v20.2/objects/documents/754/renditions/viewable_rendition__v
+2020-09-03 13:56:54 DEBUG HttpRequestConnector:145 - HTTP status code = 200
+2020-09-03 13:56:54 DEBUG VaultRequest:208 - responseOption = BYTE_ARRAY
+2020-09-03 13:56:54 INFO  HttpRequestConnector:134 - Sending GET to https://sbelanco-phase-2-sbx.veevavault.com/api/v20.2/objects/documents/755/renditions/viewable_rendition__v
+2020-09-03 13:56:55 DEBUG HttpRequestConnector:145 - HTTP status code = 200
+2020-09-03 13:56:55 DEBUG VaultRequest:208 - responseOption = BYTE_ARRAY
+2020-09-03 13:56:55 INFO  HttpRequestConnector:134 - Sending GET to https://sbelanco-phase-2-sbx.veevavault.com/api/v20.2/objects/documents/756/renditions/viewable_rendition__v
+2020-09-03 13:56:56 DEBUG HttpRequestConnector:145 - HTTP status code = 200
+2020-09-03 13:56:56 DEBUG VaultRequest:208 - responseOption = BYTE_ARRAY
+2020-09-03 13:56:56 INFO  HttpRequestConnector:134 - Sending GET to https://sbelanco-phase-2-sbx.veevavault.com/api/v20.2/objects/documents/757/renditions/viewable_rendition__v
+2020-09-03 13:56:57 DEBUG HttpRequestConnector:145 - HTTP status code = 200
+2020-09-03 13:56:57 DEBUG VaultRequest:208 - responseOption = BYTE_ARRAY
+2020-09-03 13:56:57 INFO  HttpRequestConnector:134 - Sending GET to https://sbelanco-phase-2-sbx.veevavault.com/api/v20.2/objects/documents/667/renditions/viewable_rendition__v
+2020-09-03 13:56:58 DEBUG HttpRequestConnector:145 - HTTP status code = 200
+2020-09-03 13:56:58 DEBUG VaultRequest:208 - responseOption = BYTE_ARRAY
+2020-09-03 13:56:58 INFO  HttpRequestConnector:134 - Sending GET to https://sbelanco-phase-2-sbx.veevavault.com/api/v20.2/objects/documents/741/renditions/viewable_rendition__v
+2020-09-03 13:56:59 DEBUG HttpRequestConnector:145 - HTTP status code = 200
+2020-09-03 13:56:59 DEBUG VaultRequest:208 - responseOption = BYTE_ARRAY
+2020-09-03 13:58:44 INFO  BatchPrintEngine:22 - Start com.veeva.vps.integration.BatchPrintEngine
+2020-09-03 13:58:45 DEBUG HttpRequestConnector:295 - RequestBody: Form
+2020-09-03 13:58:45 INFO  HttpRequestConnector:134 - Sending POST to https://sbelanco-phase-2-sbx.veevavault.com/api/v20.2/auth
+2020-09-03 13:58:45 DEBUG HttpRequestConnector:145 - HTTP status code = 200
+2020-09-03 13:58:45 DEBUG VaultRequest:97 - HTTP response before deserialization = {"responseStatus":"SUCCESS","sessionId":"C68866C0DC2E651A2BF53FD375C640511C0FA72FB7D75F979CA63180C3CC67E33DF8B045209C51CE74F5F737707D4D4DC6103C48AF92B55FA0C03F38A8FD00C1","userId":3420495,"vaultIds":[{"id":36945,"name":"Quality Sandbox","url":"https://sb-elanco-quality.veevavault.com/api"},{"id":39587,"name":"Alpha Review sbx","url":"https://sbelanco-alpha-review-sbx.veevavault.com/api"},{"id":46950,"name":"QualitySuite Sandbox","url":"https://sbelanco-qualitysuite-sandbox.veevavault.com/api"},{"id":47567,"name":"Phase 2 SBX","url":"https://sbelanco-phase-2-sbx.veevavault.com/api"},{"id":48610,"name":"Temporary Sandbox","url":"https://sbelanco-temporary-sandbox.veevavault.com/api"},{"id":49248,"name":"Clinical VAL","url":"https://sbelanco-clinical-val.veevavault.com/api"},{"id":50270,"name":"Clinical Sandbox","url":"https://sb-elanco-clinical-sbx.veevavault.com/api"},{"id":51477,"name":"New Complaints VPK SBX","url":"https://sb-elanco-new-complaints-vpk-sbx.veevavault.com/api"},{"id":52099,"name":"Elanco Test","url":"https://sbelanco-elanco-test.veevavault.com/api"},{"id":52804,"name":"RIM Training","url":"https://sb-elanco-rim-training.veevavault.com/api"},{"id":55563,"name":"QMS Dry Run Config Migration SBX 2","url":"https://sb-elanco-qms-dry-run-config-migration-sbx-2.veevavault.com/api"},{"id":55644,"name":"Quality Suite Test","url":"https://sbelanco-qualitysuite-test.veevavault.com/api"},{"id":56114,"name":"Integration-Migration","url":"https://sb-elanco-integration-migration.veevavault.com/api"}],"vaultId":47567}
+2020-09-03 13:58:45 DEBUG VaultRequest:208 - responseOption = STRING
+2020-09-03 13:58:45 INFO  AuthenticationRequest:374 - Authentication succeeded
+2020-09-03 13:58:45 INFO  QueryRequest:138 - Query = select id, (select id, document__c from package_class_document_instances__cr) from package_class_instance__c where state__v = 'ready_for_printing_state__c'
+2020-09-03 13:58:45 DEBUG HttpRequestConnector:295 - RequestBody: Form
+2020-09-03 13:58:45 INFO  HttpRequestConnector:134 - Sending POST to https://sbelanco-phase-2-sbx.veevavault.com/api/v20.2/query
+2020-09-03 13:59:11 INFO  BatchPrintEngine:22 - Start com.veeva.vps.integration.BatchPrintEngine
+2020-09-03 13:59:11 DEBUG HttpRequestConnector:295 - RequestBody: Form
+2020-09-03 13:59:11 INFO  HttpRequestConnector:134 - Sending POST to https://sbelanco-phase-2-sbx.veevavault.com/api/v20.2/auth
+2020-09-03 13:59:12 DEBUG HttpRequestConnector:145 - HTTP status code = 200
+2020-09-03 13:59:12 DEBUG VaultRequest:97 - HTTP response before deserialization = {"responseStatus":"SUCCESS","sessionId":"F8D2A9ABD4CB02CF4BA5B00ED6AE03A87AAC6E723D1E98B7F84B757141545736CF82207D1BDAA0CF65FA9A51BAD004A7EFFF82CF5AD7787971157C4024E2E4BD","userId":3420495,"vaultIds":[{"id":36945,"name":"Quality Sandbox","url":"https://sb-elanco-quality.veevavault.com/api"},{"id":39587,"name":"Alpha Review sbx","url":"https://sbelanco-alpha-review-sbx.veevavault.com/api"},{"id":46950,"name":"QualitySuite Sandbox","url":"https://sbelanco-qualitysuite-sandbox.veevavault.com/api"},{"id":47567,"name":"Phase 2 SBX","url":"https://sbelanco-phase-2-sbx.veevavault.com/api"},{"id":48610,"name":"Temporary Sandbox","url":"https://sbelanco-temporary-sandbox.veevavault.com/api"},{"id":49248,"name":"Clinical VAL","url":"https://sbelanco-clinical-val.veevavault.com/api"},{"id":50270,"name":"Clinical Sandbox","url":"https://sb-elanco-clinical-sbx.veevavault.com/api"},{"id":51477,"name":"New Complaints VPK SBX","url":"https://sb-elanco-new-complaints-vpk-sbx.veevavault.com/api"},{"id":52099,"name":"Elanco Test","url":"https://sbelanco-elanco-test.veevavault.com/api"},{"id":52804,"name":"RIM Training","url":"https://sb-elanco-rim-training.veevavault.com/api"},{"id":55563,"name":"QMS Dry Run Config Migration SBX 2","url":"https://sb-elanco-qms-dry-run-config-migration-sbx-2.veevavault.com/api"},{"id":55644,"name":"Quality Suite Test","url":"https://sbelanco-qualitysuite-test.veevavault.com/api"},{"id":56114,"name":"Integration-Migration","url":"https://sb-elanco-integration-migration.veevavault.com/api"}],"vaultId":47567}
+2020-09-03 13:59:12 DEBUG VaultRequest:208 - responseOption = STRING
+2020-09-03 13:59:12 INFO  AuthenticationRequest:374 - Authentication succeeded
+2020-09-03 13:59:12 INFO  QueryRequest:138 - Query = select id, (select id, document__c from package_class_document_instances__cr) from package_class_instance__c where state__v = 'ready_for_printing_state__c'
+2020-09-03 13:59:12 DEBUG HttpRequestConnector:295 - RequestBody: Form
+2020-09-03 13:59:12 INFO  HttpRequestConnector:134 - Sending POST to https://sbelanco-phase-2-sbx.veevavault.com/api/v20.2/query
+2020-09-03 13:59:13 DEBUG HttpRequestConnector:145 - HTTP status code = 200
+2020-09-03 13:59:13 DEBUG VaultRequest:97 - HTTP response before deserialization = {"responseStatus":"SUCCESS","responseDetails":{"limit":1000,"offset":0,"size":8,"total":8},"data":[{"id":"V5S000000000H01","package_class_document_instances__cr":{"responseDetails":{"limit":250,"offset":0,"size":1,"total":1},"data":[{"id":"V5T000000000I01","document__c":"500_0_1"}]}},{"id":"V5S000000000H02","package_class_document_instances__cr":{"responseDetails":{"limit":250,"offset":0,"size":0,"total":0},"data":[]}},{"id":"V5S000000000I01","package_class_document_instances__cr":{"responseDetails":{"limit":250,"offset":0,"size":1,"total":1},"data":[{"id":"V5T000000000I02","document__c":"503_0_1"}]}},{"id":"V5S000000000K02","package_class_document_instances__cr":{"responseDetails":{"limit":250,"offset":0,"size":1,"total":1},"data":[{"id":"V5T000000000L02","document__c":"667_0_1"}]}},{"id":"V5S000000000M02","package_class_document_instances__cr":{"responseDetails":{"limit":250,"offset":0,"size":1,"total":1},"data":[{"id":"V5T000000000N01","document__c":"741_0_1"}]}},{"id":"V5S000000000M03","package_class_document_instances__cr":{"responseDetails":{"limit":250,"offset":0,"size":1,"total":1},"data":[{"id":"V5T000000000N02","document__c":"744_0_1"}]}},{"id":"V5S000000000N02","package_class_document_instances__cr":{"responseDetails":{"limit":250,"offset":0,"size":1,"total":1},"data":[{"id":"V5T000000000N04","document__c":"754_0_1"}]}},{"id":"V5S000000000N04","package_class_document_instances__cr":{"responseDetails":{"limit":250,"offset":0,"size":3,"total":3},"data":[{"id":"V5T000000000N05","document__c":"755_0_1"},{"id":"V5T000000000N06","document__c":"756_0_1"},{"id":"V5T000000000N07","document__c":"757_0_1"}]}}]}
+2020-09-03 13:59:13 DEBUG VaultRequest:208 - responseOption = STRING
+2020-09-03 13:59:13 INFO  HttpRequestConnector:134 - Sending GET to https://sbelanco-phase-2-sbx.veevavault.com/api/v20.2/objects/documents/500/renditions/viewable_rendition__v
+2020-09-03 13:59:14 DEBUG HttpRequestConnector:145 - HTTP status code = 200
+2020-09-03 13:59:14 DEBUG VaultRequest:208 - responseOption = BYTE_ARRAY
+2020-09-03 13:59:14 INFO  HttpRequestConnector:134 - Sending GET to https://sbelanco-phase-2-sbx.veevavault.com/api/v20.2/objects/documents/503/renditions/viewable_rendition__v
+2020-09-03 13:59:15 DEBUG HttpRequestConnector:145 - HTTP status code = 200
+2020-09-03 13:59:15 DEBUG VaultRequest:208 - responseOption = BYTE_ARRAY
+2020-09-03 13:59:15 INFO  HttpRequestConnector:134 - Sending GET to https://sbelanco-phase-2-sbx.veevavault.com/api/v20.2/objects/documents/744/renditions/viewable_rendition__v
+2020-09-03 13:59:16 DEBUG HttpRequestConnector:145 - HTTP status code = 200
+2020-09-03 13:59:16 DEBUG VaultRequest:208 - responseOption = BYTE_ARRAY
+2020-09-03 13:59:16 INFO  HttpRequestConnector:134 - Sending GET to https://sbelanco-phase-2-sbx.veevavault.com/api/v20.2/objects/documents/754/renditions/viewable_rendition__v
+2020-09-03 13:59:17 DEBUG HttpRequestConnector:145 - HTTP status code = 200
+2020-09-03 13:59:17 DEBUG VaultRequest:208 - responseOption = BYTE_ARRAY
+2020-09-03 13:59:17 INFO  HttpRequestConnector:134 - Sending GET to https://sbelanco-phase-2-sbx.veevavault.com/api/v20.2/objects/documents/755/renditions/viewable_rendition__v
+2020-09-03 13:59:18 DEBUG HttpRequestConnector:145 - HTTP status code = 200
+2020-09-03 13:59:18 DEBUG VaultRequest:208 - responseOption = BYTE_ARRAY
+2020-09-03 13:59:18 INFO  HttpRequestConnector:134 - Sending GET to https://sbelanco-phase-2-sbx.veevavault.com/api/v20.2/objects/documents/756/renditions/viewable_rendition__v
+2020-09-03 13:59:20 DEBUG HttpRequestConnector:145 - HTTP status code = 200
+2020-09-03 13:59:20 DEBUG VaultRequest:208 - responseOption = BYTE_ARRAY
+2020-09-03 13:59:20 INFO  HttpRequestConnector:134 - Sending GET to https://sbelanco-phase-2-sbx.veevavault.com/api/v20.2/objects/documents/757/renditions/viewable_rendition__v
+2020-09-03 13:59:21 DEBUG HttpRequestConnector:145 - HTTP status code = 200
+2020-09-03 13:59:21 DEBUG VaultRequest:208 - responseOption = BYTE_ARRAY
+2020-09-03 13:59:21 INFO  HttpRequestConnector:134 - Sending GET to https://sbelanco-phase-2-sbx.veevavault.com/api/v20.2/objects/documents/667/renditions/viewable_rendition__v
+2020-09-03 13:59:22 DEBUG HttpRequestConnector:145 - HTTP status code = 200
+2020-09-03 13:59:22 DEBUG VaultRequest:208 - responseOption = BYTE_ARRAY
+2020-09-03 13:59:22 INFO  HttpRequestConnector:134 - Sending GET to https://sbelanco-phase-2-sbx.veevavault.com/api/v20.2/objects/documents/741/renditions/viewable_rendition__v
+2020-09-03 13:59:23 DEBUG HttpRequestConnector:145 - HTTP status code = 200
+2020-09-03 13:59:23 DEBUG VaultRequest:208 - responseOption = BYTE_ARRAY
+2020-09-03 13:59:24 INFO  BatchPrintEngine:74 - Job completed
+2020-09-03 13:59:24 INFO  BatchPrintEngine:74 - Job completed
+2020-09-03 13:59:24 INFO  BatchPrintEngine:61 - Exiting app
+2020-09-03 13:59:24 INFO  BatchPrintEngine:74 - Job completed
+2020-09-03 13:59:24 INFO  BatchPrintEngine:74 - Job completed
+2020-09-03 13:59:24 INFO  BatchPrintEngine:61 - Exiting app
+2020-09-03 13:59:24 INFO  BatchPrintEngine:74 - Job completed
+2020-09-03 13:59:24 INFO  BatchPrintEngine:74 - Job completed
+2020-09-03 13:59:24 INFO  BatchPrintEngine:61 - Exiting app
+2020-09-03 13:59:24 INFO  BatchPrintEngine:74 - Job completed
+2020-09-03 13:59:24 INFO  BatchPrintEngine:74 - Job completed
+2020-09-03 13:59:24 INFO  BatchPrintEngine:61 - Exiting app
+2020-09-03 13:59:24 INFO  BatchPrintEngine:74 - Job completed
+2020-09-03 13:59:24 INFO  BatchPrintEngine:74 - Job completed
+2020-09-03 13:59:24 INFO  BatchPrintEngine:61 - Exiting app
+2020-09-03 13:59:24 INFO  BatchPrintEngine:74 - Job completed
+2020-09-03 13:59:24 INFO  BatchPrintEngine:74 - Job completed
+2020-09-03 13:59:24 INFO  BatchPrintEngine:61 - Exiting app
+2020-09-03 13:59:24 INFO  BatchPrintEngine:74 - Job completed
+2020-09-03 13:59:24 INFO  BatchPrintEngine:74 - Job completed
+2020-09-03 13:59:24 INFO  BatchPrintEngine:61 - Exiting app
+2020-09-03 13:59:24 INFO  BatchPrintEngine:74 - Job completed
+2020-09-03 13:59:24 INFO  BatchPrintEngine:74 - Job completed
+2020-09-03 13:59:24 INFO  BatchPrintEngine:61 - Exiting app
+2020-09-03 13:59:24 INFO  BatchPrintEngine:74 - Job completed
+2020-09-03 13:59:24 INFO  BatchPrintEngine:74 - Job completed
+2020-09-03 13:59:24 INFO  BatchPrintEngine:61 - Exiting app
+2020-09-03 13:59:24 INFO  BatchPrintEngine:68 - End com.veeva.vps.integration.BatchPrintEngine
+2020-09-03 15:09:10 INFO  BatchPrintEngine:22 - Start com.veeva.vps.integration.BatchPrintEngine
+2020-09-03 15:09:10 DEBUG HttpRequestConnector:295 - RequestBody: Form
+2020-09-03 15:09:10 INFO  HttpRequestConnector:134 - Sending POST to https://sbelanco-phase-2-sbx.veevavault.com/api/v20.2/auth
+2020-09-03 15:09:11 DEBUG HttpRequestConnector:145 - HTTP status code = 200
+2020-09-03 15:09:11 DEBUG VaultRequest:97 - HTTP response before deserialization = {"responseStatus":"SUCCESS","sessionId":"2DA15546B1DFD875AAC4500B9F1E64C8BC35C9DEFB0E858951F93D04B0F755899AB6B7D873B5D80342EBFFD2E220471C51A006684C01FDB90692B2CF26CA4EB1","userId":3420495,"vaultIds":[{"id":36945,"name":"Quality Sandbox","url":"https://sb-elanco-quality.veevavault.com/api"},{"id":39587,"name":"Alpha Review sbx","url":"https://sbelanco-alpha-review-sbx.veevavault.com/api"},{"id":46950,"name":"QualitySuite Sandbox","url":"https://sbelanco-qualitysuite-sandbox.veevavault.com/api"},{"id":47567,"name":"Phase 2 SBX","url":"https://sbelanco-phase-2-sbx.veevavault.com/api"},{"id":48610,"name":"Temporary Sandbox","url":"https://sbelanco-temporary-sandbox.veevavault.com/api"},{"id":49248,"name":"Clinical VAL","url":"https://sbelanco-clinical-val.veevavault.com/api"},{"id":50270,"name":"Clinical Sandbox","url":"https://sb-elanco-clinical-sbx.veevavault.com/api"},{"id":51477,"name":"New Complaints VPK SBX","url":"https://sb-elanco-new-complaints-vpk-sbx.veevavault.com/api"},{"id":52099,"name":"Elanco Test","url":"https://sbelanco-elanco-test.veevavault.com/api"},{"id":52804,"name":"RIM Training","url":"https://sb-elanco-rim-training.veevavault.com/api"},{"id":55563,"name":"QMS Dry Run Config Migration SBX 2","url":"https://sb-elanco-qms-dry-run-config-migration-sbx-2.veevavault.com/api"},{"id":55644,"name":"Quality Suite Test","url":"https://sbelanco-qualitysuite-test.veevavault.com/api"},{"id":56114,"name":"Integration-Migration","url":"https://sb-elanco-integration-migration.veevavault.com/api"}],"vaultId":47567}
+2020-09-03 15:09:11 DEBUG VaultRequest:208 - responseOption = STRING
+2020-09-03 15:09:11 INFO  AuthenticationRequest:374 - Authentication succeeded
+2020-09-03 15:09:11 INFO  QueryRequest:138 - Query = select id, (select id, document__c from package_class_document_instances__cr) from package_class_instance__c where state__v = 'ready_for_printing_state__c'
+2020-09-03 15:09:11 DEBUG HttpRequestConnector:295 - RequestBody: Form
+2020-09-03 15:09:11 INFO  HttpRequestConnector:134 - Sending POST to https://sbelanco-phase-2-sbx.veevavault.com/api/v20.2/query
+2020-09-03 15:09:12 DEBUG HttpRequestConnector:145 - HTTP status code = 200
+2020-09-03 15:09:12 DEBUG VaultRequest:97 - HTTP response before deserialization = {"responseStatus":"SUCCESS","responseDetails":{"limit":1000,"offset":0,"size":11,"total":11},"data":[{"id":"V5S000000000H01","package_class_document_instances__cr":{"responseDetails":{"limit":250,"offset":0,"size":1,"total":1},"data":[{"id":"V5T000000000I01","document__c":"500_0_1"}]}},{"id":"V5S000000000H02","package_class_document_instances__cr":{"responseDetails":{"limit":250,"offset":0,"size":0,"total":0},"data":[]}},{"id":"V5S000000000I01","package_class_document_instances__cr":{"responseDetails":{"limit":250,"offset":0,"size":1,"total":1},"data":[{"id":"V5T000000000I02","document__c":"503_0_1"}]}},{"id":"V5S000000000K01","package_class_document_instances__cr":{"responseDetails":{"limit":250,"offset":0,"size":1,"total":1},"data":[{"id":"V5T000000000L01","document__c":"661_0_1"}]}},{"id":"V5S000000000K02","package_class_document_instances__cr":{"responseDetails":{"limit":250,"offset":0,"size":1,"total":1},"data":[{"id":"V5T000000000L02","document__c":"667_0_1"}]}},{"id":"V5S000000000M02","package_class_document_instances__cr":{"responseDetails":{"limit":250,"offset":0,"size":1,"total":1},"data":[{"id":"V5T000000000N01","document__c":"741_0_1"}]}},{"id":"V5S000000000M03","package_class_document_instances__cr":{"responseDetails":{"limit":250,"offset":0,"size":1,"total":1},"data":[{"id":"V5T000000000N02","document__c":"744_0_1"}]}},{"id":"V5S000000000N01","package_class_document_instances__cr":{"responseDetails":{"limit":250,"offset":0,"size":1,"total":1},"data":[{"id":"V5T000000000O03","document__c":"750_0_1"}]}},{"id":"V5S000000000N02","package_class_document_instances__cr":{"responseDetails":{"limit":250,"offset":0,"size":1,"total":1},"data":[{"id":"V5T000000000N04","document__c":"754_0_1"}]}},{"id":"V5S000000000N03","package_class_document_instances__cr":{"responseDetails":{"limit":250,"offset":0,"size":1,"total":1},"data":[{"id":"V5T000000000N03","document__c":"753_0_1"}]}},{"id":"V5S000000000N04","package_class_document_instances__cr":{"responseDetails":{"limit":250,"offset":0,"size":3,"total":3},"data":[{"id":"V5T000000000N05","document__c":"755_0_1"},{"id":"V5T000000000N06","document__c":"756_0_1"},{"id":"V5T000000000N07","document__c":"757_0_1"}]}}]}
+2020-09-03 15:09:12 DEBUG VaultRequest:208 - responseOption = STRING
+2020-09-03 15:09:12 INFO  HttpRequestConnector:134 - Sending GET to https://sbelanco-phase-2-sbx.veevavault.com/api/v20.2/objects/documents/500/renditions/viewable_rendition__v
+2020-09-03 15:09:13 DEBUG HttpRequestConnector:145 - HTTP status code = 200
+2020-09-03 15:09:13 DEBUG VaultRequest:208 - responseOption = BYTE_ARRAY
+2020-09-03 15:09:13 INFO  HttpRequestConnector:134 - Sending GET to https://sbelanco-phase-2-sbx.veevavault.com/api/v20.2/objects/documents/503/renditions/viewable_rendition__v
+2020-09-03 15:09:15 DEBUG HttpRequestConnector:145 - HTTP status code = 200
+2020-09-03 15:09:15 DEBUG VaultRequest:208 - responseOption = BYTE_ARRAY
+2020-09-03 15:09:15 INFO  HttpRequestConnector:134 - Sending GET to https://sbelanco-phase-2-sbx.veevavault.com/api/v20.2/objects/documents/753/renditions/viewable_rendition__v
+2020-09-03 15:09:23 INFO  BatchPrintEngine:22 - Start com.veeva.vps.integration.BatchPrintEngine
+2020-09-03 15:09:24 DEBUG HttpRequestConnector:295 - RequestBody: Form
+2020-09-03 15:09:24 INFO  HttpRequestConnector:134 - Sending POST to https://sbelanco-phase-2-sbx.veevavault.com/api/v20.2/auth
+2020-09-03 15:09:24 DEBUG HttpRequestConnector:145 - HTTP status code = 200
+2020-09-03 15:09:24 DEBUG VaultRequest:97 - HTTP response before deserialization = {"responseStatus":"SUCCESS","sessionId":"987E9EEE1BC4430EC58A88DC2FE38762FD0C10DDAE762EE94FCDA5E4CCDAA4A38F1087A6B4A4FA0F9ACA83527ACFF3EECD9A0255EDB991872856F9980CF94894","userId":3420495,"vaultIds":[{"id":36945,"name":"Quality Sandbox","url":"https://sb-elanco-quality.veevavault.com/api"},{"id":39587,"name":"Alpha Review sbx","url":"https://sbelanco-alpha-review-sbx.veevavault.com/api"},{"id":46950,"name":"QualitySuite Sandbox","url":"https://sbelanco-qualitysuite-sandbox.veevavault.com/api"},{"id":47567,"name":"Phase 2 SBX","url":"https://sbelanco-phase-2-sbx.veevavault.com/api"},{"id":48610,"name":"Temporary Sandbox","url":"https://sbelanco-temporary-sandbox.veevavault.com/api"},{"id":49248,"name":"Clinical VAL","url":"https://sbelanco-clinical-val.veevavault.com/api"},{"id":50270,"name":"Clinical Sandbox","url":"https://sb-elanco-clinical-sbx.veevavault.com/api"},{"id":51477,"name":"New Complaints VPK SBX","url":"https://sb-elanco-new-complaints-vpk-sbx.veevavault.com/api"},{"id":52099,"name":"Elanco Test","url":"https://sbelanco-elanco-test.veevavault.com/api"},{"id":52804,"name":"RIM Training","url":"https://sb-elanco-rim-training.veevavault.com/api"},{"id":55563,"name":"QMS Dry Run Config Migration SBX 2","url":"https://sb-elanco-qms-dry-run-config-migration-sbx-2.veevavault.com/api"},{"id":55644,"name":"Quality Suite Test","url":"https://sbelanco-qualitysuite-test.veevavault.com/api"},{"id":56114,"name":"Integration-Migration","url":"https://sb-elanco-integration-migration.veevavault.com/api"}],"vaultId":47567}
+2020-09-03 15:09:24 DEBUG VaultRequest:208 - responseOption = STRING
+2020-09-03 15:09:24 INFO  AuthenticationRequest:374 - Authentication succeeded
+2020-09-03 15:09:24 INFO  QueryRequest:138 - Query = select id, (select id, document__c from package_class_document_instances__cr) from package_class_instance__c where state__v = 'ready_for_printing_state__c'
+2020-09-03 15:09:24 DEBUG HttpRequestConnector:295 - RequestBody: Form
+2020-09-03 15:09:24 INFO  HttpRequestConnector:134 - Sending POST to https://sbelanco-phase-2-sbx.veevavault.com/api/v20.2/query
+2020-09-03 15:09:25 DEBUG HttpRequestConnector:145 - HTTP status code = 200
+2020-09-03 15:09:25 DEBUG VaultRequest:97 - HTTP response before deserialization = {"responseStatus":"SUCCESS","responseDetails":{"limit":1000,"offset":0,"size":11,"total":11},"data":[{"id":"V5S000000000H01","package_class_document_instances__cr":{"responseDetails":{"limit":250,"offset":0,"size":1,"total":1},"data":[{"id":"V5T000000000I01","document__c":"500_0_1"}]}},{"id":"V5S000000000H02","package_class_document_instances__cr":{"responseDetails":{"limit":250,"offset":0,"size":0,"total":0},"data":[]}},{"id":"V5S000000000I01","package_class_document_instances__cr":{"responseDetails":{"limit":250,"offset":0,"size":1,"total":1},"data":[{"id":"V5T000000000I02","document__c":"503_0_1"}]}},{"id":"V5S000000000K01","package_class_document_instances__cr":{"responseDetails":{"limit":250,"offset":0,"size":1,"total":1},"data":[{"id":"V5T000000000L01","document__c":"661_0_1"}]}},{"id":"V5S000000000K02","package_class_document_instances__cr":{"responseDetails":{"limit":250,"offset":0,"size":1,"total":1},"data":[{"id":"V5T000000000L02","document__c":"667_0_1"}]}},{"id":"V5S000000000M02","package_class_document_instances__cr":{"responseDetails":{"limit":250,"offset":0,"size":1,"total":1},"data":[{"id":"V5T000000000N01","document__c":"741_0_1"}]}},{"id":"V5S000000000M03","package_class_document_instances__cr":{"responseDetails":{"limit":250,"offset":0,"size":1,"total":1},"data":[{"id":"V5T000000000N02","document__c":"744_0_1"}]}},{"id":"V5S000000000N01","package_class_document_instances__cr":{"responseDetails":{"limit":250,"offset":0,"size":1,"total":1},"data":[{"id":"V5T000000000O03","document__c":"750_0_1"}]}},{"id":"V5S000000000N02","package_class_document_instances__cr":{"responseDetails":{"limit":250,"offset":0,"size":1,"total":1},"data":[{"id":"V5T000000000N04","document__c":"754_0_1"}]}},{"id":"V5S000000000N03","package_class_document_instances__cr":{"responseDetails":{"limit":250,"offset":0,"size":1,"total":1},"data":[{"id":"V5T000000000N03","document__c":"753_0_1"}]}},{"id":"V5S000000000N04","package_class_document_instances__cr":{"responseDetails":{"limit":250,"offset":0,"size":3,"total":3},"data":[{"id":"V5T000000000N05","document__c":"755_0_1"},{"id":"V5T000000000N06","document__c":"756_0_1"},{"id":"V5T000000000N07","document__c":"757_0_1"}]}}]}
+2020-09-03 15:09:25 DEBUG VaultRequest:208 - responseOption = STRING
+2020-09-03 15:09:25 INFO  HttpRequestConnector:134 - Sending GET to https://sbelanco-phase-2-sbx.veevavault.com/api/v20.2/objects/documents/500/renditions/viewable_rendition__v
+2020-09-03 15:09:26 DEBUG HttpRequestConnector:145 - HTTP status code = 200
+2020-09-03 15:09:26 DEBUG VaultRequest:208 - responseOption = BYTE_ARRAY
+2020-09-03 15:09:26 INFO  HttpRequestConnector:134 - Sending GET to https://sbelanco-phase-2-sbx.veevavault.com/api/v20.2/objects/documents/503/renditions/viewable_rendition__v
+2020-09-03 15:09:28 DEBUG HttpRequestConnector:145 - HTTP status code = 200
+2020-09-03 15:09:28 DEBUG VaultRequest:208 - responseOption = BYTE_ARRAY
+2020-09-03 15:09:28 INFO  HttpRequestConnector:134 - Sending GET to https://sbelanco-phase-2-sbx.veevavault.com/api/v20.2/objects/documents/753/renditions/viewable_rendition__v
+2020-09-03 15:09:29 DEBUG HttpRequestConnector:145 - HTTP status code = 200
+2020-09-03 15:09:29 DEBUG VaultRequest:208 - responseOption = BYTE_ARRAY
+2020-09-03 15:09:29 INFO  HttpRequestConnector:134 - Sending GET to https://sbelanco-phase-2-sbx.veevavault.com/api/v20.2/objects/documents/744/renditions/viewable_rendition__v
+2020-09-03 15:09:30 DEBUG HttpRequestConnector:145 - HTTP status code = 200
+2020-09-03 15:09:30 DEBUG VaultRequest:208 - responseOption = BYTE_ARRAY
+2020-09-03 15:09:30 INFO  HttpRequestConnector:134 - Sending GET to https://sbelanco-phase-2-sbx.veevavault.com/api/v20.2/objects/documents/754/renditions/viewable_rendition__v
+2020-09-03 15:09:31 DEBUG HttpRequestConnector:145 - HTTP status code = 200
+2020-09-03 15:09:31 DEBUG VaultRequest:208 - responseOption = BYTE_ARRAY
+2020-09-03 15:09:31 INFO  HttpRequestConnector:134 - Sending GET to https://sbelanco-phase-2-sbx.veevavault.com/api/v20.2/objects/documents/755/renditions/viewable_rendition__v
+2020-09-03 15:09:32 DEBUG HttpRequestConnector:145 - HTTP status code = 200
+2020-09-03 15:09:32 DEBUG VaultRequest:208 - responseOption = BYTE_ARRAY
+2020-09-03 15:09:32 INFO  HttpRequestConnector:134 - Sending GET to https://sbelanco-phase-2-sbx.veevavault.com/api/v20.2/objects/documents/756/renditions/viewable_rendition__v
+2020-09-03 15:09:33 DEBUG HttpRequestConnector:145 - HTTP status code = 200
+2020-09-03 15:09:33 DEBUG VaultRequest:208 - responseOption = BYTE_ARRAY
+2020-09-03 15:09:33 INFO  HttpRequestConnector:134 - Sending GET to https://sbelanco-phase-2-sbx.veevavault.com/api/v20.2/objects/documents/757/renditions/viewable_rendition__v
+2020-09-03 15:09:34 DEBUG HttpRequestConnector:145 - HTTP status code = 200
+2020-09-03 15:09:34 DEBUG VaultRequest:208 - responseOption = BYTE_ARRAY
+2020-09-03 15:09:34 INFO  HttpRequestConnector:134 - Sending GET to https://sbelanco-phase-2-sbx.veevavault.com/api/v20.2/objects/documents/667/renditions/viewable_rendition__v
+2020-09-03 15:09:35 DEBUG HttpRequestConnector:145 - HTTP status code = 200
+2020-09-03 15:09:35 DEBUG VaultRequest:208 - responseOption = BYTE_ARRAY
+2020-09-03 15:09:35 INFO  HttpRequestConnector:134 - Sending GET to https://sbelanco-phase-2-sbx.veevavault.com/api/v20.2/objects/documents/661/renditions/viewable_rendition__v
+2020-09-03 15:09:37 DEBUG HttpRequestConnector:145 - HTTP status code = 200
+2020-09-03 15:09:37 DEBUG VaultRequest:208 - responseOption = BYTE_ARRAY
+2020-09-03 15:09:37 INFO  HttpRequestConnector:134 - Sending GET to https://sbelanco-phase-2-sbx.veevavault.com/api/v20.2/objects/documents/741/renditions/viewable_rendition__v
+2020-09-03 15:09:38 DEBUG HttpRequestConnector:145 - HTTP status code = 200
+2020-09-03 15:09:38 DEBUG VaultRequest:208 - responseOption = BYTE_ARRAY
+2020-09-03 15:09:38 INFO  HttpRequestConnector:134 - Sending GET to https://sbelanco-phase-2-sbx.veevavault.com/api/v20.2/objects/documents/750/renditions/viewable_rendition__v
+2020-09-03 15:09:39 DEBUG HttpRequestConnector:145 - HTTP status code = 200
+2020-09-03 15:09:39 DEBUG VaultRequest:208 - responseOption = BYTE_ARRAY
+2020-09-03 15:09:45 INFO  BatchPrintEngine:61 - Exiting app
+2020-09-03 15:10:01 INFO  BatchPrintEngine:61 - Exiting app
+2020-09-03 15:10:01 INFO  BatchPrintEngine:61 - Exiting app
+2020-09-03 15:10:01 INFO  BatchPrintEngine:61 - Exiting app
+2020-09-03 15:10:01 INFO  BatchPrintEngine:61 - Exiting app
+2020-09-03 15:10:01 INFO  BatchPrintEngine:61 - Exiting app
+2020-09-03 15:10:01 INFO  BatchPrintEngine:61 - Exiting app
+2020-09-03 15:10:01 INFO  BatchPrintEngine:61 - Exiting app
+2020-09-03 15:10:29 INFO  BatchPrintEngine:22 - Start com.veeva.vps.integration.BatchPrintEngine
+2020-09-03 15:10:29 DEBUG HttpRequestConnector:295 - RequestBody: Form
+2020-09-03 15:10:29 INFO  HttpRequestConnector:134 - Sending POST to https://sbelanco-phase-2-sbx.veevavault.com/api/v20.2/auth
+2020-09-03 15:10:30 DEBUG HttpRequestConnector:145 - HTTP status code = 200
+2020-09-03 15:10:30 DEBUG VaultRequest:97 - HTTP response before deserialization = {"responseStatus":"SUCCESS","sessionId":"A9B59D46CCBC09196F2575CBA377CBB8153F4468C5D0ED8B8CA43A5F341C4C137D39EC55373904CF4A4F97FD44A9AE62DE2C5EE8CD74DCAB27373B389C09A66D","userId":3420495,"vaultIds":[{"id":36945,"name":"Quality Sandbox","url":"https://sb-elanco-quality.veevavault.com/api"},{"id":39587,"name":"Alpha Review sbx","url":"https://sbelanco-alpha-review-sbx.veevavault.com/api"},{"id":46950,"name":"QualitySuite Sandbox","url":"https://sbelanco-qualitysuite-sandbox.veevavault.com/api"},{"id":47567,"name":"Phase 2 SBX","url":"https://sbelanco-phase-2-sbx.veevavault.com/api"},{"id":48610,"name":"Temporary Sandbox","url":"https://sbelanco-temporary-sandbox.veevavault.com/api"},{"id":49248,"name":"Clinical VAL","url":"https://sbelanco-clinical-val.veevavault.com/api"},{"id":50270,"name":"Clinical Sandbox","url":"https://sb-elanco-clinical-sbx.veevavault.com/api"},{"id":51477,"name":"New Complaints VPK SBX","url":"https://sb-elanco-new-complaints-vpk-sbx.veevavault.com/api"},{"id":52099,"name":"Elanco Test","url":"https://sbelanco-elanco-test.veevavault.com/api"},{"id":52804,"name":"RIM Training","url":"https://sb-elanco-rim-training.veevavault.com/api"},{"id":55563,"name":"QMS Dry Run Config Migration SBX 2","url":"https://sb-elanco-qms-dry-run-config-migration-sbx-2.veevavault.com/api"},{"id":55644,"name":"Quality Suite Test","url":"https://sbelanco-qualitysuite-test.veevavault.com/api"},{"id":56114,"name":"Integration-Migration","url":"https://sb-elanco-integration-migration.veevavault.com/api"}],"vaultId":47567}
+2020-09-03 15:10:30 DEBUG VaultRequest:208 - responseOption = STRING
+2020-09-03 15:10:30 INFO  AuthenticationRequest:374 - Authentication succeeded
+2020-09-03 15:10:30 INFO  QueryRequest:138 - Query = select id, (select id, document__c from package_class_document_instances__cr) from package_class_instance__c where state__v = 'ready_for_printing_state__c'
+2020-09-03 15:10:30 DEBUG HttpRequestConnector:295 - RequestBody: Form
+2020-09-03 15:10:30 INFO  HttpRequestConnector:134 - Sending POST to https://sbelanco-phase-2-sbx.veevavault.com/api/v20.2/query
+2020-09-03 15:10:31 DEBUG HttpRequestConnector:145 - HTTP status code = 200
+2020-09-03 15:10:31 DEBUG VaultRequest:97 - HTTP response before deserialization = {"responseStatus":"SUCCESS","responseDetails":{"limit":1000,"offset":0,"size":11,"total":11},"data":[{"id":"V5S000000000H01","package_class_document_instances__cr":{"responseDetails":{"limit":250,"offset":0,"size":1,"total":1},"data":[{"id":"V5T000000000I01","document__c":"500_0_1"}]}},{"id":"V5S000000000H02","package_class_document_instances__cr":{"responseDetails":{"limit":250,"offset":0,"size":0,"total":0},"data":[]}},{"id":"V5S000000000I01","package_class_document_instances__cr":{"responseDetails":{"limit":250,"offset":0,"size":1,"total":1},"data":[{"id":"V5T000000000I02","document__c":"503_0_1"}]}},{"id":"V5S000000000K01","package_class_document_instances__cr":{"responseDetails":{"limit":250,"offset":0,"size":1,"total":1},"data":[{"id":"V5T000000000L01","document__c":"661_0_1"}]}},{"id":"V5S000000000K02","package_class_document_instances__cr":{"responseDetails":{"limit":250,"offset":0,"size":1,"total":1},"data":[{"id":"V5T000000000L02","document__c":"667_0_1"}]}},{"id":"V5S000000000M02","package_class_document_instances__cr":{"responseDetails":{"limit":250,"offset":0,"size":1,"total":1},"data":[{"id":"V5T000000000N01","document__c":"741_0_1"}]}},{"id":"V5S000000000M03","package_class_document_instances__cr":{"responseDetails":{"limit":250,"offset":0,"size":1,"total":1},"data":[{"id":"V5T000000000N02","document__c":"744_0_1"}]}},{"id":"V5S000000000N01","package_class_document_instances__cr":{"responseDetails":{"limit":250,"offset":0,"size":1,"total":1},"data":[{"id":"V5T000000000O03","document__c":"750_0_1"}]}},{"id":"V5S000000000N02","package_class_document_instances__cr":{"responseDetails":{"limit":250,"offset":0,"size":1,"total":1},"data":[{"id":"V5T000000000N04","document__c":"754_0_1"}]}},{"id":"V5S000000000N03","package_class_document_instances__cr":{"responseDetails":{"limit":250,"offset":0,"size":1,"total":1},"data":[{"id":"V5T000000000N03","document__c":"753_0_1"}]}},{"id":"V5S000000000N04","package_class_document_instances__cr":{"responseDetails":{"limit":250,"offset":0,"size":3,"total":3},"data":[{"id":"V5T000000000N05","document__c":"755_0_1"},{"id":"V5T000000000N06","document__c":"756_0_1"},{"id":"V5T000000000N07","document__c":"757_0_1"}]}}]}
+2020-09-03 15:10:31 DEBUG VaultRequest:208 - responseOption = STRING
+2020-09-03 15:10:31 INFO  HttpRequestConnector:134 - Sending GET to https://sbelanco-phase-2-sbx.veevavault.com/api/v20.2/objects/documents/500/renditions/viewable_rendition__v
+2020-09-03 15:10:32 DEBUG HttpRequestConnector:145 - HTTP status code = 200
+2020-09-03 15:10:32 DEBUG VaultRequest:208 - responseOption = BYTE_ARRAY
+2020-09-03 15:10:32 INFO  HttpRequestConnector:134 - Sending GET to https://sbelanco-phase-2-sbx.veevavault.com/api/v20.2/objects/documents/503/renditions/viewable_rendition__v
+2020-09-03 15:10:33 DEBUG HttpRequestConnector:145 - HTTP status code = 200
+2020-09-03 15:10:33 DEBUG VaultRequest:208 - responseOption = BYTE_ARRAY
+2020-09-03 15:10:33 INFO  HttpRequestConnector:134 - Sending GET to https://sbelanco-phase-2-sbx.veevavault.com/api/v20.2/objects/documents/753/renditions/viewable_rendition__v
+2020-09-03 15:10:34 DEBUG HttpRequestConnector:145 - HTTP status code = 200
+2020-09-03 15:10:34 DEBUG VaultRequest:208 - responseOption = BYTE_ARRAY
+2020-09-03 15:10:34 INFO  HttpRequestConnector:134 - Sending GET to https://sbelanco-phase-2-sbx.veevavault.com/api/v20.2/objects/documents/744/renditions/viewable_rendition__v
+2020-09-03 15:10:36 DEBUG HttpRequestConnector:145 - HTTP status code = 200
+2020-09-03 15:10:36 DEBUG VaultRequest:208 - responseOption = BYTE_ARRAY
+2020-09-03 15:10:36 INFO  HttpRequestConnector:134 - Sending GET to https://sbelanco-phase-2-sbx.veevavault.com/api/v20.2/objects/documents/754/renditions/viewable_rendition__v
+2020-09-03 15:10:36 DEBUG HttpRequestConnector:145 - HTTP status code = 200
+2020-09-03 15:10:36 DEBUG VaultRequest:208 - responseOption = BYTE_ARRAY
+2020-09-03 15:10:36 INFO  HttpRequestConnector:134 - Sending GET to https://sbelanco-phase-2-sbx.veevavault.com/api/v20.2/objects/documents/755/renditions/viewable_rendition__v
+2020-09-03 15:10:37 DEBUG HttpRequestConnector:145 - HTTP status code = 200
+2020-09-03 15:10:37 DEBUG VaultRequest:208 - responseOption = BYTE_ARRAY
+2020-09-03 15:10:37 INFO  HttpRequestConnector:134 - Sending GET to https://sbelanco-phase-2-sbx.veevavault.com/api/v20.2/objects/documents/756/renditions/viewable_rendition__v
+2020-09-03 15:10:38 DEBUG HttpRequestConnector:145 - HTTP status code = 200
+2020-09-03 15:10:38 DEBUG VaultRequest:208 - responseOption = BYTE_ARRAY
+2020-09-03 15:10:38 INFO  HttpRequestConnector:134 - Sending GET to https://sbelanco-phase-2-sbx.veevavault.com/api/v20.2/objects/documents/757/renditions/viewable_rendition__v
+2020-09-03 15:10:39 DEBUG HttpRequestConnector:145 - HTTP status code = 200
+2020-09-03 15:10:39 DEBUG VaultRequest:208 - responseOption = BYTE_ARRAY
+2020-09-03 15:10:39 INFO  HttpRequestConnector:134 - Sending GET to https://sbelanco-phase-2-sbx.veevavault.com/api/v20.2/objects/documents/667/renditions/viewable_rendition__v
+2020-09-03 15:10:40 DEBUG HttpRequestConnector:145 - HTTP status code = 200
+2020-09-03 15:10:40 DEBUG VaultRequest:208 - responseOption = BYTE_ARRAY
+2020-09-03 15:10:40 INFO  HttpRequestConnector:134 - Sending GET to https://sbelanco-phase-2-sbx.veevavault.com/api/v20.2/objects/documents/661/renditions/viewable_rendition__v
+2020-09-03 15:10:41 DEBUG HttpRequestConnector:145 - HTTP status code = 200
+2020-09-03 15:10:41 DEBUG VaultRequest:208 - responseOption = BYTE_ARRAY
+2020-09-03 15:10:41 INFO  HttpRequestConnector:134 - Sending GET to https://sbelanco-phase-2-sbx.veevavault.com/api/v20.2/objects/documents/741/renditions/viewable_rendition__v
+2020-09-03 15:10:42 DEBUG HttpRequestConnector:145 - HTTP status code = 200
+2020-09-03 15:10:42 DEBUG VaultRequest:208 - responseOption = BYTE_ARRAY
+2020-09-03 15:10:42 INFO  HttpRequestConnector:134 - Sending GET to https://sbelanco-phase-2-sbx.veevavault.com/api/v20.2/objects/documents/750/renditions/viewable_rendition__v
+2020-09-03 15:10:43 DEBUG HttpRequestConnector:145 - HTTP status code = 200
+2020-09-03 15:10:43 DEBUG VaultRequest:208 - responseOption = BYTE_ARRAY
+2020-09-03 15:10:43 INFO  BatchPrintEngine:61 - Exiting app
+2020-09-03 15:11:49 INFO  BatchPrintEngine:66 - End Print Loop
+2020-09-03 15:11:49 INFO  BatchPrintEngine:61 - Exiting app
+2020-09-03 15:11:49 INFO  BatchPrintEngine:66 - End Print Loop
+2020-09-03 15:11:49 INFO  BatchPrintEngine:61 - Exiting app
+2020-09-03 15:11:49 INFO  BatchPrintEngine:66 - End Print Loop
+2020-09-03 15:11:49 INFO  BatchPrintEngine:61 - Exiting app
+2020-09-03 15:11:49 INFO  BatchPrintEngine:66 - End Print Loop
+2020-09-03 15:11:49 INFO  BatchPrintEngine:61 - Exiting app
+2020-09-03 15:11:49 INFO  BatchPrintEngine:66 - End Print Loop
+2020-09-03 15:11:49 INFO  BatchPrintEngine:61 - Exiting app
+2020-09-03 15:11:49 INFO  BatchPrintEngine:66 - End Print Loop
+2020-09-03 15:11:49 INFO  BatchPrintEngine:61 - Exiting app
+2020-09-03 15:11:49 INFO  BatchPrintEngine:66 - End Print Loop
+2020-09-03 15:11:49 INFO  BatchPrintEngine:61 - Exiting app
+2020-09-03 15:11:49 INFO  BatchPrintEngine:66 - End Print Loop
+2020-09-03 15:16:31 INFO  BatchPrintEngine:22 - Start com.veeva.vps.integration.BatchPrintEngine
+2020-09-03 15:16:31 DEBUG HttpRequestConnector:295 - RequestBody: Form
+2020-09-03 15:16:31 INFO  HttpRequestConnector:134 - Sending POST to https://sbelanco-phase-2-sbx.veevavault.com/api/v20.2/auth
+2020-09-03 15:16:32 DEBUG HttpRequestConnector:145 - HTTP status code = 200
+2020-09-03 15:16:32 DEBUG VaultRequest:97 - HTTP response before deserialization = {"responseStatus":"SUCCESS","sessionId":"28E6F21B0718CB48AB3E5687276B90DE8C720ADB6C418D67C203CF51E099BA8E140F19908F3846CD41BB5885914569AC41FB7427AD5C3CD053502B050ED6A4DC","userId":3420495,"vaultIds":[{"id":36945,"name":"Quality Sandbox","url":"https://sb-elanco-quality.veevavault.com/api"},{"id":39587,"name":"Alpha Review sbx","url":"https://sbelanco-alpha-review-sbx.veevavault.com/api"},{"id":46950,"name":"QualitySuite Sandbox","url":"https://sbelanco-qualitysuite-sandbox.veevavault.com/api"},{"id":47567,"name":"Phase 2 SBX","url":"https://sbelanco-phase-2-sbx.veevavault.com/api"},{"id":48610,"name":"Temporary Sandbox","url":"https://sbelanco-temporary-sandbox.veevavault.com/api"},{"id":49248,"name":"Clinical VAL","url":"https://sbelanco-clinical-val.veevavault.com/api"},{"id":50270,"name":"Clinical Sandbox","url":"https://sb-elanco-clinical-sbx.veevavault.com/api"},{"id":51477,"name":"New Complaints VPK SBX","url":"https://sb-elanco-new-complaints-vpk-sbx.veevavault.com/api"},{"id":52099,"name":"Elanco Test","url":"https://sbelanco-elanco-test.veevavault.com/api"},{"id":52804,"name":"RIM Training","url":"https://sb-elanco-rim-training.veevavault.com/api"},{"id":55563,"name":"QMS Dry Run Config Migration SBX 2","url":"https://sb-elanco-qms-dry-run-config-migration-sbx-2.veevavault.com/api"},{"id":55644,"name":"Quality Suite Test","url":"https://sbelanco-qualitysuite-test.veevavault.com/api"},{"id":56114,"name":"Integration-Migration","url":"https://sb-elanco-integration-migration.veevavault.com/api"}],"vaultId":47567}
+2020-09-03 15:16:32 DEBUG VaultRequest:208 - responseOption = STRING
+2020-09-03 15:16:32 INFO  AuthenticationRequest:374 - Authentication succeeded
+2020-09-03 15:16:32 INFO  QueryRequest:138 - Query = select id, (select id, document__c from package_class_document_instances__cr) from package_class_instance__c where state__v = 'ready_for_printing_state__c'
+2020-09-03 15:16:32 DEBUG HttpRequestConnector:295 - RequestBody: Form
+2020-09-03 15:16:32 INFO  HttpRequestConnector:134 - Sending POST to https://sbelanco-phase-2-sbx.veevavault.com/api/v20.2/query
+2020-09-03 15:16:33 DEBUG HttpRequestConnector:145 - HTTP status code = 200
+2020-09-03 15:16:33 DEBUG VaultRequest:97 - HTTP response before deserialization = {"responseStatus":"SUCCESS","responseDetails":{"limit":1000,"offset":0,"size":11,"total":11},"data":[{"id":"V5S000000000H01","package_class_document_instances__cr":{"responseDetails":{"limit":250,"offset":0,"size":1,"total":1},"data":[{"id":"V5T000000000I01","document__c":"500_0_1"}]}},{"id":"V5S000000000H02","package_class_document_instances__cr":{"responseDetails":{"limit":250,"offset":0,"size":0,"total":0},"data":[]}},{"id":"V5S000000000I01","package_class_document_instances__cr":{"responseDetails":{"limit":250,"offset":0,"size":1,"total":1},"data":[{"id":"V5T000000000I02","document__c":"503_0_1"}]}},{"id":"V5S000000000K01","package_class_document_instances__cr":{"responseDetails":{"limit":250,"offset":0,"size":1,"total":1},"data":[{"id":"V5T000000000L01","document__c":"661_0_1"}]}},{"id":"V5S000000000K02","package_class_document_instances__cr":{"responseDetails":{"limit":250,"offset":0,"size":1,"total":1},"data":[{"id":"V5T000000000L02","document__c":"667_0_1"}]}},{"id":"V5S000000000M02","package_class_document_instances__cr":{"responseDetails":{"limit":250,"offset":0,"size":1,"total":1},"data":[{"id":"V5T000000000N01","document__c":"741_0_1"}]}},{"id":"V5S000000000M03","package_class_document_instances__cr":{"responseDetails":{"limit":250,"offset":0,"size":1,"total":1},"data":[{"id":"V5T000000000N02","document__c":"744_0_1"}]}},{"id":"V5S000000000N01","package_class_document_instances__cr":{"responseDetails":{"limit":250,"offset":0,"size":1,"total":1},"data":[{"id":"V5T000000000O03","document__c":"750_0_1"}]}},{"id":"V5S000000000N02","package_class_document_instances__cr":{"responseDetails":{"limit":250,"offset":0,"size":1,"total":1},"data":[{"id":"V5T000000000N04","document__c":"754_0_1"}]}},{"id":"V5S000000000N03","package_class_document_instances__cr":{"responseDetails":{"limit":250,"offset":0,"size":1,"total":1},"data":[{"id":"V5T000000000N03","document__c":"753_0_1"}]}},{"id":"V5S000000000N04","package_class_document_instances__cr":{"responseDetails":{"limit":250,"offset":0,"size":3,"total":3},"data":[{"id":"V5T000000000N05","document__c":"755_0_1"},{"id":"V5T000000000N06","document__c":"756_0_1"},{"id":"V5T000000000N07","document__c":"757_0_1"}]}}]}
+2020-09-03 15:16:33 DEBUG VaultRequest:208 - responseOption = STRING
+2020-09-03 15:16:33 INFO  HttpRequestConnector:134 - Sending GET to https://sbelanco-phase-2-sbx.veevavault.com/api/v20.2/objects/documents/500/renditions/viewable_rendition__v
+2020-09-03 15:16:35 DEBUG HttpRequestConnector:145 - HTTP status code = 200
+2020-09-03 15:16:35 DEBUG VaultRequest:208 - responseOption = BYTE_ARRAY
+2020-09-03 15:16:35 INFO  HttpRequestConnector:134 - Sending GET to https://sbelanco-phase-2-sbx.veevavault.com/api/v20.2/objects/documents/503/renditions/viewable_rendition__v
+2020-09-03 15:16:36 DEBUG HttpRequestConnector:145 - HTTP status code = 200
+2020-09-03 15:16:36 DEBUG VaultRequest:208 - responseOption = BYTE_ARRAY
+2020-09-03 15:16:36 INFO  HttpRequestConnector:134 - Sending GET to https://sbelanco-phase-2-sbx.veevavault.com/api/v20.2/objects/documents/753/renditions/viewable_rendition__v
+2020-09-03 15:16:37 DEBUG HttpRequestConnector:145 - HTTP status code = 200
+2020-09-03 15:16:37 DEBUG VaultRequest:208 - responseOption = BYTE_ARRAY
+2020-09-03 15:16:37 INFO  HttpRequestConnector:134 - Sending GET to https://sbelanco-phase-2-sbx.veevavault.com/api/v20.2/objects/documents/744/renditions/viewable_rendition__v
+2020-09-03 15:16:38 DEBUG HttpRequestConnector:145 - HTTP status code = 200
+2020-09-03 15:16:38 DEBUG VaultRequest:208 - responseOption = BYTE_ARRAY
+2020-09-03 15:16:38 INFO  HttpRequestConnector:134 - Sending GET to https://sbelanco-phase-2-sbx.veevavault.com/api/v20.2/objects/documents/754/renditions/viewable_rendition__v
+2020-09-03 15:16:39 DEBUG HttpRequestConnector:145 - HTTP status code = 200
+2020-09-03 15:16:39 DEBUG VaultRequest:208 - responseOption = BYTE_ARRAY
+2020-09-03 15:16:39 INFO  HttpRequestConnector:134 - Sending GET to https://sbelanco-phase-2-sbx.veevavault.com/api/v20.2/objects/documents/755/renditions/viewable_rendition__v
+2020-09-03 15:16:42 DEBUG HttpRequestConnector:145 - HTTP status code = 200
+2020-09-03 15:16:42 DEBUG VaultRequest:208 - responseOption = BYTE_ARRAY
+2020-09-03 15:16:42 INFO  HttpRequestConnector:134 - Sending GET to https://sbelanco-phase-2-sbx.veevavault.com/api/v20.2/objects/documents/756/renditions/viewable_rendition__v
+2020-09-03 15:16:43 DEBUG HttpRequestConnector:145 - HTTP status code = 200
+2020-09-03 15:16:43 DEBUG VaultRequest:208 - responseOption = BYTE_ARRAY
+2020-09-03 15:16:43 INFO  HttpRequestConnector:134 - Sending GET to https://sbelanco-phase-2-sbx.veevavault.com/api/v20.2/objects/documents/757/renditions/viewable_rendition__v
+2020-09-03 15:16:45 DEBUG HttpRequestConnector:145 - HTTP status code = 200
+2020-09-03 15:16:45 DEBUG VaultRequest:208 - responseOption = BYTE_ARRAY
+2020-09-03 15:16:45 INFO  HttpRequestConnector:134 - Sending GET to https://sbelanco-phase-2-sbx.veevavault.com/api/v20.2/objects/documents/667/renditions/viewable_rendition__v
+2020-09-03 15:16:46 DEBUG HttpRequestConnector:145 - HTTP status code = 200
+2020-09-03 15:16:46 DEBUG VaultRequest:208 - responseOption = BYTE_ARRAY
+2020-09-03 15:16:46 INFO  HttpRequestConnector:134 - Sending GET to https://sbelanco-phase-2-sbx.veevavault.com/api/v20.2/objects/documents/661/renditions/viewable_rendition__v
+2020-09-03 15:16:47 DEBUG HttpRequestConnector:145 - HTTP status code = 200
+2020-09-03 15:16:47 DEBUG VaultRequest:208 - responseOption = BYTE_ARRAY
+2020-09-03 15:16:47 INFO  HttpRequestConnector:134 - Sending GET to https://sbelanco-phase-2-sbx.veevavault.com/api/v20.2/objects/documents/741/renditions/viewable_rendition__v
+2020-09-03 15:16:48 DEBUG HttpRequestConnector:145 - HTTP status code = 200
+2020-09-03 15:16:48 DEBUG VaultRequest:208 - responseOption = BYTE_ARRAY
+2020-09-03 15:16:48 INFO  HttpRequestConnector:134 - Sending GET to https://sbelanco-phase-2-sbx.veevavault.com/api/v20.2/objects/documents/750/renditions/viewable_rendition__v
+2020-09-03 15:16:50 DEBUG HttpRequestConnector:145 - HTTP status code = 200
+2020-09-03 15:16:50 DEBUG VaultRequest:208 - responseOption = BYTE_ARRAY
+2020-09-03 15:17:15 INFO  BatchPrintEngine:70 - Exiting app
+2020-09-03 15:18:11 INFO  BatchPrintEngine:74 - End Print Loop
+2020-09-03 15:18:11 INFO  BatchPrintEngine:70 - Exiting app
+2020-09-03 15:18:11 INFO  BatchPrintEngine:74 - End Print Loop
+2020-09-03 15:18:11 INFO  BatchPrintEngine:70 - Exiting app
+2020-09-03 15:18:11 INFO  BatchPrintEngine:74 - End Print Loop
+2020-09-03 15:18:11 INFO  BatchPrintEngine:70 - Exiting app
+2020-09-03 15:18:11 INFO  BatchPrintEngine:74 - End Print Loop
+2020-09-03 15:18:11 INFO  BatchPrintEngine:70 - Exiting app
+2020-09-03 15:18:11 INFO  BatchPrintEngine:74 - End Print Loop
+2020-09-03 15:18:12 INFO  BatchPrintEngine:22 - Start com.veeva.vps.integration.BatchPrintEngine
+2020-09-03 15:18:12 DEBUG HttpRequestConnector:295 - RequestBody: Form
+2020-09-03 15:18:12 INFO  HttpRequestConnector:134 - Sending POST to https://sbelanco-phase-2-sbx.veevavault.com/api/v20.2/auth
+2020-09-03 15:18:13 DEBUG HttpRequestConnector:145 - HTTP status code = 200
+2020-09-03 15:18:13 DEBUG VaultRequest:97 - HTTP response before deserialization = {"responseStatus":"SUCCESS","sessionId":"71BE62AED0E75FC4D48B98612016AF6A972E971056196245021217ACD8EA9DE3C5EE4FD480C54FB9CA058A27C039FA048156B1C5C8494CA4FE707D21D00097B7","userId":3420495,"vaultIds":[{"id":36945,"name":"Quality Sandbox","url":"https://sb-elanco-quality.veevavault.com/api"},{"id":39587,"name":"Alpha Review sbx","url":"https://sbelanco-alpha-review-sbx.veevavault.com/api"},{"id":46950,"name":"QualitySuite Sandbox","url":"https://sbelanco-qualitysuite-sandbox.veevavault.com/api"},{"id":47567,"name":"Phase 2 SBX","url":"https://sbelanco-phase-2-sbx.veevavault.com/api"},{"id":48610,"name":"Temporary Sandbox","url":"https://sbelanco-temporary-sandbox.veevavault.com/api"},{"id":49248,"name":"Clinical VAL","url":"https://sbelanco-clinical-val.veevavault.com/api"},{"id":50270,"name":"Clinical Sandbox","url":"https://sb-elanco-clinical-sbx.veevavault.com/api"},{"id":51477,"name":"New Complaints VPK SBX","url":"https://sb-elanco-new-complaints-vpk-sbx.veevavault.com/api"},{"id":52099,"name":"Elanco Test","url":"https://sbelanco-elanco-test.veevavault.com/api"},{"id":52804,"name":"RIM Training","url":"https://sb-elanco-rim-training.veevavault.com/api"},{"id":55563,"name":"QMS Dry Run Config Migration SBX 2","url":"https://sb-elanco-qms-dry-run-config-migration-sbx-2.veevavault.com/api"},{"id":55644,"name":"Quality Suite Test","url":"https://sbelanco-qualitysuite-test.veevavault.com/api"},{"id":56114,"name":"Integration-Migration","url":"https://sb-elanco-integration-migration.veevavault.com/api"}],"vaultId":47567}
+2020-09-03 15:18:13 DEBUG VaultRequest:208 - responseOption = STRING
+2020-09-03 15:18:13 INFO  AuthenticationRequest:374 - Authentication succeeded
+2020-09-03 15:18:13 INFO  QueryRequest:138 - Query = select id, (select id, document__c from package_class_document_instances__cr) from package_class_instance__c where state__v = 'ready_for_printing_state__c'
+2020-09-03 15:18:13 DEBUG HttpRequestConnector:295 - RequestBody: Form
+2020-09-03 15:18:13 INFO  HttpRequestConnector:134 - Sending POST to https://sbelanco-phase-2-sbx.veevavault.com/api/v20.2/query
+2020-09-03 15:18:14 DEBUG HttpRequestConnector:145 - HTTP status code = 200
+2020-09-03 15:18:14 DEBUG VaultRequest:97 - HTTP response before deserialization = {"responseStatus":"SUCCESS","responseDetails":{"limit":1000,"offset":0,"size":11,"total":11},"data":[{"id":"V5S000000000H01","package_class_document_instances__cr":{"responseDetails":{"limit":250,"offset":0,"size":1,"total":1},"data":[{"id":"V5T000000000I01","document__c":"500_0_1"}]}},{"id":"V5S000000000H02","package_class_document_instances__cr":{"responseDetails":{"limit":250,"offset":0,"size":0,"total":0},"data":[]}},{"id":"V5S000000000I01","package_class_document_instances__cr":{"responseDetails":{"limit":250,"offset":0,"size":1,"total":1},"data":[{"id":"V5T000000000I02","document__c":"503_0_1"}]}},{"id":"V5S000000000K01","package_class_document_instances__cr":{"responseDetails":{"limit":250,"offset":0,"size":1,"total":1},"data":[{"id":"V5T000000000L01","document__c":"661_0_1"}]}},{"id":"V5S000000000K02","package_class_document_instances__cr":{"responseDetails":{"limit":250,"offset":0,"size":1,"total":1},"data":[{"id":"V5T000000000L02","document__c":"667_0_1"}]}},{"id":"V5S000000000M02","package_class_document_instances__cr":{"responseDetails":{"limit":250,"offset":0,"size":1,"total":1},"data":[{"id":"V5T000000000N01","document__c":"741_0_1"}]}},{"id":"V5S000000000M03","package_class_document_instances__cr":{"responseDetails":{"limit":250,"offset":0,"size":1,"total":1},"data":[{"id":"V5T000000000N02","document__c":"744_0_1"}]}},{"id":"V5S000000000N01","package_class_document_instances__cr":{"responseDetails":{"limit":250,"offset":0,"size":1,"total":1},"data":[{"id":"V5T000000000O03","document__c":"750_0_1"}]}},{"id":"V5S000000000N02","package_class_document_instances__cr":{"responseDetails":{"limit":250,"offset":0,"size":1,"total":1},"data":[{"id":"V5T000000000N04","document__c":"754_0_1"}]}},{"id":"V5S000000000N03","package_class_document_instances__cr":{"responseDetails":{"limit":250,"offset":0,"size":1,"total":1},"data":[{"id":"V5T000000000N03","document__c":"753_0_1"}]}},{"id":"V5S000000000N04","package_class_document_instances__cr":{"responseDetails":{"limit":250,"offset":0,"size":3,"total":3},"data":[{"id":"V5T000000000N05","document__c":"755_0_1"},{"id":"V5T000000000N06","document__c":"756_0_1"},{"id":"V5T000000000N07","document__c":"757_0_1"}]}}]}
+2020-09-03 15:18:14 DEBUG VaultRequest:208 - responseOption = STRING
+2020-09-03 15:18:14 INFO  HttpRequestConnector:134 - Sending GET to https://sbelanco-phase-2-sbx.veevavault.com/api/v20.2/objects/documents/500/renditions/viewable_rendition__v
+2020-09-03 15:18:15 DEBUG HttpRequestConnector:145 - HTTP status code = 200
+2020-09-03 15:18:15 DEBUG VaultRequest:208 - responseOption = BYTE_ARRAY
+2020-09-03 15:18:15 INFO  HttpRequestConnector:134 - Sending GET to https://sbelanco-phase-2-sbx.veevavault.com/api/v20.2/objects/documents/503/renditions/viewable_rendition__v
+2020-09-03 15:18:16 DEBUG HttpRequestConnector:145 - HTTP status code = 200
+2020-09-03 15:18:16 DEBUG VaultRequest:208 - responseOption = BYTE_ARRAY
+2020-09-03 15:18:16 INFO  HttpRequestConnector:134 - Sending GET to https://sbelanco-phase-2-sbx.veevavault.com/api/v20.2/objects/documents/753/renditions/viewable_rendition__v
+2020-09-03 15:18:19 DEBUG HttpRequestConnector:145 - HTTP status code = 200
+2020-09-03 15:18:19 DEBUG VaultRequest:208 - responseOption = BYTE_ARRAY
+2020-09-03 15:18:19 INFO  HttpRequestConnector:134 - Sending GET to https://sbelanco-phase-2-sbx.veevavault.com/api/v20.2/objects/documents/744/renditions/viewable_rendition__v
+2020-09-03 15:18:20 DEBUG HttpRequestConnector:145 - HTTP status code = 200
+2020-09-03 15:18:20 DEBUG VaultRequest:208 - responseOption = BYTE_ARRAY
+2020-09-03 15:18:20 INFO  HttpRequestConnector:134 - Sending GET to https://sbelanco-phase-2-sbx.veevavault.com/api/v20.2/objects/documents/754/renditions/viewable_rendition__v
+2020-09-03 15:18:21 DEBUG HttpRequestConnector:145 - HTTP status code = 200
+2020-09-03 15:18:21 DEBUG VaultRequest:208 - responseOption = BYTE_ARRAY
+2020-09-03 15:18:21 INFO  HttpRequestConnector:134 - Sending GET to https://sbelanco-phase-2-sbx.veevavault.com/api/v20.2/objects/documents/755/renditions/viewable_rendition__v
+2020-09-03 15:18:22 DEBUG HttpRequestConnector:145 - HTTP status code = 200
+2020-09-03 15:18:22 DEBUG VaultRequest:208 - responseOption = BYTE_ARRAY
+2020-09-03 15:18:22 INFO  HttpRequestConnector:134 - Sending GET to https://sbelanco-phase-2-sbx.veevavault.com/api/v20.2/objects/documents/756/renditions/viewable_rendition__v
+2020-09-03 15:18:23 DEBUG HttpRequestConnector:145 - HTTP status code = 200
+2020-09-03 15:18:23 DEBUG VaultRequest:208 - responseOption = BYTE_ARRAY
+2020-09-03 15:18:23 INFO  HttpRequestConnector:134 - Sending GET to https://sbelanco-phase-2-sbx.veevavault.com/api/v20.2/objects/documents/757/renditions/viewable_rendition__v
+2020-09-03 15:18:24 DEBUG HttpRequestConnector:145 - HTTP status code = 200
+2020-09-03 15:18:24 DEBUG VaultRequest:208 - responseOption = BYTE_ARRAY
+2020-09-03 15:18:24 INFO  HttpRequestConnector:134 - Sending GET to https://sbelanco-phase-2-sbx.veevavault.com/api/v20.2/objects/documents/667/renditions/viewable_rendition__v
+2020-09-03 15:18:25 DEBUG HttpRequestConnector:145 - HTTP status code = 200
+2020-09-03 15:18:25 DEBUG VaultRequest:208 - responseOption = BYTE_ARRAY
+2020-09-03 15:18:25 INFO  HttpRequestConnector:134 - Sending GET to https://sbelanco-phase-2-sbx.veevavault.com/api/v20.2/objects/documents/661/renditions/viewable_rendition__v
+2020-09-03 15:18:26 DEBUG HttpRequestConnector:145 - HTTP status code = 200
+2020-09-03 15:18:26 DEBUG VaultRequest:208 - responseOption = BYTE_ARRAY
+2020-09-03 15:18:26 INFO  HttpRequestConnector:134 - Sending GET to https://sbelanco-phase-2-sbx.veevavault.com/api/v20.2/objects/documents/741/renditions/viewable_rendition__v
+2020-09-03 15:18:27 DEBUG HttpRequestConnector:145 - HTTP status code = 200
+2020-09-03 15:18:27 DEBUG VaultRequest:208 - responseOption = BYTE_ARRAY
+2020-09-03 15:18:27 INFO  HttpRequestConnector:134 - Sending GET to https://sbelanco-phase-2-sbx.veevavault.com/api/v20.2/objects/documents/750/renditions/viewable_rendition__v
+2020-09-03 15:18:28 DEBUG HttpRequestConnector:145 - HTTP status code = 200
+2020-09-03 15:18:28 DEBUG VaultRequest:208 - responseOption = BYTE_ARRAY
+2020-09-03 15:18:35 INFO  BatchPrintEngine:85 - Job completed
+2020-09-03 15:18:35 INFO  BatchPrintEngine:85 - Job completed
+2020-09-03 15:18:35 INFO  BatchPrintEngine:70 - Exiting app
+2020-09-03 15:18:43 INFO  BatchPrintEngine:74 - End Print Loop
+2020-09-03 15:20:21 INFO  BatchPrintEngine:23 - Start com.veeva.vps.integration.BatchPrintEngine
+2020-09-03 15:20:22 DEBUG HttpRequestConnector:295 - RequestBody: Form
+2020-09-03 15:20:22 INFO  HttpRequestConnector:134 - Sending POST to https://sbelanco-phase-2-sbx.veevavault.com/api/v20.2/auth
+2020-09-03 15:20:22 DEBUG HttpRequestConnector:145 - HTTP status code = 200
+2020-09-03 15:20:22 DEBUG VaultRequest:97 - HTTP response before deserialization = {"responseStatus":"SUCCESS","sessionId":"E00C7015AC8DF64BFB9F4D18DFE1308D7B9C12D79DA5A27BC8D186350873FE243A432206520893941865F09AB1B7BA3A6505CC3B5D16F9C49E0250ACE3FF2529","userId":3420495,"vaultIds":[{"id":36945,"name":"Quality Sandbox","url":"https://sb-elanco-quality.veevavault.com/api"},{"id":39587,"name":"Alpha Review sbx","url":"https://sbelanco-alpha-review-sbx.veevavault.com/api"},{"id":46950,"name":"QualitySuite Sandbox","url":"https://sbelanco-qualitysuite-sandbox.veevavault.com/api"},{"id":47567,"name":"Phase 2 SBX","url":"https://sbelanco-phase-2-sbx.veevavault.com/api"},{"id":48610,"name":"Temporary Sandbox","url":"https://sbelanco-temporary-sandbox.veevavault.com/api"},{"id":49248,"name":"Clinical VAL","url":"https://sbelanco-clinical-val.veevavault.com/api"},{"id":50270,"name":"Clinical Sandbox","url":"https://sb-elanco-clinical-sbx.veevavault.com/api"},{"id":51477,"name":"New Complaints VPK SBX","url":"https://sb-elanco-new-complaints-vpk-sbx.veevavault.com/api"},{"id":52099,"name":"Elanco Test","url":"https://sbelanco-elanco-test.veevavault.com/api"},{"id":52804,"name":"RIM Training","url":"https://sb-elanco-rim-training.veevavault.com/api"},{"id":55563,"name":"QMS Dry Run Config Migration SBX 2","url":"https://sb-elanco-qms-dry-run-config-migration-sbx-2.veevavault.com/api"},{"id":55644,"name":"Quality Suite Test","url":"https://sbelanco-qualitysuite-test.veevavault.com/api"},{"id":56114,"name":"Integration-Migration","url":"https://sb-elanco-integration-migration.veevavault.com/api"}],"vaultId":47567}
+2020-09-03 15:20:22 DEBUG VaultRequest:208 - responseOption = STRING
+2020-09-03 15:20:22 INFO  AuthenticationRequest:374 - Authentication succeeded
+2020-09-03 15:20:22 INFO  QueryRequest:138 - Query = select id, (select id, document__c from package_class_document_instances__cr) from package_class_instance__c where state__v = 'ready_for_printing_state__c'
+2020-09-03 15:20:22 DEBUG HttpRequestConnector:295 - RequestBody: Form
+2020-09-03 15:20:22 INFO  HttpRequestConnector:134 - Sending POST to https://sbelanco-phase-2-sbx.veevavault.com/api/v20.2/query
+2020-09-03 15:20:23 DEBUG HttpRequestConnector:145 - HTTP status code = 200
+2020-09-03 15:20:23 DEBUG VaultRequest:97 - HTTP response before deserialization = {"responseStatus":"SUCCESS","responseDetails":{"limit":1000,"offset":0,"size":11,"total":11},"data":[{"id":"V5S000000000H01","package_class_document_instances__cr":{"responseDetails":{"limit":250,"offset":0,"size":1,"total":1},"data":[{"id":"V5T000000000I01","document__c":"500_0_1"}]}},{"id":"V5S000000000H02","package_class_document_instances__cr":{"responseDetails":{"limit":250,"offset":0,"size":0,"total":0},"data":[]}},{"id":"V5S000000000I01","package_class_document_instances__cr":{"responseDetails":{"limit":250,"offset":0,"size":1,"total":1},"data":[{"id":"V5T000000000I02","document__c":"503_0_1"}]}},{"id":"V5S000000000K01","package_class_document_instances__cr":{"responseDetails":{"limit":250,"offset":0,"size":1,"total":1},"data":[{"id":"V5T000000000L01","document__c":"661_0_1"}]}},{"id":"V5S000000000K02","package_class_document_instances__cr":{"responseDetails":{"limit":250,"offset":0,"size":1,"total":1},"data":[{"id":"V5T000000000L02","document__c":"667_0_1"}]}},{"id":"V5S000000000M02","package_class_document_instances__cr":{"responseDetails":{"limit":250,"offset":0,"size":1,"total":1},"data":[{"id":"V5T000000000N01","document__c":"741_0_1"}]}},{"id":"V5S000000000M03","package_class_document_instances__cr":{"responseDetails":{"limit":250,"offset":0,"size":1,"total":1},"data":[{"id":"V5T000000000N02","document__c":"744_0_1"}]}},{"id":"V5S000000000N01","package_class_document_instances__cr":{"responseDetails":{"limit":250,"offset":0,"size":1,"total":1},"data":[{"id":"V5T000000000O03","document__c":"750_0_1"}]}},{"id":"V5S000000000N02","package_class_document_instances__cr":{"responseDetails":{"limit":250,"offset":0,"size":1,"total":1},"data":[{"id":"V5T000000000N04","document__c":"754_0_1"}]}},{"id":"V5S000000000N03","package_class_document_instances__cr":{"responseDetails":{"limit":250,"offset":0,"size":1,"total":1},"data":[{"id":"V5T000000000N03","document__c":"753_0_1"}]}},{"id":"V5S000000000N04","package_class_document_instances__cr":{"responseDetails":{"limit":250,"offset":0,"size":3,"total":3},"data":[{"id":"V5T000000000N05","document__c":"755_0_1"},{"id":"V5T000000000N06","document__c":"756_0_1"},{"id":"V5T000000000N07","document__c":"757_0_1"}]}}]}
+2020-09-03 15:20:23 DEBUG VaultRequest:208 - responseOption = STRING
+2020-09-03 15:20:23 INFO  HttpRequestConnector:134 - Sending GET to https://sbelanco-phase-2-sbx.veevavault.com/api/v20.2/objects/documents/500/renditions/viewable_rendition__v
+2020-09-03 15:20:24 DEBUG HttpRequestConnector:145 - HTTP status code = 200
+2020-09-03 15:20:24 DEBUG VaultRequest:208 - responseOption = BYTE_ARRAY
+2020-09-03 15:20:24 INFO  HttpRequestConnector:134 - Sending GET to https://sbelanco-phase-2-sbx.veevavault.com/api/v20.2/objects/documents/503/renditions/viewable_rendition__v
+2020-09-03 15:20:26 DEBUG HttpRequestConnector:145 - HTTP status code = 200
+2020-09-03 15:20:26 DEBUG VaultRequest:208 - responseOption = BYTE_ARRAY
+2020-09-03 15:20:26 INFO  HttpRequestConnector:134 - Sending GET to https://sbelanco-phase-2-sbx.veevavault.com/api/v20.2/objects/documents/753/renditions/viewable_rendition__v
+2020-09-03 15:20:27 DEBUG HttpRequestConnector:145 - HTTP status code = 200
+2020-09-03 15:20:27 DEBUG VaultRequest:208 - responseOption = BYTE_ARRAY
+2020-09-03 15:20:27 INFO  HttpRequestConnector:134 - Sending GET to https://sbelanco-phase-2-sbx.veevavault.com/api/v20.2/objects/documents/744/renditions/viewable_rendition__v
+2020-09-03 15:20:28 DEBUG HttpRequestConnector:145 - HTTP status code = 200
+2020-09-03 15:20:28 DEBUG VaultRequest:208 - responseOption = BYTE_ARRAY
+2020-09-03 15:20:28 INFO  HttpRequestConnector:134 - Sending GET to https://sbelanco-phase-2-sbx.veevavault.com/api/v20.2/objects/documents/754/renditions/viewable_rendition__v
+2020-09-03 15:20:29 DEBUG HttpRequestConnector:145 - HTTP status code = 200
+2020-09-03 15:20:29 DEBUG VaultRequest:208 - responseOption = BYTE_ARRAY
+2020-09-03 15:20:29 INFO  HttpRequestConnector:134 - Sending GET to https://sbelanco-phase-2-sbx.veevavault.com/api/v20.2/objects/documents/755/renditions/viewable_rendition__v
+2020-09-03 15:20:30 DEBUG HttpRequestConnector:145 - HTTP status code = 200
+2020-09-03 15:20:30 DEBUG VaultRequest:208 - responseOption = BYTE_ARRAY
+2020-09-03 15:20:30 INFO  HttpRequestConnector:134 - Sending GET to https://sbelanco-phase-2-sbx.veevavault.com/api/v20.2/objects/documents/756/renditions/viewable_rendition__v
+2020-09-03 15:20:31 DEBUG HttpRequestConnector:145 - HTTP status code = 200
+2020-09-03 15:20:31 DEBUG VaultRequest:208 - responseOption = BYTE_ARRAY
+2020-09-03 15:20:31 INFO  HttpRequestConnector:134 - Sending GET to https://sbelanco-phase-2-sbx.veevavault.com/api/v20.2/objects/documents/757/renditions/viewable_rendition__v
+2020-09-03 15:20:32 DEBUG HttpRequestConnector:145 - HTTP status code = 200
+2020-09-03 15:20:32 DEBUG VaultRequest:208 - responseOption = BYTE_ARRAY
+2020-09-03 15:20:32 INFO  HttpRequestConnector:134 - Sending GET to https://sbelanco-phase-2-sbx.veevavault.com/api/v20.2/objects/documents/667/renditions/viewable_rendition__v
+2020-09-03 15:20:33 DEBUG HttpRequestConnector:145 - HTTP status code = 200
+2020-09-03 15:20:33 DEBUG VaultRequest:208 - responseOption = BYTE_ARRAY
+2020-09-03 15:20:33 INFO  HttpRequestConnector:134 - Sending GET to https://sbelanco-phase-2-sbx.veevavault.com/api/v20.2/objects/documents/661/renditions/viewable_rendition__v
+2020-09-03 15:20:34 DEBUG HttpRequestConnector:145 - HTTP status code = 200
+2020-09-03 15:20:34 DEBUG VaultRequest:208 - responseOption = BYTE_ARRAY
+2020-09-03 15:20:34 INFO  HttpRequestConnector:134 - Sending GET to https://sbelanco-phase-2-sbx.veevavault.com/api/v20.2/objects/documents/741/renditions/viewable_rendition__v
+2020-09-03 15:20:35 DEBUG HttpRequestConnector:145 - HTTP status code = 200
+2020-09-03 15:20:35 DEBUG VaultRequest:208 - responseOption = BYTE_ARRAY
+2020-09-03 15:20:35 INFO  HttpRequestConnector:134 - Sending GET to https://sbelanco-phase-2-sbx.veevavault.com/api/v20.2/objects/documents/750/renditions/viewable_rendition__v
+2020-09-03 15:20:36 DEBUG HttpRequestConnector:145 - HTTP status code = 200
+2020-09-03 15:20:36 DEBUG VaultRequest:208 - responseOption = BYTE_ARRAY
+2020-09-03 15:20:53 INFO  BatchPrintEngine:86 - Job completed
+2020-09-03 15:20:53 INFO  BatchPrintEngine:86 - Job completed
+2020-09-03 15:20:53 INFO  BatchPrintEngine:71 - Exiting app
+2020-09-03 15:20:54 INFO  BatchPrintEngine:75 - End Print Loop
+2020-09-03 15:21:22 INFO  BatchPrintEngine:86 - Job completed
+2020-09-03 15:21:22 INFO  BatchPrintEngine:86 - Job completed
+2020-09-03 15:21:22 INFO  BatchPrintEngine:71 - Exiting app
+2020-09-03 15:21:22 INFO  BatchPrintEngine:75 - End Print Loop
+2020-09-03 15:21:22 INFO  BatchPrintEngine:86 - Job completed
+2020-09-03 15:21:48 INFO  BatchPrintEngine:23 - Start com.veeva.vps.integration.BatchPrintEngine
+2020-09-03 15:21:49 DEBUG HttpRequestConnector:295 - RequestBody: Form
+2020-09-03 15:21:49 INFO  HttpRequestConnector:134 - Sending POST to https://sbelanco-phase-2-sbx.veevavault.com/api/v20.2/auth
+2020-09-03 15:21:50 DEBUG HttpRequestConnector:145 - HTTP status code = 200
+2020-09-03 15:21:50 DEBUG VaultRequest:97 - HTTP response before deserialization = {"responseStatus":"SUCCESS","sessionId":"3FBFAE0639F8EE5FAAD968299A5460F8F950BA5D9F74AF47FB659C1B95158088D2D8EC4EE8B94620E1CF6F643CADCD461AA12EEC3D89D7FD34603D045A2DB483","userId":3420495,"vaultIds":[{"id":36945,"name":"Quality Sandbox","url":"https://sb-elanco-quality.veevavault.com/api"},{"id":39587,"name":"Alpha Review sbx","url":"https://sbelanco-alpha-review-sbx.veevavault.com/api"},{"id":46950,"name":"QualitySuite Sandbox","url":"https://sbelanco-qualitysuite-sandbox.veevavault.com/api"},{"id":47567,"name":"Phase 2 SBX","url":"https://sbelanco-phase-2-sbx.veevavault.com/api"},{"id":48610,"name":"Temporary Sandbox","url":"https://sbelanco-temporary-sandbox.veevavault.com/api"},{"id":49248,"name":"Clinical VAL","url":"https://sbelanco-clinical-val.veevavault.com/api"},{"id":50270,"name":"Clinical Sandbox","url":"https://sb-elanco-clinical-sbx.veevavault.com/api"},{"id":51477,"name":"New Complaints VPK SBX","url":"https://sb-elanco-new-complaints-vpk-sbx.veevavault.com/api"},{"id":52099,"name":"Elanco Test","url":"https://sbelanco-elanco-test.veevavault.com/api"},{"id":52804,"name":"RIM Training","url":"https://sb-elanco-rim-training.veevavault.com/api"},{"id":55563,"name":"QMS Dry Run Config Migration SBX 2","url":"https://sb-elanco-qms-dry-run-config-migration-sbx-2.veevavault.com/api"},{"id":55644,"name":"Quality Suite Test","url":"https://sbelanco-qualitysuite-test.veevavault.com/api"},{"id":56114,"name":"Integration-Migration","url":"https://sb-elanco-integration-migration.veevavault.com/api"}],"vaultId":47567}
+2020-09-03 15:21:50 DEBUG VaultRequest:208 - responseOption = STRING
+2020-09-03 15:21:50 INFO  AuthenticationRequest:374 - Authentication succeeded
+2020-09-03 15:21:50 INFO  QueryRequest:138 - Query = select id, (select id, document__c from package_class_document_instances__cr) from package_class_instance__c where state__v = 'ready_for_printing_state__c'
+2020-09-03 15:21:50 DEBUG HttpRequestConnector:295 - RequestBody: Form
+2020-09-03 15:21:50 INFO  HttpRequestConnector:134 - Sending POST to https://sbelanco-phase-2-sbx.veevavault.com/api/v20.2/query
+2020-09-03 15:21:52 DEBUG HttpRequestConnector:145 - HTTP status code = 200
+2020-09-03 15:21:52 DEBUG VaultRequest:97 - HTTP response before deserialization = {"responseStatus":"SUCCESS","responseDetails":{"limit":1000,"offset":0,"size":11,"total":11},"data":[{"id":"V5S000000000H01","package_class_document_instances__cr":{"responseDetails":{"limit":250,"offset":0,"size":1,"total":1},"data":[{"id":"V5T000000000I01","document__c":"500_0_1"}]}},{"id":"V5S000000000H02","package_class_document_instances__cr":{"responseDetails":{"limit":250,"offset":0,"size":0,"total":0},"data":[]}},{"id":"V5S000000000I01","package_class_document_instances__cr":{"responseDetails":{"limit":250,"offset":0,"size":1,"total":1},"data":[{"id":"V5T000000000I02","document__c":"503_0_1"}]}},{"id":"V5S000000000K01","package_class_document_instances__cr":{"responseDetails":{"limit":250,"offset":0,"size":1,"total":1},"data":[{"id":"V5T000000000L01","document__c":"661_0_1"}]}},{"id":"V5S000000000K02","package_class_document_instances__cr":{"responseDetails":{"limit":250,"offset":0,"size":1,"total":1},"data":[{"id":"V5T000000000L02","document__c":"667_0_1"}]}},{"id":"V5S000000000M02","package_class_document_instances__cr":{"responseDetails":{"limit":250,"offset":0,"size":1,"total":1},"data":[{"id":"V5T000000000N01","document__c":"741_0_1"}]}},{"id":"V5S000000000M03","package_class_document_instances__cr":{"responseDetails":{"limit":250,"offset":0,"size":1,"total":1},"data":[{"id":"V5T000000000N02","document__c":"744_0_1"}]}},{"id":"V5S000000000N01","package_class_document_instances__cr":{"responseDetails":{"limit":250,"offset":0,"size":1,"total":1},"data":[{"id":"V5T000000000O03","document__c":"750_0_1"}]}},{"id":"V5S000000000N02","package_class_document_instances__cr":{"responseDetails":{"limit":250,"offset":0,"size":1,"total":1},"data":[{"id":"V5T000000000N04","document__c":"754_0_1"}]}},{"id":"V5S000000000N03","package_class_document_instances__cr":{"responseDetails":{"limit":250,"offset":0,"size":1,"total":1},"data":[{"id":"V5T000000000N03","document__c":"753_0_1"}]}},{"id":"V5S000000000N04","package_class_document_instances__cr":{"responseDetails":{"limit":250,"offset":0,"size":3,"total":3},"data":[{"id":"V5T000000000N05","document__c":"755_0_1"},{"id":"V5T000000000N06","document__c":"756_0_1"},{"id":"V5T000000000N07","document__c":"757_0_1"}]}}]}
+2020-09-03 15:21:52 DEBUG VaultRequest:208 - responseOption = STRING
+2020-09-03 15:21:52 INFO  HttpRequestConnector:134 - Sending GET to https://sbelanco-phase-2-sbx.veevavault.com/api/v20.2/objects/documents/500/renditions/viewable_rendition__v
+2020-09-03 15:21:53 DEBUG HttpRequestConnector:145 - HTTP status code = 200
+2020-09-03 15:21:53 DEBUG VaultRequest:208 - responseOption = BYTE_ARRAY
+2020-09-03 15:21:53 INFO  HttpRequestConnector:134 - Sending GET to https://sbelanco-phase-2-sbx.veevavault.com/api/v20.2/objects/documents/503/renditions/viewable_rendition__v
+2020-09-03 15:21:54 DEBUG HttpRequestConnector:145 - HTTP status code = 200
+2020-09-03 15:21:54 DEBUG VaultRequest:208 - responseOption = BYTE_ARRAY
+2020-09-03 15:21:54 INFO  HttpRequestConnector:134 - Sending GET to https://sbelanco-phase-2-sbx.veevavault.com/api/v20.2/objects/documents/753/renditions/viewable_rendition__v
+2020-09-03 15:21:55 DEBUG HttpRequestConnector:145 - HTTP status code = 200
+2020-09-03 15:21:55 DEBUG VaultRequest:208 - responseOption = BYTE_ARRAY
+2020-09-03 15:21:55 INFO  HttpRequestConnector:134 - Sending GET to https://sbelanco-phase-2-sbx.veevavault.com/api/v20.2/objects/documents/744/renditions/viewable_rendition__v
+2020-09-03 15:21:57 DEBUG HttpRequestConnector:145 - HTTP status code = 200
+2020-09-03 15:21:57 DEBUG VaultRequest:208 - responseOption = BYTE_ARRAY
+2020-09-03 15:21:57 INFO  HttpRequestConnector:134 - Sending GET to https://sbelanco-phase-2-sbx.veevavault.com/api/v20.2/objects/documents/754/renditions/viewable_rendition__v
+2020-09-03 15:21:58 DEBUG HttpRequestConnector:145 - HTTP status code = 200
+2020-09-03 15:21:58 DEBUG VaultRequest:208 - responseOption = BYTE_ARRAY
+2020-09-03 15:21:58 INFO  HttpRequestConnector:134 - Sending GET to https://sbelanco-phase-2-sbx.veevavault.com/api/v20.2/objects/documents/755/renditions/viewable_rendition__v
+2020-09-03 15:21:59 DEBUG HttpRequestConnector:145 - HTTP status code = 200
+2020-09-03 15:21:59 DEBUG VaultRequest:208 - responseOption = BYTE_ARRAY
+2020-09-03 15:21:59 INFO  HttpRequestConnector:134 - Sending GET to https://sbelanco-phase-2-sbx.veevavault.com/api/v20.2/objects/documents/756/renditions/viewable_rendition__v
+2020-09-03 15:22:00 DEBUG HttpRequestConnector:145 - HTTP status code = 200
+2020-09-03 15:22:00 DEBUG VaultRequest:208 - responseOption = BYTE_ARRAY
+2020-09-03 15:22:00 INFO  HttpRequestConnector:134 - Sending GET to https://sbelanco-phase-2-sbx.veevavault.com/api/v20.2/objects/documents/757/renditions/viewable_rendition__v
+2020-09-03 15:22:01 DEBUG HttpRequestConnector:145 - HTTP status code = 200
+2020-09-03 15:22:01 DEBUG VaultRequest:208 - responseOption = BYTE_ARRAY
+2020-09-03 15:22:01 INFO  HttpRequestConnector:134 - Sending GET to https://sbelanco-phase-2-sbx.veevavault.com/api/v20.2/objects/documents/667/renditions/viewable_rendition__v
+2020-09-03 15:22:02 DEBUG HttpRequestConnector:145 - HTTP status code = 200
+2020-09-03 15:22:02 DEBUG VaultRequest:208 - responseOption = BYTE_ARRAY
+2020-09-03 15:22:02 INFO  HttpRequestConnector:134 - Sending GET to https://sbelanco-phase-2-sbx.veevavault.com/api/v20.2/objects/documents/661/renditions/viewable_rendition__v
+2020-09-03 15:22:03 DEBUG HttpRequestConnector:145 - HTTP status code = 200
+2020-09-03 15:22:03 DEBUG VaultRequest:208 - responseOption = BYTE_ARRAY
+2020-09-03 15:22:03 INFO  HttpRequestConnector:134 - Sending GET to https://sbelanco-phase-2-sbx.veevavault.com/api/v20.2/objects/documents/741/renditions/viewable_rendition__v
+2020-09-03 15:22:04 DEBUG HttpRequestConnector:145 - HTTP status code = 200
+2020-09-03 15:22:04 DEBUG VaultRequest:208 - responseOption = BYTE_ARRAY
+2020-09-03 15:22:04 INFO  HttpRequestConnector:134 - Sending GET to https://sbelanco-phase-2-sbx.veevavault.com/api/v20.2/objects/documents/750/renditions/viewable_rendition__v
+2020-09-03 15:22:05 DEBUG HttpRequestConnector:145 - HTTP status code = 200
+2020-09-03 15:22:05 DEBUG VaultRequest:208 - responseOption = BYTE_ARRAY
+2020-09-03 15:22:10 INFO  BatchPrintEngine:86 - Job completed
+2020-09-03 15:22:10 INFO  BatchPrintEngine:86 - Job completed
+2020-09-03 15:22:10 INFO  BatchPrintEngine:71 - Exiting app
+2020-09-03 15:22:17 INFO  BatchPrintEngine:75 - End Print Loop
+2020-09-03 15:22:21 INFO  BatchPrintEngine:86 - Job completed
+2020-09-03 15:22:21 INFO  BatchPrintEngine:86 - Job completed
+2020-09-03 15:22:21 INFO  BatchPrintEngine:71 - Exiting app
+2020-09-03 15:22:21 INFO  BatchPrintEngine:75 - End Print Loop
+2020-09-03 15:22:21 INFO  BatchPrintEngine:86 - Job completed
+2020-09-03 15:22:21 INFO  BatchPrintEngine:86 - Job completed
+2020-09-03 15:22:21 INFO  BatchPrintEngine:71 - Exiting app
+2020-09-03 15:22:21 INFO  BatchPrintEngine:75 - End Print Loop
+2020-09-03 15:22:21 INFO  BatchPrintEngine:86 - Job completed
+2020-09-03 15:22:21 INFO  BatchPrintEngine:86 - Job completed
+2020-09-03 15:22:21 INFO  BatchPrintEngine:71 - Exiting app
+2020-09-03 15:22:21 INFO  BatchPrintEngine:75 - End Print Loop
+2020-09-03 15:22:21 INFO  BatchPrintEngine:86 - Job completed
+2020-09-03 15:22:21 INFO  BatchPrintEngine:86 - Job completed
+2020-09-03 15:22:21 INFO  BatchPrintEngine:71 - Exiting app
+2020-09-03 15:22:21 INFO  BatchPrintEngine:75 - End Print Loop
+2020-09-03 15:22:21 INFO  BatchPrintEngine:86 - Job completed
+2020-09-03 15:22:21 INFO  BatchPrintEngine:86 - Job completed
+2020-09-03 15:22:21 INFO  BatchPrintEngine:71 - Exiting app
+2020-09-03 15:22:21 INFO  BatchPrintEngine:75 - End Print Loop
+2020-09-03 15:22:21 INFO  BatchPrintEngine:86 - Job completed
+2020-09-03 15:22:21 INFO  BatchPrintEngine:86 - Job completed
+2020-09-03 15:22:21 INFO  BatchPrintEngine:71 - Exiting app
+2020-09-03 15:22:21 INFO  BatchPrintEngine:75 - End Print Loop
+2020-09-03 15:22:21 INFO  BatchPrintEngine:86 - Job completed
+2020-09-03 15:22:21 INFO  BatchPrintEngine:86 - Job completed
+2020-09-03 15:22:21 INFO  BatchPrintEngine:71 - Exiting app
+2020-09-03 15:22:21 INFO  BatchPrintEngine:75 - End Print Loop
+2020-09-03 15:22:21 INFO  BatchPrintEngine:86 - Job completed
+2020-09-03 15:22:21 INFO  BatchPrintEngine:86 - Job completed
+2020-09-03 15:22:21 INFO  BatchPrintEngine:71 - Exiting app
+2020-09-03 15:22:21 INFO  BatchPrintEngine:75 - End Print Loop
+2020-09-03 15:22:21 INFO  BatchPrintEngine:86 - Job completed
+2020-09-03 15:22:21 INFO  BatchPrintEngine:86 - Job completed
+2020-09-03 15:22:21 INFO  BatchPrintEngine:71 - Exiting app
+2020-09-03 15:22:21 INFO  BatchPrintEngine:75 - End Print Loop
+2020-09-03 15:22:21 INFO  BatchPrintEngine:86 - Job completed
+2020-09-03 15:22:21 INFO  BatchPrintEngine:86 - Job completed
+2020-09-03 15:22:21 INFO  BatchPrintEngine:71 - Exiting app
+2020-09-03 15:22:21 INFO  BatchPrintEngine:75 - End Print Loop
+2020-09-03 15:22:21 INFO  BatchPrintEngine:86 - Job completed
+2020-09-03 15:22:21 INFO  BatchPrintEngine:86 - Job completed
+2020-09-03 15:22:21 INFO  BatchPrintEngine:71 - Exiting app
+2020-09-03 15:22:21 INFO  BatchPrintEngine:75 - End Print Loop
+2020-09-03 15:22:21 INFO  BatchPrintEngine:80 - End com.veeva.vps.integration.BatchPrintEngine

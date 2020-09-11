@@ -155,21 +155,28 @@ public class VaultService {
 	public void movePCIsToPrinted(Set<String> printedPCIIds, Set<String> reprintPCIIds)
 	{
 		VaultClient vc = getVaultClient();
-		ObjectRecordActionResponse printResponse = vc.newRequest(ObjectLifecycleWorkflowRequest.class).initiateObjectActionOnMultipleRecords(OBJECTNAME_PCI, printedPCIIds, PRINTEDUSERACTION);
-		List<VaultResponse.APIResponseError> errors = printResponse.getErrors();
-		if (errors != null)
+		if (!printedPCIIds.isEmpty())
 		{
-			for (VaultResponse.APIResponseError error : errors) {
-				logger.error("Error moving PCI(s) to Printed: " + error.getMessage());
+			ObjectRecordActionResponse printResponse = vc.newRequest(ObjectLifecycleWorkflowRequest.class).initiateObjectActionOnMultipleRecords(OBJECTNAME_PCI, printedPCIIds, PRINTEDUSERACTION);
+			List<VaultResponse.APIResponseError> errors = printResponse.getErrors();
+			if (errors != null)
+			{
+				for (VaultResponse.APIResponseError error : errors) {
+					logger.error("Error moving PCI(s) to Printed: " + error.getMessage());
+				}
 			}
 		}
 
-		ObjectRecordActionResponse reprintResponse = vc.newRequest(ObjectLifecycleWorkflowRequest.class).initiateObjectActionOnMultipleRecords(OBJECTNAME_PCI, reprintPCIIds, REPRINTEDUSERACTION);
-		errors = reprintResponse.getErrors();
-		if (errors != null) {
-			for (VaultResponse.APIResponseError error : errors) {
-				logger.error("Error moving reprinted PCI(s) to Printed: " + error.getMessage());
+		if (!reprintPCIIds.isEmpty())
+		{
+			ObjectRecordActionResponse reprintResponse = vc.newRequest(ObjectLifecycleWorkflowRequest.class).initiateObjectActionOnMultipleRecords(OBJECTNAME_PCI, reprintPCIIds, REPRINTEDUSERACTION);
+			List<VaultResponse.APIResponseError> errors = reprintResponse.getErrors();
+			if (errors != null) {
+				for (VaultResponse.APIResponseError error : errors) {
+					logger.error("Error moving reprinted PCI(s) to Printed: " + error.getMessage());
+				}
 			}
+
 		}
 
 	}

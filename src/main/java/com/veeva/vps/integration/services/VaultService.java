@@ -35,7 +35,7 @@ public class VaultService {
 	private String domain = "";
 	private VaultClient vc;
 	//private String pciQuery = "select id, (select id, document__c from package_class_document_instances__cr) from package_class_instance__c where state__v = 'ready_for_printing_state__c'";
-	private String pciDocQuery = "select id, document__c, package_class_instance__c, number_of_copies__c, (select name__v from paper_type__cr), (select name__v from printertray__cr), (select id, state__v from package_class_instance__cr) from package_class_document_instance__c where package_class_instance__c in (select id from package_class_instance__cr where state__v CONTAINS ('ready_for_printing_state__c','ready_for_reprint_state__c'))";
+	private String pciDocQuery = "select id, document__c, package_class_instance__c, number_of_copies__c, (select name__v from paper_type__cr), (select name__v, printer_name_on_server__c from printertray__cr), (select id, state__v from package_class_instance__cr) from package_class_document_instance__c where package_class_instance__c in (select id from package_class_instance__cr where state__v CONTAINS ('ready_for_printing_state__c','ready_for_reprint_state__c'))";
 	private String dataKeyDocIds = "docIds";
 	private String dataKeyPrinter = "printerTray";
 	private String dataKeyPaperSize = "paperSize";
@@ -44,8 +44,10 @@ public class VaultService {
 	private String dataKeyPCIId = "packageClassInstanceId";
 	private String dataKeyPCIState = "packageClassInstanceState";
 	private String dataKeyPCIDocId = "packageClassInstanceDocId";
+	private String dataKeyPrinterNameOnServer = "packageClassInstanceDocPrinterNameOnServer";
 	private String OBJFIELD_NUMCOPIES = "number_of_copies__c";
 	private String OBJFIELD_PCI = "package_class_instance__c";
+	private String OBJFIELD_SERVER_PRINTER_NAME = "printer_name_on_server__c";
 
 
 	public VaultService(String username, String password, String domain) {
@@ -107,7 +109,7 @@ public class VaultService {
 	//Get all PCIs in the Ready for Printing State
 	private List<Map<String, String>> getPCIsReadyForPrinting()
 	{
-		logger.info("Start getPCIsReadyForPrinting");
+		logger.info("**************** Start getPCIsReadyForPrinting ***********************");
 		List<Map<String, String>> pciDocList = new ArrayList<>();
 
 		VaultClient vc = getVaultClient();
@@ -134,6 +136,11 @@ public class VaultService {
 			for (QueryResponse.QueryRecord curRec : response2.getRecords()) {
 				String printer = curRec.getString("name__v");
 				docData.put(dataKeyPrinter, printer);
+				String printerNameOnServer = curRec.getString(OBJFIELD_SERVER_PRINTER_NAME);
+				if (printerNameOnServer == null)
+					printerNameOnServer = "";
+
+				docData.put(dataKeyPrinterNameOnServer, printerNameOnServer);
 			}
 
 			QueryResponse response3 = rec.getSubQuery(RELATIONNAME_PCI);

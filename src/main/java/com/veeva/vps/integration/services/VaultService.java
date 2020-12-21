@@ -3,6 +3,7 @@ package com.veeva.vps.integration.services;
 import com.veeva.vault.vapil.api.VaultClient;
 import com.veeva.vault.vapil.api.model.VaultClientId;
 import com.veeva.vault.vapil.api.model.response.ObjectRecordActionResponse;
+import com.veeva.vault.vapil.api.model.response.ObjectRecordBulkActionResponse;
 import com.veeva.vault.vapil.api.model.response.QueryResponse;
 import com.veeva.vault.vapil.api.model.response.VaultResponse;
 import com.veeva.vault.vapil.api.request.DocumentRenditionRequest;
@@ -35,7 +36,7 @@ public class VaultService {
 	private String domain = "";
 	private VaultClient vc;
 	//private String pciQuery = "select id, (select id, document__c from package_class_document_instances__cr) from package_class_instance__c where state__v = 'ready_for_printing_state__c'";
-	private String pciDocQuery = "select id, document__c, package_class_instance__c, number_of_copies__c, (select name__v from paper_type__cr), (select name__v, printer_name_on_server__c from printertray__cr), (select id, state__v from package_class_instance__cr) from package_class_document_instance__c where package_class_instance__c in (select id from package_class_instance__cr where state__v CONTAINS ('ready_for_printing_state__c','ready_for_reprint_state__c'))";
+	private String pciDocQuery = "select id, document__c, package_class_instance__c, number_of_copies__c, (select name__v from paper_type__cr), (select name__v, printer_name_on_server__c, printing_sides__c from printertray__cr), (select id, state__v from package_class_instance__cr) from package_class_document_instance__c where package_class_instance__c in (select id from package_class_instance__cr where state__v CONTAINS ('ready_for_printing_state__c','ready_for_reprint_state__c'))";
 	private String dataKeyDocIds = "docIds";
 	private String dataKeyPrinter = "printerTray";
 	private String dataKeyPaperSize = "paperSize";
@@ -48,6 +49,8 @@ public class VaultService {
 	private String OBJFIELD_NUMCOPIES = "number_of_copies__c";
 	private String OBJFIELD_PCI = "package_class_instance__c";
 	private String OBJFIELD_SERVER_PRINTER_NAME = "printer_name_on_server__c";
+	private String dataKeyPrinterPageSides = "papersides";
+	private String OBJFIELD_PAPER_SIDES = "printing_sides__c";
 
 
 	public VaultService(String username, String password, String domain) {
@@ -140,7 +143,17 @@ public class VaultService {
 				if (printerNameOnServer == null)
 					printerNameOnServer = "";
 
+				List<String> paperSides = curRec.getList(OBJFIELD_PAPER_SIDES);
+				String paperSidesValue = "";
+				if (paperSides != null) {
+					if (!paperSides.isEmpty())
+					{
+						paperSidesValue = paperSides.get(0);
+					}
+				}
+
 				docData.put(dataKeyPrinterNameOnServer, printerNameOnServer);
+				docData.put(dataKeyPrinterPageSides, paperSidesValue);
 			}
 
 			QueryResponse response3 = rec.getSubQuery(RELATIONNAME_PCI);
@@ -164,7 +177,7 @@ public class VaultService {
 		VaultClient vc = getVaultClient();
 		if (!printedPCIIds.isEmpty())
 		{
-			ObjectRecordActionResponse printResponse = vc.newRequest(ObjectLifecycleWorkflowRequest.class).initiateObjectActionOnMultipleRecords(OBJECTNAME_PCI, printedPCIIds, PRINTEDUSERACTION);
+			ObjectRecordBulkActionResponse printResponse = vc.newRequest(ObjectLifecycleWorkflowRequest.class).initiateObjectActionOnMultipleRecords(OBJECTNAME_PCI, printedPCIIds, PRINTEDUSERACTION);
 			List<VaultResponse.APIResponseError> errors = printResponse.getErrors();
 			if (errors != null)
 			{
@@ -176,7 +189,7 @@ public class VaultService {
 
 		if (!reprintPCIIds.isEmpty())
 		{
-			ObjectRecordActionResponse reprintResponse = vc.newRequest(ObjectLifecycleWorkflowRequest.class).initiateObjectActionOnMultipleRecords(OBJECTNAME_PCI, reprintPCIIds, REPRINTEDUSERACTION);
+			ObjectRecordBulkActionResponse reprintResponse = vc.newRequest(ObjectLifecycleWorkflowRequest.class).initiateObjectActionOnMultipleRecords(OBJECTNAME_PCI, reprintPCIIds, REPRINTEDUSERACTION);
 			List<VaultResponse.APIResponseError> errors = reprintResponse.getErrors();
 			if (errors != null) {
 				for (VaultResponse.APIResponseError error : errors) {

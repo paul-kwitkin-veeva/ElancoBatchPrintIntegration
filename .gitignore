@@ -61,3 +61,10 @@ target/classes/com/veeva/vps/integration/services/VaultService.class
 target/classes/log4j.xml
 target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst
 target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst
+target/ElancoBatchPrintIntegration-1.0-SNAPSHOT-jar-with-dependencies.jar
+target/libs/fontbox-2.0.21.jar
+target/libs/pdfbox-2.0.21.jar
+target/libs/pdfbox-debugger-2.0.21.jar
+target/libs/pdfbox-tools-2.0.21.jar
+target/libs/vapil-20.2.2.jar
+elancoPrintIntegration.log

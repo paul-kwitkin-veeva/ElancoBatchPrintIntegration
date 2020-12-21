@@ -9,11 +9,16 @@ import org.apache.log4j.BasicConfigurator;
 import org.apache.log4j.Logger;
 import org.apache.pdfbox.pdmodel.PDDocument;
 import org.apache.pdfbox.printing.PDFPageable;
+import org.apache.pdfbox.printing.PDFPrintable;
+import org.apache.pdfbox.printing.Scaling;
 
 import javax.imageio.ImageIO;
 import javax.print.*;
 import javax.print.attribute.*;
 import java.awt.image.BufferedImage;
+import java.awt.print.Book;
+import java.awt.print.PageFormat;
+import java.awt.print.Paper;
 import java.awt.print.PrinterJob;
 import java.io.*;
 import java.util.*;
@@ -37,6 +42,7 @@ public class BatchPrintEngine {
 	private static String READYFORREPRINTSTATE = "ready_for_reprint_state__c";
 	private static String CONFIGURATIONZEBRA = "Zebra_Printers";
 	private static String dataKeyPrinterNameOnServer = "packageClassInstanceDocPrinterNameOnServer";
+	private static String dataKeyPrinterPageSides = "papersides";
 
 	public static void main(String[] args) throws Exception {
 		logger.info("Start com.veeva.vps.integration.BatchPrintEngine");
@@ -132,6 +138,11 @@ public class BatchPrintEngine {
 
 						attrSet.add(new Copies(Integer.parseInt(docData.get(dataKeyNumCopies))));
 						logger.debug("number of copies size: " + docData.get(dataKeyNumCopies));
+						String paperSides = docData.get(dataKeyPrinterPageSides);
+						if (paperSides.equalsIgnoreCase("duplex__c"))
+						{
+							attrSet.add(Sides.DUPLEX);
+						}
 
 						//Need to determine if this is a zebra printer and therefore need to convert the PDF to an image to print
 						List<String> zebraPrinters = settingRecord.getValueAsList(CONFIGURATIONZEBRA);
@@ -155,9 +166,24 @@ public class BatchPrintEngine {
 						}
 						else
 						{
+							// custom page format
+							PageFormat pageFormat = job.getPageFormat(attrSet);
+							//Paper paper = pageFormat.getPaper();
+//							//8-1/4 x 11-3/4
+//							double width = 8.25;
+//							double height = 11.75;
+//							paper.setSize(width * 72, height * 72);
+//							pageFormat.setPaper(paper);
+
+							// override the page format
+							//Book book = new Book();
+							// append all pages
+							//book.append(new PDFPrintable(document), pageFormat, document.getNumberOfPages());
+							//job.setPageable(book);
+							//job.setPrintable(new PDFPrintable(document, Scaling.SCALE_TO_FIT));
 							job.setPageable(new PDFPageable(document));
 							job.setPrintService(curService);
-							job.print();
+							job.print(attrSet);
 						}
 
 						logger.info("Exiting app");

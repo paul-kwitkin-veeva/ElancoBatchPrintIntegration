@@ -24,6 +24,11 @@
                 <updatePolicy>never</updatePolicy>
             </releases>
         </repository>
+        <repository>
+            <id>project.local</id>
+            <name>project</name>
+            <url>file:${project.basedir}/local-repo</url>
+        </repository>
     </repositories>
 
     <dependencies>
@@ -56,7 +61,11 @@
             <artifactId>pdfbox-tools</artifactId>
             <version>2.0.21</version>
         </dependency>
-
+        <dependency>
+            <groupId>com.zebra.sdk</groupId>
+            <artifactId>ZSDK_API</artifactId>
+            <version>2.14.5198</version>
+        </dependency>
     </dependencies>
     <build>
         <plugins>

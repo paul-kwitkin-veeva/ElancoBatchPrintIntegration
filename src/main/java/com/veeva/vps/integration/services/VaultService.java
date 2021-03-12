@@ -2,10 +2,7 @@ package com.veeva.vps.integration.services;
 
 import com.veeva.vault.vapil.api.VaultClient;
 import com.veeva.vault.vapil.api.model.VaultClientId;
-import com.veeva.vault.vapil.api.model.response.ObjectRecordActionResponse;
-import com.veeva.vault.vapil.api.model.response.ObjectRecordBulkActionResponse;
-import com.veeva.vault.vapil.api.model.response.QueryResponse;
-import com.veeva.vault.vapil.api.model.response.VaultResponse;
+import com.veeva.vault.vapil.api.model.response.*;
 import com.veeva.vault.vapil.api.request.DocumentRenditionRequest;
 import com.veeva.vault.vapil.api.request.ObjectLifecycleWorkflowRequest;
 import com.veeva.vault.vapil.api.request.QueryRequest;
@@ -91,9 +88,14 @@ public class VaultService {
 			if (!file.exists())
 			{
 				byte[] curBytes = getViewableRendition(Integer.parseInt(docIDString.substring(0, pos)));
-				writeByte(file, curBytes);
+				if (curBytes != null)
+				{
+					writeByte(file, curBytes);
+					docData.put(dataKeyFileLoc, file.getAbsolutePath());
+				}
+
 			}
-			docData.put(dataKeyFileLoc, file.getAbsolutePath());
+
 		}
 
 		logger.info("End getDocumentsReadyForPrinting");
@@ -105,8 +107,20 @@ public class VaultService {
 	private byte[] getViewableRendition(int docId)
 	{
 		VaultClient vc = getVaultClient();
-		VaultResponse documentResponse = vc.newRequest(DocumentRenditionRequest.class).downloadDocumentRenditionFile(docId, "viewable_rendition__v");
-		return documentResponse.getBinaryContent();
+		byte[] result = null;
+		VaultResponse documentResponse = null;
+		//check for the rendition first
+		DocumentRenditionResponse documentRenditionResponse = vc.newRequest(DocumentRenditionRequest.class).retrieveDocumentRenditions(docId);
+		DocumentRenditionResponse.Renditions renditions = documentRenditionResponse.getRenditions();
+		if (renditions != null)
+		{
+			if (renditions.getProperties().containsKey("viewable_rendition__v")) {
+				documentResponse = vc.newRequest(DocumentRenditionRequest.class).downloadDocumentRenditionFile(docId, "viewable_rendition__v");
+				result = documentResponse.getBinaryContent();
+			}
+		}
+
+		return result;
 	}
 
 	//Get all PCIs in the Ready for Printing State

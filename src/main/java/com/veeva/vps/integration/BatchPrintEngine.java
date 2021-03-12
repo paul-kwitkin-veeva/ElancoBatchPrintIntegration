@@ -4,6 +4,12 @@ import com.veeva.vps.integration.model.VpsImagePrintable;
 import com.veeva.vps.integration.model.VpsSettingRecord;
 import com.veeva.vps.integration.services.VaultService;
 import com.veeva.vps.integration.services.VpsImageService;
+import com.zebra.sdk.comm.Connection;
+import com.zebra.sdk.comm.ConnectionException;
+import com.zebra.sdk.comm.TcpConnection;
+import com.zebra.sdk.printer.ZebraPrinter;
+import com.zebra.sdk.printer.ZebraPrinterFactory;
+import com.zebra.sdk.printer.ZebraPrinterLanguageUnknownException;
 import org.apache.commons.io.FileUtils;
 import org.apache.log4j.BasicConfigurator;
 import org.apache.log4j.Logger;
@@ -81,121 +87,119 @@ public class BatchPrintEngine {
 			logger.debug("Got a document list size: " + docList.size());
 
 			for (Map<String, String> docData : docList) {
-				String curFilePath = docData.get(dataKeyFileLoc);
-				PDDocument document = PDDocument.load(new File(curFilePath));
-				DocFlavor flavor = DocFlavor.INPUT_STREAM.AUTOSENSE;
-				PrintRequestAttributeSet attrSet = new HashPrintRequestAttributeSet();
-
-				PrintService[] services = PrintServiceLookup.lookupPrintServices(flavor, attrSet);
-//				logger.debug("Number of services1: " + services.length);
-//				for (PrintService curService : services) {
-//					String name = curService.getName();
-//					logger.debug("Service1 name: " + name);
-//				}
-				VpsSettingRecord settingRecord = vaultService.getVpsSettings("BPRPrinterIntegration", true);
-				String printerName = docData.get(dataKeyPrinter);
-				if (printerName == null)
-					printerName = "";
-
-				String printerToUse = settingRecord.getValue(printerName, "");
-				if (printerToUse.isEmpty())
+				try
 				{
-					printerToUse = docData.get(dataKeyPrinterNameOnServer);
-				}
+					String curFilePath = docData.get(dataKeyFileLoc);
+					if (curFilePath != null) {
+						PDDocument document = PDDocument.load(new File(curFilePath));
+						DocFlavor flavor = DocFlavor.INPUT_STREAM.AUTOSENSE;
+						PrintRequestAttributeSet attrSet = new HashPrintRequestAttributeSet();
 
-				logger.debug("printerName: " + printerName);
-				logger.debug("printerToUse: " + printerToUse);
-				logger.debug("Number of services: " + services.length);
-				DocPrintJob printJob = null;
+						PrintService[] services = PrintServiceLookup.lookupPrintServices(flavor, attrSet);
 
-				for (PrintService curService : services) {
-					String name = curService.getName();
-					logger.debug("Service name: " + name);
-					logger.debug("printerToUse: " + printerToUse);
+						VpsSettingRecord settingRecord = vaultService.getVpsSettings("BPRPrinterIntegration", true);
+						String printerName = docData.get(dataKeyPrinter);
+						if (printerName == null)
+							printerName = "";
 
-//					printFunctionality(curService, "Trays", MediaTray.class);
-//					printFunctionality(curService, "Copies", Copies.class);
-//					printFunctionality(curService, "Print Quality", PrintQuality.class);
-//					printFunctionality(curService, "Color", ColorSupported.class);
-//					printFunctionality(curService, "Media Size", MediaSize.class);
-//					printFunctionality(curService, "Accepting Jobs", PrinterIsAcceptingJobs.class);
-					PrinterJob job = PrinterJob.getPrinterJob();
-
-					if (name.equalsIgnoreCase(printerToUse))
-					{
-						logger.debug("***************** Create print job for doc: " + docData.get(dataKeyDocIds) + " ********************");
-						//TODO Add the tray and paper size options to the attributes so that only the printers that support that are listed then match the printer
-						logger.debug("paper size: " + docData.get(dataKeyPaperSize));
-//
-//						if (docData.get(dataKeyPaperSize).equalsIgnoreCase("A4"))
-//							attrSet.add(MediaSizeName.ISO_A4);
-//						if (docData.get(dataKeyPaperSize).equalsIgnoreCase("Letter"))
-//							attrSet.add(MediaSizeName.NA_LETTER);
-//						if (docData.get(dataKeyPaperSize).equalsIgnoreCase("Legal"))
-//							attrSet.add(MediaSizeName.NA_LEGAL);
-//						if (docData.get(dataKeyPaperSize).equalsIgnoreCase("A3"))
-//							attrSet.add(MediaSizeName.ISO_A3);
-
-						attrSet.add(new Copies(Integer.parseInt(docData.get(dataKeyNumCopies))));
-						logger.debug("number of copies size: " + docData.get(dataKeyNumCopies));
-						String paperSides = docData.get(dataKeyPrinterPageSides);
-						if (paperSides.equalsIgnoreCase("duplex__c"))
+						String printerToUse = settingRecord.getValue(printerName, "");
+						if (printerToUse.isEmpty())
 						{
-							attrSet.add(Sides.DUPLEX);
+							printerToUse = docData.get(dataKeyPrinterNameOnServer);
 						}
 
-						//Need to determine if this is a zebra printer and therefore need to convert the PDF to an image to print
-						List<String> zebraPrinters = settingRecord.getValueAsList(CONFIGURATIONZEBRA);
-						if (zebraPrinters.contains(name))
-						{
-							//convert the doc to an image
-							VpsImageService imageService = new VpsImageService();
-							List<String> imageFiles = imageService.convertPDFToImage(document, tempFolder, docData.get(dataKeyPCIDocId));
+						logger.debug("printerName: " + printerName);
+						logger.debug("printerToUse: " + printerToUse);
+						logger.debug("Number of services: " + services.length);
+						DocPrintJob printJob = null;
 
-							for (String imagePath : imageFiles) {
-								//set the image to be printed
-								//PrintRequestAttributeSet aset = new HashPrintRequestAttributeSet();
-								attrSet.add(new PrinterResolution(300, 300, PrinterResolution.DPI));
+						for (PrintService curService : services) {
 
-								BufferedImage myPicture = ImageIO.read(new File(imagePath));
+							String name = curService.getName();
+							logger.debug("Service name: " + name);
+							logger.debug("printerToUse: " + printerToUse);
 
-								job.setPrintable(new VpsImagePrintable.ImagePrintable(job, myPicture));
-								job.setPrintService(curService);
-								job.print(attrSet);
+							PrinterJob job = PrinterJob.getPrinterJob();
+
+							if (name.equalsIgnoreCase(printerToUse))
+							{
+								logger.debug("***************** Create print job for doc: " + docData.get(dataKeyDocIds) + " ********************");
+								//TODO Add the tray and paper size options to the attributes so that only the printers that support that are listed then match the printer
+								logger.debug("paper size: " + docData.get(dataKeyPaperSize));
+
+								attrSet.add(new Copies(Integer.parseInt(docData.get(dataKeyNumCopies))));
+								logger.debug("number of copies size: " + docData.get(dataKeyNumCopies));
+								String paperSides = docData.get(dataKeyPrinterPageSides);
+								if (paperSides.equalsIgnoreCase("duplex__c"))
+								{
+									attrSet.add(Sides.DUPLEX);
+								}
+
+								//Need to determine if this is a zebra printer and therefore need to convert the PDF to an image to print
+								List<String> zebraPrinters = settingRecord.getValueAsList(CONFIGURATIONZEBRA);
+								if (zebraPrinters.contains(name))
+								{
+									logger.debug("Print to Zebra Printer");
+									//convert the doc to an image
+									VpsImageService imageService = new VpsImageService();
+									List<String> imageFiles = imageService.convertPDFToImage(document, tempFolder, docData.get(dataKeyPCIDocId));
+
+									for (String imagePath : imageFiles) {
+										logger.debug("Print image: " + imagePath);
+
+										Connection thePrinterConn = new TcpConnection(name, TcpConnection.DEFAULT_ZPL_TCP_PORT);
+
+										logger.debug("Connection opened to printer: " + name);
+										try {
+											// Instantiate connection for ZPL TCP port at given address
+											thePrinterConn.open();
+											ZebraPrinter printer = ZebraPrinterFactory.getInstance(thePrinterConn);
+
+											int x = 0;
+											int y = 0;
+											logger.debug("Printing image to zebra printer");
+											int numCopies = Integer.parseInt(docData.get(dataKeyNumCopies));
+											for (int i = 0; i < numCopies ; i++) {
+												printer.printImage(imagePath, x, y);
+											}
+
+										} catch (ConnectionException e) {
+											e.printStackTrace();
+										} catch (ZebraPrinterLanguageUnknownException e) {
+											e.printStackTrace();
+										} finally {
+											// Close the connection to release resources.
+											thePrinterConn.close();
+										}
+									}
+
+								}
+								else
+								{
+									// custom page format
+									PageFormat pageFormat = job.getPageFormat(attrSet);
+									job.setPageable(new PDFPageable(document));
+									job.setPrintService(curService);
+									job.print(attrSet);
+								}
+
+								logger.info("Exiting app");
+								document.close();
+								logger.info("End Print Loop");
+
+								if (docData.get(dataKeyPCIState).equalsIgnoreCase(READYFORPRINTSTATE))
+									docsPrinted.add(docData.get(dataKeyPCIId));
+								if (docData.get(dataKeyPCIState).equalsIgnoreCase(READYFORREPRINTSTATE))
+									docsRePrinted.add(docData.get(dataKeyPCIId));
+
 							}
 						}
-						else
-						{
-							// custom page format
-							PageFormat pageFormat = job.getPageFormat(attrSet);
-							//Paper paper = pageFormat.getPaper();
-//							//8-1/4 x 11-3/4
-//							double width = 8.25;
-//							double height = 11.75;
-//							paper.setSize(width * 72, height * 72);
-//							pageFormat.setPaper(paper);
-
-							// override the page format
-							//Book book = new Book();
-							// append all pages
-							//book.append(new PDFPrintable(document), pageFormat, document.getNumberOfPages());
-							//job.setPageable(book);
-							//job.setPrintable(new PDFPrintable(document, Scaling.SCALE_TO_FIT));
-							job.setPageable(new PDFPageable(document));
-							job.setPrintService(curService);
-							job.print(attrSet);
-						}
-
-						logger.info("Exiting app");
-						document.close();
-						logger.info("End Print Loop");
-
-						if (docData.get(dataKeyPCIState).equalsIgnoreCase(READYFORPRINTSTATE))
-							docsPrinted.add(docData.get(dataKeyPCIId));
-						if (docData.get(dataKeyPCIState).equalsIgnoreCase(READYFORREPRINTSTATE))
-							docsRePrinted.add(docData.get(dataKeyPCIId));
-
 					}
+
+				}
+				catch (Exception ex)
+				{
+					ex.printStackTrace();
 				}
 			}
 

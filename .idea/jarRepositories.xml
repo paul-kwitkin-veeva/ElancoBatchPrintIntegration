@@ -12,6 +12,11 @@
       <option name="url" value="https://repo.veevaservices.com/vapil/maven" />
     </remote-repository>
     <remote-repository>
+      <option name="id" value="project.local" />
+      <option name="name" value="project" />
+      <option name="url" value="file:$PROJECT_DIR$/local-repo" />
+    </remote-repository>
+    <remote-repository>
       <option name="id" value="central" />
       <option name="name" value="Maven Central repository" />
       <option name="url" value="https://repo1.maven.org/maven2" />
